@@ -1,0 +1,21 @@
+Id,Mobile,Route,Day,StartDate,Location,Postcode,Start,End,Address,Lat,Lng
+1,Taunton,A,Tuesday,4/12/2016,Week Lane,TA22 9JN,10:15,10:45,"Week Lane, Exton CP, West Somerset District, Somerset, South West England, England, TA22, UK",51.0882084,-3.5390053
+2,Taunton,A,Tuesday,4/12/2016,Winsford Centre,TA24 7JQ,10:55,11:25,"The Steep, Winsford CP, West Somerset District, Somerset, South West England, England, UK",51.10369,-3.5651438
+3,Taunton,A,Tuesday,4/12/2016,Folly Cottage,TA24 7JL,11:35,11:55,"Halse Lane, Winsford CP, West Somerset District, Somerset, South West England, England, UK",51.0987248,-3.5773776
+4,Taunton,A,Tuesday,4/12/2016,Withypool Post Office,TA24 7QP,12:40,13:00,"Withypool, Somerset, South West England, England, UK",51.1077271,-3.6499527
+5,Taunton,A,Tuesday,4/12/2016,Sportsman Inn,EX36 3LU,13:20,13:40,"Landacre Lane, Exmoor CP, West Somerset District, Somerset, South West England, England, UK",51.0886447,-3.7192873
+6,Taunton,A,Tuesday,4/12/2016,High Street,TA22 9QW,13:55,14:15,"Broad Lane, Withypool & Hawkridge CP, West Somerset District, Somerset, South West England, England, UK",51.0641413,-3.6272036
+7,Taunton,B,Wednesday,4/13/2016,Lower Holworthy,TA22 9NY,9:40,9:50,"Ruggs Hill, Brompton Regis CP, West Somerset District, Somerset, South West England, England, UK",51.0738177,-3.4554891
+8,Taunton,B,Wednesday,4/13/2016,Wimbleball Lake,TA22 9NU,10:00,10:20,"Duck Cafe, Bryant's Hill, Brompton Regis CP, West Somerset District, Somerset, South West England, England, UK",51.0671909,-3.4784884
+9,Taunton,B,Wednesday,4/13/2016,George Inn,TA22 9NL,10:25,10:50,"Brompton Regis, Somerset, South West England, England, UK",51.0734234,-3.4988676
+10,Taunton,B,Wednesday,4/13/2016,Combeshead,TA22 9LE,10:55,11:05,"Combeshead Cross, West Somerset District, Somerset, South West England, England, UK",51.0843494,-3.5118929
+11,Taunton,B,Wednesday,4/13/2016,Exford School,TA24 7PP,11:25,11:55,"Exford Church of England First School, Exford, Somerset, South West England, England, TA24 7PP, UK",51.1333698,-3.63902952885085
+12,Taunton,B,Wednesday,4/13/2016,Whiterock,TA24 7JT,12:10,12:20,"Winstitchen Lane, Exmoor CP, West Somerset District, Somerset, South West England, England, UK",51.1386793,-3.7417426
+13,Taunton,B,Wednesday,4/13/2016,Hillcrest,TA24 7SL,12:30,12:40,"Simonsbath, Somerset, South West England, England, UK",51.1390293,-3.7559702
+14,Taunton,B,Wednesday,4/13/2016,Red Deer House,TA24 7JY,13:20,13:35,"Red Deer Farm, West Somerset District, Somerset, South West England, England, UK",51.1412721,-3.701474
+15,Taunton,B,Wednesday,4/13/2016,West Ley,TA24 7NQ,13:40,13:50,"Yealscombe Lane, Exford CP, West Somerset District, Somerset, South West England, England, UK",51.1393094,-3.6621837
+16,Taunton,B,Wednesday,4/13/2016,Mill Lane House,TA24 7NS,14:00,14:15,"Exford CP, West Somerset District, Somerset, South West England, England, UK",51.14299325,-3.65349960462774
+17,Taunton,B,Wednesday,4/13/2016,Exford Centre,TA24 7PU,14:25,15:00,"Exford CP, West Somerset District, Somerset, South West England, England, TA24 7PU, UK",51.1326011,-3.6407281
+18,Taunton,B,Wednesday,4/13/2016,Blagdon View,TA24 7ED,15:15,15:35,"Blagdon Cross, West Somerset District, Somerset, South West England, England, UK",51.1437083,-3.552229
+19,Taunton,B,Wednesday,4/13/2016,Wheddon Cross car park,TA24 7DY,15:40,15:55,"TA24 72, Cutcombe Hill, Cutcombe CP, West Somerset District, Somerset, South West England, England, UK",51.1384266,-3.5387119
+20,Taunton,C,Thursday,4/14/2016,Appley Pavilion,TA21 0HH,9:30,9:55,"Stawley Primary School, Appley Cross, Stawley CP, Taunton Deane, Somerset, South West England, England, TA21 0HH, UK",50.98096875,-3.32533069632792
