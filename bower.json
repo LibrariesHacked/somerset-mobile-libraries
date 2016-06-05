@@ -1,0 +1,23 @@
+{
+  "name": "somerset-mobile-libraries",
+  "homepage": "https://github.com/LibrariesHacked/somerset-mobile-libraries",
+  "authors": [
+    "Dave <david_rowe@bathnes.gov.uk>"
+  ],
+  "description": "",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "bootswatch": "^3.3.6+2",
+    "leaflet": "^0.7.7",
+    "moment": "momentjs#^2.13.0"
+  }
+}
