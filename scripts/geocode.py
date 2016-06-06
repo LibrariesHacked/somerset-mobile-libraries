@@ -7,7 +7,7 @@ with open('../data/somersetmobiles.csv', 'r') as mobilecsv:
     reader = csv.reader(mobilecsv, delimiter=',', quotechar='"')
     next(reader, None)  # skip the headers
     writer = csv.writer(open('../data/somersetmobiles_geocoded.csv', 'w'), delimiter=',',quotechar='"', quoting=csv.QUOTE_MINIMAL)
-    writer.writerow(['Id','Mobile','Route','Day','StartDate','Location','Postcode','Start','End','Address','Lat','Lng'])
+    writer.writerow(['Id','Mobile','Route','Day','StartDate','Location','Postcode','Start','End','Address','Place','Lat','Lng'])
     
     for row in reader:
         # Id,Mobile,Route,Day,StartDate,Location,Postcode,Start,End
@@ -20,10 +20,21 @@ with open('../data/somersetmobiles.csv', 'r') as mobilecsv:
         postcode = row[6]
         start = row[7]
         end = row[8]
-        # use the postcode in the geocoder.  will most likely have to manually edit a few later anyway.
-        url = 'http://nominatim.openstreetmap.org/search/' + postcode + '?format=json&addressdetails=1&limit=1'
+        # url = 'http://nominatim.openstreetmap.org/search/' + postcode + '?format=json&addressdetails=1&limit=1'
+        url = 'https://maps.googleapis.com/maps/api/geocode/json?address=' + location + ',' + postcode  + ' Somerset UK'
         result = requests.get(url).json()
         
-        writer.writerow([id,mobile,route,day,startdate,location,postcode,start,end,result[0]['display_name'],result[0]['lat'],result[0]['lon']])
-        # because the web service is rate limited, wait for a second before moving onto the next one.
-        time.sleep(1)
+        addresses = result['results']
+        
+        if len(addresses) > 0:
+            place = 'TODO'
+            for address in addresses[0]['address_components']:
+                if 'postal_town' in address['types']:
+                    place = address['long_name']
+                    
+            writer.writerow([id,mobile,route,day,startdate,location,postcode,start,end,addresses[0]['formatted_address'],place,addresses[0]['geometry']['location']['lat'],addresses[0]['geometry']['location']['lng']])
+            # because the web service is rate limited, wait for a second before moving onto the next one.
+            time.sleep(1)
+        else:
+            writer.writerow([id,mobile,route,day,startdate,location,postcode,start,end,'TODO','TODO','TODO','TODO'])
+ 

@@ -1,0 +1,227 @@
+Id,Mobile,Route,Day,StartDate,Location,Postcode,Start,End,Address,Lat,Lng
+1,Taunton,A,Tuesday,4/12/2016,Week Lane,TA22 9JN,10:15,10:45,"Week Lane, Exton CP, West Somerset District, Somerset, South West England, England, TA22, UK",51.0882084,-3.5390053
+2,Taunton,A,Tuesday,4/12/2016,Winsford Centre,TA24 7JQ,10:55,11:25,"The Steep, Winsford CP, West Somerset District, Somerset, South West England, England, UK",51.10369,-3.5651438
+3,Taunton,A,Tuesday,4/12/2016,Folly Cottage,TA24 7JL,11:35,11:55,"Halse Lane, Winsford CP, West Somerset District, Somerset, South West England, England, UK",51.0987248,-3.5773776
+4,Taunton,A,Tuesday,4/12/2016,Withypool Post Office,TA24 7QP,12:40,13:00,"Withypool, Somerset, South West England, England, UK",51.1077271,-3.6499527
+5,Taunton,A,Tuesday,4/12/2016,Sportsman Inn,EX36 3LU,13:20,13:40,"Landacre Lane, Exmoor CP, West Somerset District, Somerset, South West England, England, UK",51.0886447,-3.7192873
+6,Taunton,A,Tuesday,4/12/2016,High Street,TA22 9QW,13:55,14:15,"Broad Lane, Withypool & Hawkridge CP, West Somerset District, Somerset, South West England, England, UK",51.0641413,-3.6272036
+7,Taunton,B,Wednesday,4/13/2016,Lower Holworthy,TA22 9NY,9:40,9:50,"Ruggs Hill, Brompton Regis CP, West Somerset District, Somerset, South West England, England, UK",51.0738177,-3.4554891
+8,Taunton,B,Wednesday,4/13/2016,Wimbleball Lake,TA22 9NU,10:00,10:20,"Duck Cafe, Bryant's Hill, Brompton Regis CP, West Somerset District, Somerset, South West England, England, UK",51.0671909,-3.4784884
+9,Taunton,B,Wednesday,4/13/2016,George Inn,TA22 9NL,10:25,10:50,"Brompton Regis, Somerset, South West England, England, UK",51.0734234,-3.4988676
+10,Taunton,B,Wednesday,4/13/2016,Combeshead,TA22 9LE,10:55,11:05,"Combeshead Cross, West Somerset District, Somerset, South West England, England, UK",51.0843494,-3.5118929
+11,Taunton,B,Wednesday,4/13/2016,Exford School,TA24 7PP,11:25,11:55,"Exford Church of England First School, Exford, Somerset, South West England, England, TA24 7PP, UK",51.1333698,-3.63902952885085
+12,Taunton,B,Wednesday,4/13/2016,Whiterock,TA24 7JT,12:10,12:20,"Winstitchen Lane, Exmoor CP, West Somerset District, Somerset, South West England, England, UK",51.1386793,-3.7417426
+13,Taunton,B,Wednesday,4/13/2016,Hillcrest,TA24 7SL,12:30,12:40,"Simonsbath, Somerset, South West England, England, UK",51.1390293,-3.7559702
+14,Taunton,B,Wednesday,4/13/2016,Red Deer House,TA24 7JY,13:20,13:35,"Red Deer Farm, West Somerset District, Somerset, South West England, England, UK",51.1412721,-3.701474
+15,Taunton,B,Wednesday,4/13/2016,West Ley,TA24 7NQ,13:40,13:50,"Yealscombe Lane, Exford CP, West Somerset District, Somerset, South West England, England, UK",51.1393094,-3.6621837
+16,Taunton,B,Wednesday,4/13/2016,Mill Lane House,TA24 7NS,14:00,14:15,"Exford CP, West Somerset District, Somerset, South West England, England, UK",51.14299325,-3.65349960462774
+17,Taunton,B,Wednesday,4/13/2016,Exford Centre,TA24 7PU,14:25,15:00,"Exford CP, West Somerset District, Somerset, South West England, England, TA24 7PU, UK",51.1326011,-3.6407281
+18,Taunton,B,Wednesday,4/13/2016,Blagdon View,TA24 7ED,15:15,15:35,"Blagdon Cross, West Somerset District, Somerset, South West England, England, UK",51.1437083,-3.552229
+19,Taunton,B,Wednesday,4/13/2016,Wheddon Cross car park,TA24 7DY,15:40,15:55,"TA24 72, Cutcombe Hill, Cutcombe CP, West Somerset District, Somerset, South West England, England, UK",51.1384266,-3.5387119
+20,Taunton,C,Thursday,4/14/2016,Appley Pavilion,TA21 0HH,9:30,9:55,"Stawley Primary School, Appley Cross, Stawley CP, Taunton Deane, Somerset, South West England, England, TA21 0HH, UK",50.98096875,-3.32533069632792
+21,Taunton,C,Thursday,4/14/2016,Raddington Mill,TA4 2QW,10:20,10:30,,,
+22,Taunton,C,Thursday,4/14/2016,Blackwell Farm,TA4 2QN,10:35,10:40,"River Batherm, Exeter, Somerset, South West England, England, UK",51.0287984,-3.4179726
+23,Taunton,C,Thursday,4/14/2016,Gamblyn Cottage,TA4 2DF,10:45,10:55,,,
+24,Taunton,C,Thursday,4/14/2016,Roborough,TA4 2JD,11:10,11:30,"Cooksley Lane, Upton CP, West Somerset District, Somerset, South West England, England, UK",51.0770975,-3.4208881
+25,Taunton,C,Thursday,4/14/2016,Middleton Lodge,TA4 2EN,11:45,12:00,,,
+26,Taunton,C,Thursday,4/14/2016,Glebe Farm,TA4 3PR,12:25,12:35,"Tolland, Somerset, South West England, England, UK",51.0812553,-3.2831845
+27,Taunton,C,Thursday,4/14/2016,Blackdown View lay-by (School),TA2 6TB,13:00,13:15,"Dunkerton Rise, Norton Fitzwarren, Norton Fitzwarren CP, Taunton Deane, Somerset, South West England, England, TA2 6QH, UK",51.0288056,-3.1456787
+28,Taunton,D,Friday,4/15/2016,Kingsbridge,TA23 0SH,9:45,10:00,"Jumpers Combe, Luxborough CP, West Somerset District, Somerset, South West England, England, UK",51.1292724,-3.4530886
+29,Taunton,D,Friday,4/15/2016,Cutcombe School,TA24 7DZ,10:15,10:45,"Cutcombe Church of England First School, Wheddon Cross, Somerset, South West England, England, TA24 7DZ, UK",51.139,-3.5377283554908
+30,Taunton,D,Friday,4/15/2016,Higher Park Lane,TA24 7AG,10:55,11:15,"Lower Park Lane, Cutcombe CP, West Somerset District, Somerset, South West England, England, UK",51.1398846,-3.5314904
+31,Taunton,D,Friday,4/15/2016,Timberscombe School & Playgroup,TA24 7TY,11:30,12:00,"Timberscombe Church of England First School, Timberscombe, Somerset, South West England, England, TA24 7TY, UK",51.16815105,-3.49647513204864
+32,Taunton,D,Friday,4/15/2016,Cheeky Cherubs Nursery,TA24 5EB,12:50,13:20,"Stephenson Road, Minehead CP, West Somerset District, Somerset, South West England, England, UK",51.200944,-3.4640438
+33,Taunton,D,Friday,4/15/2016,Butlins- Billyï¿½s All Stars Nursery,TA24 5SH,13:25,13:55,"Plantation Quay, West Somerset District, Somerset, South West England, England, UK",51.205239,-3.4617293
+34,Taunton,D,Friday,4/15/2016,Willow Grove ,TA23 0PT,14:10,14:25,"Monksway, Old Cleeve, West Somerset District, Somerset, South West England, England, TA23 0PP, UK",51.1614113,-3.3642485
+35,Taunton,E,Wednesday,4/20/2016,"Bishops Hull Rd, Memorial (Plygrp)",TA1 5HR,9:30,9:45,"TA1 5HR, United Kingdom",51.0171054633714,-3.13610084087041
+36,Taunton,E,Wednesday,4/20/2016,Leachï¿½s Field,TA2 8JL,10:05,10:35,"18, Leachs Field, Kingston St Mary CP, Taunton Deane, Somerset, South West England, England, TA2 8JL, UK",51.0603313,-3.1154625
+37,Taunton,E,Wednesday,4/20/2016,Spaxton School,TA5 1BS,10:55,11:30,"Spaxton CofE Primary School, High Street, Spaxton CP, Sedgemoor District, Somerset, South West England, England, TA5 1BS, UK",51.1247761,-3.10681525545621
+38,Taunton,E,Wednesday,4/20/2016,The Cottage (Bottom of hill),TA5 1DR,11:45,11:55,"TA5 1DR, United Kingdom",51.0991048448835,-3.13961087971158
+39,Taunton,E,Wednesday,4/20/2016,Broomfield Church,TA5 2EQ,12:05,12:20,"All Saints Church, Church Road, Broomfield CP, Sedgemoor District, Somerset, South West England, England, TA5 2EQ, UK",51.0822291,-3.10879436716726
+40,Taunton,E,Wednesday,4/20/2016,Entrance to Halswell House,TA5 2DE,12:40,13:00,"Millwood Stream, Sedgemoor District, Somerset, South West England, England, UK",51.1048644,-3.0633626
+41,Taunton,F,Thursday,4/21/2016,Village Hall,TA3 5QQ,9:35,10:05,"Curvalion Road, Creech St Michael CP, Taunton Deane, Somerset, South West England, England, UK",51.0250126,-3.0391229
+42,Taunton,F,Thursday,4/21/2016,Neroche School,TA19 9RG,10:25,11:15,"Tanyard, Broadway CP, South Somerset, Somerset, South West England, England, UK",50.9340662,-2.9651554
+43,Taunton,F,Thursday,4/21/2016,Isle Brewers Garage,TA3 6QN,11:40,11:55,"Isle Brewers CP, South Somerset, Somerset, South West England, England, UK",50.98404865,-2.9007280868893
+44,Taunton,F,Thursday,4/21/2016,Isle Abbotts Village Hall,TA3 6RR,12:10,12:30,"Isle Abbotts CP, South Somerset, Somerset, South West England, England, UK",50.9783449,-2.92838233276581
+45,Taunton,F,Thursday,4/21/2016,Curry Mallet Post Office,TA3 6SY,12:40,12:55,"Curry Mallet, Somerset, South West England, England, UK",50.9925166,-2.9584427
+46,Taunton,F,Thursday,4/21/2016,St Martins Close,TA3 6PW,13:40,14:00,"St Martin's Close, Fivehead CP, South Somerset, Somerset, South West England, England, TA3 6PQ, UK",51.0006242,-2.9227393
+47,Taunton,F,Thursday,4/21/2016,Parsonage Place,TA10 0EW,14:15,14:40,"Parsonage Place, Curry Rivel CP, South Somerset, Somerset, South West England, England, UK",51.0251752,-2.865547
+48,Taunton,F,Thursday,4/21/2016,Stoke St Gregory Village Hall,TA3 6EG,15:00,15:40,"Stoke St Gregory Church of England Primary School, Huntham Lane, Stoke St Gregory CP, Taunton Deane, Somerset, South West England, England, TA3 6EG, UK",51.03962715,-2.93323449325377
+49,Taunton,F,Thursday,4/21/2016,Stoke Road,TA3 6HW,15:50,16:05,"Stoke Road, North Curry CP, Taunton Deane, Somerset, South West England, England, UK",51.0268048,-2.9611474
+50,Taunton,F,Thursday,4/21/2016,Queens Square,TA3 6JS,16:10,16:40,"North Curry, Somerset, South West England, England, UK",51.0229142,-2.9719048
+51,Taunton,G,Friday,4/22/2016,Stockmoor School,TA6 6AH,9:30,10:00,"Tori Green, Stockmoor Village, North Petherton CP, Sedgemoor District, Somerset, South West England, England, TA6 6LE, UK",51.1109678,-2.9972962
+52,Taunton,G,Friday,4/22/2016,Gardens Childrenï¿½s Centre,TA6 5HT,10:15,10:45,"TA6 5HT, United Kingdom",51.126729820224,-2.9930921842743
+53,Taunton,G,Friday,4/22/2016,College Childrenï¿½s Centre,TA6 4PZ,10:55,11:55,"TA6 4PZ, United Kingdom",51.1318338949222,-2.98734630525888
+54,Taunton,G,Friday,4/22/2016,Chedzoy Lane (Pre-school),TA7 8QW,12:05,12:50,"M5, Bridgwater Without CP, Sedgemoor District, Somerset, South West England, England, TA6 4GU, UK",51.1411727,-2.9715441
+55,Taunton,G,Friday,4/22/2016,Stawell Village Hall,TA7 9AE,13:00,13:15,"9A, Reparto Antonio Maceo, Altahabana, La Habana, Cerro, l'Havana, 10900, Cuba",23.0835363,-82.3863431
+56,Taunton,G,Friday,4/22/2016,"Tapmoor Road, Junction",TA7 9BZ,14:00,14:25,"Tapmoor Road, Moorlinch CP, Sedgemoor District, Somerset, South West England, England, UK",51.1307803,-2.8653345
+57,Taunton,G,Friday,4/22/2016,Community Centre,TA7 0EX,14:45,15:45,"Cranwell Close, Westonzoyland CP, Sedgemoor District, Somerset, South West England, England, UK",51.1094546,-2.9223002
+58,Taunton,G,Friday,4/22/2016,"Main Road, Bus Stop",TA7 0NJ,15:55,16:15,"Nethermoor Road, Middlezoy CP, Sedgemoor District, Somerset, South West England, England, TA7 0NN, UK",51.0894556,-2.8924915
+59,Taunton,H,Tuesday,4/26/2016,Otterhampton School,TA5 2QS,9:45,10:40,"School Lane, Otterhampton CP, Sedgemoor District, Somerset, South West England, England, UK",51.175591,-3.0640187
+60,Taunton,H,Tuesday,4/26/2016,Harbour,TA5 2QU,10:45,11:05,"Martyn Close, Otterhampton CP, Sedgemoor District, Somerset, South West England, England, UK",51.1750153,-3.0606274
+61,Taunton,H,Tuesday,4/26/2016,Combwich Post Office,TA5 2QW,11:10,11:30,"Estuary Park, Otterhampton CP, Sedgemoor District, Somerset, South West England, England, UK",51.1732426,-3.0649315
+62,Taunton,H,Tuesday,4/26/2016,Captains,TA5 2PY,11:40,11:55,"Stockland Bristol CP, Sedgemoor District, Somerset, South West England, England, TA5 2PY, UK",51.1874839571248,-3.08342405681336
+63,Taunton,H,Tuesday,4/26/2016,Ridgeway Lane (Telephone Box),TA5 1TN,12:05,12:20,"Ridgeway Lane, Stogursey CP, West Somerset District, Somerset, South West England, England, TA5 1TN, UK",51.201709,-3.1064346
+64,Taunton,H,Tuesday,4/26/2016,Shurton Inn,TA5 1QE,12:35,12:55,"Thatch End, Shurton Road, Stogursey CP, West Somerset District, Somerset, South West England, England, TA5 1QE, UK",51.19209595,-3.14388960598647
+65,Taunton,H,Tuesday,4/26/2016,Greyhound Inn,TA5 1QR,13:40,14:10,"Lime Street, Stogursey CP, West Somerset District, Somerset, South West England, England, UK",51.1811325,-3.1415628
+66,Taunton,H,Tuesday,4/26/2016,Town Close No 30,TA5 1RN,14:15,14:40,"Town Close, Stogursey CP, West Somerset District, Somerset, South West England, England, UK",51.1808895,-3.146818
+67,Taunton,H,Tuesday,4/26/2016,Brook Street,TA5 2HP,15:00,15:30,"Brook Street, Cannington CP, Sedgemoor District, Somerset, South West England, England, UK",51.1500212,-3.0608983
+68,Taunton,I,Wednesday,4/27/2016,Dinhams Farm Corner,TA3 5JG,9:35,9:45,"Boons Orchard, Ruishton CP, Taunton Deane, Somerset, South West England, England, TA3 5JZ, UK",51.0188154,-3.0490416
+69,Taunton,I,Wednesday,4/27/2016,Hatch Beauchamp Village Hall,TA3 6SQ,9:55,10:20,"Station Road, Hatch Beauchamp CP, Taunton Deane, Somerset, South West England, England, UK",50.9788708,-2.9921241
+70,Taunton,I,Wednesday,4/27/2016,Capland,TA3 6TW,10:20,10:40,,,
+71,Taunton,I,Wednesday,4/27/2016,Ilton School,TA19 9EX,10:55,11:30,"Old Orchard Close, Ilton CP, South Somerset, Somerset, South West England, England, UK",50.9529931,-2.9242947
+72,Taunton,I,Wednesday,4/27/2016,Merrifields,TA19 9HA,11:40,11:50,"Chard Canal, South Somerset, Somerset, South West England, England, UK",50.951809,-2.9345843
+73,Taunton,I,Wednesday,4/27/2016,Tatworth Memorial Hall,TA20 2QA,13:00,13:20,"Linkhay, Tatworth, Tatworth & Forton CP, South Somerset, Somerset, South West England, England, UK",50.8424675,-2.950613
+74,Taunton,I,Wednesday,4/27/2016,Davies Close,TA20 4JL,13:40,14:00,"Davies Close, Winsham CP, South Somerset, Somerset, South West England, England, UK",50.8535133,-2.8929979
+75,Taunton,I,Wednesday,4/27/2016,Winsham School & Bell Inn,TA20 4HU,14:10,14:40,"Church Street, Winsham CP, South Somerset, Somerset, South West England, England, UK",50.852737,-2.8893663
+76,Taunton,I,Wednesday,4/27/2016,Higher Chillington,TA19 0PT,14:55,15:10,"Higher Chillington, Somerset, South West England, England, UK",50.8885994,-2.8694216
+77,Taunton,J,Thursday,4/28/2016,Childrenï¿½s Centre,TA23 0EX,9:45,10:00,"Knights Templar Church of England/Methodist Community School, Liddymore Road, Watchet CP, West Somerset District, Somerset, South West England, England, TA23 0EX, UK",51.17689835,-3.32121776491883
+78,Taunton,J,Thursday,4/28/2016,Roadwater Church,TA23 0RB,10:30,10:50,"Roadwater, Somerset, South West England, England, UK",51.1361489,-3.3848457
+79,Taunton,J,Thursday,4/28/2016,Higher Rodhuish Farm,TA24 6QL,11:00,11:20,"Rodhuish Hill Lane, Withycombe CP, West Somerset District, Somerset, South West England, England, UK",51.1509169,-3.4176702
+80,Taunton,J,Thursday,4/28/2016,The Causeway,TA24 6PZ,11:30,11:50,"Withycombe, Somerset, South West England, England, UK",51.1626814,-3.409467
+81,Taunton,J,Thursday,4/28/2016,Carantoc Place,TA24 6NE,12:00,12:15,"Station Road, Carhampton CP, West Somerset District, Somerset, South West England, England, UK",51.174409,-3.421374
+82,Taunton,J,Thursday,4/28/2016,Blue Anchor Garage,TA24 6JZ,12:25,12:40,"Blue Anchor, Somerset, South West England, England, UK",51.1792298,-3.4035047
+83,Taunton,J,Thursday,4/28/2016,Hill Top,TA5 1SR,13:45,14:05,"Hilltop Lane, Kilve CP, West Somerset District, Somerset, South West England, England, UK",51.1783356,-3.2066246
+84,Taunton,J,Thursday,4/28/2016,Frog Street T junction,TA5 1EJ,14:10,14:25,"East Quantoxhead, Somerset, South West England, England, UK",51.1829066,-3.2356446
+85,Taunton,K,Friday,4/29/2016,Slough,TA3 5RW,9:15,9:25,"Cold Road, West Hatch CP, Taunton Deane, Somerset, South West England, England, UK",50.9891026,-3.0343327
+86,Taunton,K,Friday,4/29/2016,Farmers Arms,TA3 5RS,9:30,9:40,"Grughay Lane, West Hatch CP, Taunton Deane, Somerset, South West England, England, UK",50.9713413,-3.0345262
+87,Taunton,K,Friday,4/29/2016,Allenï¿½s Farm,TA3 6AG,10:00,10:20,"Broadmead Road, Beercrocombe CP, South Somerset, Somerset, South West England, England, UK",50.978796,-2.9654241
+88,Taunton,K,Friday,4/29/2016,Barrington School,TA19 0JR,10:45,11:00,"Water Street, Barrington CP, South Somerset, Somerset, South West England, England, TA19 0NQ, UK",50.9592724,-2.8626507
+89,Taunton,K,Friday,4/29/2016,Buttle Close,TA19 0LU,11:10,11:25,"Buttle Close, Shepton Beauchamp CP, South Somerset, Somerset, South West England, England, UK",50.949877,-2.849917
+90,Taunton,K,Friday,4/29/2016,Opposite Ruskway Lane,TA10 0BN,11:40,11:50,"B3168, South Somerset, Somerset, South West England, England, UK",50.9715562,-2.8810462
+91,Taunton,K,Friday,4/29/2016,Homelea,TA7 0SA,12:50,13:00,"Stanmoor Road, Burrowbridge CP, Taunton Deane, Somerset, South West England, England, UK",51.0622067,-2.9248554
+92,Taunton,K,Friday,4/29/2016,Outwood Rd Station Post Box,TA3 5AJ,13:20,13:35,"Outwood, Somerset, South West England, England, UK",51.050267,-2.991269
+93,Taunton,K,Friday,4/29/2016,Durston Village Hall,TA3 5AG,13:40,13:55,"TA3 5AF, United Kingdom",51.0479124526953,-3.01275448050297
+94,Taunton,L,Tuesday,4/5/2016,Amberley,TA3 7SG,9:30,9:45,"Blagdon Hill Stores, Blagdon Hill, Pitminster CP, Taunton Deane, Somerset, South West England, England, UK",50.9602899,-3.1248399453083
+95,Taunton,L,Tuesday,4/5/2016,Pear Tree Cottage,TA3 7QB,10:00,10:20,"Stapley, Taunton Deane, Somerset, South West England, England, UK",50.9175372,-3.1540643
+96,Taunton,L,Tuesday,4/5/2016,Churchinford Village Hall & Playgroup,TA3 7RG,10:30,11:15,"Churchinford, Somerset, South West England, England, UK",50.9077748,-3.1206322
+97,Taunton,L,Tuesday,4/5/2016,Old School,TA21 0BJ,11:40,12:00,"Nynehead, Somerset, South West England, England, UK",50.9980152,-3.2277963
+98,Taunton,L,Tuesday,4/5/2016,Hillfarance Church,TA4 1AW,12:10,12:30,"Hillfarrance, Somerset, South West England, England, UK",51.0154405,-3.1887152
+99,Taunton,L,Tuesday,4/5/2016,Cotford St Luke School,TA4 1JD,13:15,13:45,"Nichol Place, Cotford St Luke CP, Taunton Deane, Somerset, South West England, England, TA4 1JE, UK",51.0386362,-3.1849966
+100,Taunton,L,Tuesday,4/5/2016,Lydeard St Lawrence School,TA4 3SF,14:00,14:45,"Lydeard St Lawrence, Somerset, South West England, England, UK",51.0825867,-3.2457998
+101,Taunton,L,Tuesday,4/5/2016,Old Post Office,TA4 3SB,14:50,15:10,"TA4 311, Westowe Hill, Lydeard Saint Lawrence CP, Taunton Deane, Somerset, South West England, England, UK",51.0841672,-3.2464601
+102,Taunton,M,Friday,4/6/2016,Crowcombe School,TA4 4AA,10:00,10:30,"TA4 4AA, United Kingdom",51.1217743487848,-3.22949947402645
+103,Taunton,M,Friday,4/6/2016,Hagleys Green,TA4 4AH,10:40,10:50,"8, Hagleys Green, Crowcombe CP, West Somerset District, Somerset, South West England, England, TA4 4AH, UK",51.12437515,-3.23731112622328
+104,Taunton,M,Friday,4/6/2016,Stogumber School,TA4 3TQ,11:00,11:30,"Stogumber CofE Primary School, Station Road, Stogumber CP, West Somerset District, Somerset, South West England, England, TA4 3TQ, UK",51.1264702,-3.28783425223907
+105,Taunton,M,Friday,4/6/2016,Notley Arms,TA4 4JB,11:40,12:10,"Front Street, Monksilver CP, West Somerset District, Somerset, South West England, England, UK",51.129454,-3.3261024
+106,Taunton,M,Friday,4/6/2016,Castlake Farm,TA4 3TT,12:25,12:35,"Water Lane, Stogumber CP, West Somerset District, Somerset, South West England, England, UK",51.1209866,-3.2648808
+107,Taunton,M,Friday,4/6/2016,Higher Vexford Farm,TA4 3QF,12:45,12:55,"Higher Vexford, Somerset, South West England, England, UK",51.1088425,-3.2727676
+108,Taunton,M,Friday,4/6/2016,Station,TA4 4PA,13:10,13:40,"Bakers Orchard, Crowcombe CP, West Somerset District, Somerset, South West England, England, TA4 4PA, UK",51.1023822,-3.234749
+109,Wells,A,Wednesday,4/13/2016,South Barrow Church,BA22 7LN,9:25,9:45,"South Barrow, Somerset, South West England, England, UK",51.0497298,-2.5675817
+110,Wells,A,Wednesday,4/13/2016,North Cadbury Village Hall,BA22 7DW,10:00,10:20,"Cutty Orchard, North Cadbury CP, South Somerset, Somerset, South West England, England, UK",51.0449003,-2.5212
+111,Wells,A,Wednesday,4/13/2016,Chapel Road (Telephone Box),BA22 7EX,10:25,10:40,"South Cadbury, Somerset, South West England, England, UK",51.0291054,-2.5245444
+112,Wells,A,Wednesday,4/13/2016,Sutton Montis Church,BA22 7HE,10:50,11:05,"Sutton Montis, Somerset, South West England, England, UK",51.019884,-2.5359871
+113,Wells,A,Wednesday,4/13/2016,Queen Camel Village Hall,BA22 7NQ,11:15,11:35,"Queen Camel, Somerset, South West England, England, UK",51.021561,-2.5766119
+114,Wells,A,Wednesday,4/13/2016,Townsend,BA22 8BP,11:45,12:05,"Little Marston Road, Marston Magna CP, South Somerset, Somerset, South West England, England, UK",51.0005545,-2.5853418
+115,Wells,A,Wednesday,4/13/2016,Road to Rimpton House,BA22 8AQ,12:10,12:40,"Mill Stream, South Somerset, Somerset, South West England, England, UK",50.9959785,-2.5621524
+116,Wells,A,Wednesday,4/13/2016,Red Tile Farm,BA22 8DF,13:30,13:40,"Court Gardens, Marston Magna CP, South Somerset, Somerset, South West England, England, UK",50.9991839,-2.5787113
+117,Wells,A,Wednesday,4/13/2016,Hales Meadow,BA21 5TA,13:50,14:05,"Hales Meadow, Mudford, South Somerset, Somerset, South West England, England, UK",50.9739354,-2.6070448
+118,Wells,A,Wednesday,4/13/2016,Fore Street Middle Farmhouse,BA22 7QW,14:20,14:40,"West Camel, West Camel CP, South Somerset, Somerset, South West England, England, UK",51.0202482,-2.605756375
+119,Wells,B,Thursday,4/14/2016,Ashcott School,TA7 9PP,9:30,10:00,"High View Drive, Ashcott CP, Sedgemoor District, Somerset, South West England, England, UK",51.1311054,-2.8083197
+120,Wells,B,Thursday,4/14/2016,Middle Street,TA7 9QB,10:05,10:20,"Middle Street, Ashcott CP, Sedgemoor District, Somerset, South West England, England, UK",51.1290926,-2.8067136
+121,Wells,B,Thursday,4/14/2016,Wellfield House,TA7 9HT,10:35,10:55,"Langland Lane, Catcott CP, Sedgemoor District, Somerset, South West England, England, UK",51.1503027,-2.8644447
+122,Wells,B,Thursday,4/14/2016,Church Lane,TA7 9DY,11:10,11:40,"Townsend Lane, Chilton Polden CP, Sedgemoor District, Somerset, South West England, England, UK",51.1540118,-2.8929425
+123,Wells,B,Thursday,4/14/2016,Station Road,TA7 8JZ,11:50,12:20,"Broderip, Cossington CP, Sedgemoor District, Somerset, South West England, England, UK",51.1619225,-2.9208621
+124,Wells,B,Thursday,4/14/2016,Westham Farm,BS28 4UR,12:50,13:05,"Hozzard Lane, Wedmore CP, Sedgemoor District, Somerset, South West England, England, BS28 4ND, UK",51.2180536,-2.8412589
+125,Wells,B,Thursday,4/14/2016,Central Car Park,BS28 4AN,13:45,14:45,"Guildhall Lane, Wedmore CP, Sedgemoor District, Somerset, South West England, England, BS28 4EG, UK",51.2260086,-2.8128334
+126,Wells,B,Thursday,4/14/2016,Little Owls (Childcare),BS28 4SA,14:50,15:05,"B3139, Wedmore CP, Sedgemoor District, Somerset, South West England, England, UK",51.2253182,-2.8018504
+127,Wells,B,Thursday,4/14/2016,Honeycombe House,BS28 4TD,15:10,15:30,"Bagley, Somerset, South West England, England, UK",51.2093301,-2.7748311
+128,Wells,C,Friday,4/15/2016,Woolavington Village Hall,TA7 8DY,9:15,10:00,"Tapps Lane, Woolavington CP, Sedgemoor District, Somerset, South West England, England, UK",51.1697079,-2.9353157
+129,Wells,C,Friday,4/15/2016,Puriton Village Hall,TA7 8BP,10:10,10:25,"Webbers Way, Puriton CP, Sedgemoor District, Somerset, South West England, England, UK",51.1684635,-2.9765953
+130,Wells,C,Friday,4/15/2016,Gaunts Road,TA6 4SF,10:30,10:50,"Grange Way, Pawlett CP, Sedgemoor District, Somerset, South West England, England, UK",51.1801958,-3.0037025
+131,Wells,C,Friday,4/15/2016,Chapel Road,TA6 4SH,10:55,11:10,"Pilgrims Way, Pawlett CP, Sedgemoor District, Somerset, South West England, England, UK",51.1814801,-3.0075254
+132,Wells,C,Friday,4/15/2016,Brent Knoll Post Office,TA9 4DT,11:30,12:00,"Portland Place, Brent Knoll CP, Sedgemoor District, Somerset, South West England, England, BS26, UK",51.2476695,-2.9508645
+133,Wells,C,Friday,4/15/2016,Pinewood Estate,TA8 2RU,12:15,12:30,"Huett Close, Brean CP, Sedgemoor District, Somerset, South West England, England, UK",51.2930642,-3.0113806
+134,Wells,C,Friday,4/15/2016,War Memorial,BS24 0DS,13:20,13:50,"Church Lane, Lympsham CP, Sedgemoor District, Somerset, South West England, England, BS26, UK",51.2833,-2.9537029
+135,Wells,C,Friday,4/15/2016,Stone Bow Farm,BS24 0HT,13:55,14:00,"North Road, Lympsham CP, Sedgemoor District, Somerset, South West England, England, BS26, UK",51.2874248,-2.9386848
+136,Wells,C,Friday,4/15/2016,East Drive (off Strowlands),TA9 4JQ,14:05,14:25,"TA9 4JG, United Kingdom",51.2627535,-2.9330491
+137,Wells,D,Tuesday,4/19/2016,Hemington School,BA3 5XU,9:30,10:00,"Ennox Farm, Hemington CP, Mendip District, Somerset, South West England, England, UK",51.2780367,-2.38981128105711
+138,Wells,D,Tuesday,4/19/2016,Tellisford Lane Estate,BA2 7LL,10:15,10:55,"Frome Road, Norton St Philip CP, Mendip District, Somerset, South West England, England, UK",51.2973192,-2.3206848
+139,Wells,D,Tuesday,4/19/2016,Marsh Road (Pre school),BA11 6PB,11:05,11:20,"Fairfield, Rode CP, Mendip District, Somerset, South West England, England, UK",51.2854605,-2.2798
+140,Wells,D,Tuesday,4/19/2016,The Green,BA11 6PE,11:25,11:45,"Fairfield, Rode CP, Mendip District, Somerset, South West England, England, UK",51.2853836,-2.278819
+141,Wells,D,Tuesday,4/19/2016,Market Place,BA11 4LY,12:05,12:20,"The Market Place, Nunney CP, Mendip District, Somerset, South West England, England, UK",51.2090667,-2.3786353
+142,Wells,D,Tuesday,4/19/2016,Seymour Arms,BA11 5HF,12:35,12:45,"The Yard, Witham Friary CP, Mendip District, Somerset, South West England, England, UK",51.1683982,-2.3668798
+143,Wells,E,Wednesday,4/20/2016,Nine Barrows Corner,BA5 3BH,9:15,9:35,"Nine Barrows Lane, Priddy CP, Mendip District, Somerset, South West England, England, BA5 3BE, UK",51.2610166,-2.6791869
+144,Wells,E,Wednesday,4/20/2016,Priddy School (Pre-school),BA5 3BE,9:40,10:00,"Priddy School, Townsend, Priddy CP, Mendip District, Somerset, South West England, England, BA5 3BE, UK",51.25941235,-2.67856900611565
+145,Wells,E,Wednesday,4/20/2016,Stoneleigh Housing Estate,BA5 1HG,10:15,10:25,"Westbury-sub-Mendip, Somerset, South West England, England, UK",51.236201,-2.72035
+146,Wells,E,Wednesday,4/20/2016,Henley Corner Farm (Telephone Box),TA10 9BQ,11:10,11:20,"Pedwell Drove, High Ham CP, South Somerset, Somerset, South West England, England, UK",51.089851,-2.807432
+147,Wells,E,Wednesday,4/20/2016,Chapel,TA10 9BH,11:25,11:35,"Pedwell Drove, High Ham CP, South Somerset, Somerset, South West England, England, UK",51.089851,-2.807432
+148,Wells,E,Wednesday,4/20/2016,Broadacre Farm,TA10 9AY,11:40,11:50,,,
+149,Wells,E,Wednesday,4/20/2016,Nythe Road Sunnymead,TA7 9BL,12:30,12:50,"Pedwell, Somerset, South West England, England, UK",51.1257303,-2.8243626
+150,Wells,E,Wednesday,4/20/2016,Cricket Club,TA7 9LN,13:30,13:50,"Shapwick, Somerset, South West England, England, UK",51.1397115,-2.8316904
+151,Wells,E,Wednesday,4/20/2016,Holywell Road,TA7 9LD,14:00,14:15,"The Square, Edington CP, Sedgemoor District, Somerset, South West England, England, UK",51.1553187,-2.8773031
+152,Wells,E,Wednesday,4/20/2016,Church Layby,TA7 8NT,14:25,14:40,"Robins Drive, Burtle CP, Sedgemoor District, Somerset, South West England, England, UK",51.1858559,-2.8711326
+153,Wells,E,Wednesday,4/20/2016,Catcott Burtle,TA7 8NB,14:50,15:05,"Burtle Road, Burtle CP, Sedgemoor District, Somerset, South West England, England, UK",51.1846257,-2.8606803
+154,Wells,E,Wednesday,4/20/2016,Abbots Close,BA6 9TF,15:20,15:50,"Moorview Close, Meare CP, Mendip District, Somerset, South West England, England, UK",51.1701492,-2.7891511
+155,Wells,F,Thursday,4/21/2016,Next Steps Childcare Centre,BA4 6QL,9:55,10:25,"First Aid, A371, Evercreech CP, Mendip District, Somerset, South West England, England, UK",51.1554965,-2.52326834569466
+156,Wells,F,Thursday,4/21/2016,North Wootton Church,BA4 4HA,10:40,11:10,"High Street, North Wootton CP, Mendip District, Somerset, South West England, England, UK",51.1741892,-2.6255797
+157,Wells,F,Thursday,4/21/2016,Doulting School,BA4 4PL,11:30,12:00,"St Aldhelm's Church of England Primary School, Chelynch Park, Doulting CP, Mendip District, Somerset, South West England, England, BA4 4PL, UK",51.1884933,-2.5063443631262
+158,Wells,F,Thursday,4/21/2016,Barley Mow,BA4 6DY,12:15,12:40,"Stratton Farm, Evercreech CP, Mendip District, Somerset, South West England, England, UK",51.1500632,-2.49265705733132
+159,Wells,F,Thursday,4/21/2016,Gartons Mead,BA4 6JH,12:55,13:25,"Gartons Mead, Evercreech CP, Mendip District, Somerset, South West England, England, UK",51.1442251,-2.5063527
+160,Wells,G,Friday,4/22/2016,Elliscombe Park,BA9 8EA,9:30,9:55,"A303, Maperton CP, South Somerset, Somerset, South West England, England, UK",51.0419795,-2.46012
+161,Wells,G,Friday,4/22/2016,Old Orchard layby,BA9 8NE,10:15,10:25,"Queens Grove, Pen Selwood, South Somerset, Somerset, South West England, England, UK",51.0785454,-2.3389683
+162,Wells,G,Friday,4/22/2016,Chapel Lane,BA8 0BR,10:40,11:10,"South Cheriton, Somerset, South West England, England, UK",51.0206119,-2.437849
+163,Wells,G,Friday,4/22/2016,School Lane (Playgroup),BA8 0HP,11:25,12:00,"High Street, Abbas and Templecombe CP, South Somerset, Somerset, South West England, England, BA8 0DH, UK",51.002068,-2.4161446
+164,Wells,G,Friday,4/22/2016,North Road,DT9 4NS,12:15,12:35,"The Knapp, Charlton Horethorne CP, South Somerset, Somerset, South West England, England, UK",51.0098816,-2.4808363
+165,Wells,G,Friday,4/22/2016,Sigwells ï¿½ Beech Farm,DT9 4LQ,12:45,12:55,,,
+166,Wells,G,Friday,4/22/2016,Sparkford Village Hall,BA22 7JN,13:15,13:45,"Twines Close, Sparkford CP, South Somerset, Somerset, South West England, England, UK",51.0321804,-2.5614085
+167,Wells,H,Tuesday,4/26/2016,West Horrington School,BA5 3EB,9:15,10:00,"Bath Road, St Cuthbert Out CP, Mendip District, Somerset, South West England, England, UK",51.2236074,-2.6094325
+168,Wells,H,Tuesday,4/26/2016,Nevilleï¿½s Batch,BA3 4TR,10:15,10:40,"Old Route of Somerset & Dorset, Tellis Lane, Binegar CP, Mendip District, Somerset, South West England, England, BA3 4, UK",51.2430894,-2.5466393
+169,Wells,H,Tuesday,4/26/2016,Fire Engine,BA3 5BJ,10:50,11:05,"Upper Benter, Mendip District, Somerset, South West England, England, UK",51.2415541,-2.5114917
+170,Wells,H,Tuesday,4/26/2016,Moonshill Road,BA3 5LG,11:15,11:30,"Moonshill Road, Stoke St. Michael CP, Mendip District, Somerset, South West England, England, UK",51.2229302,-2.483456
+171,Wells,H,Tuesday,4/26/2016,Memorial Hall,BA3 5QQ,11:40,12:00,"BA3 5QL, United Kingdom",51.2234709849041,-2.44334180493954
+172,Wells,H,Tuesday,4/26/2016,Bullen Mead,BA11 3LG,12:15,12:30,,,
+173,Wells,H,Tuesday,4/26/2016,The Bridge,BA3 5RL,12:40,12:50,"Vobster, Somerset, South West England, England, UK",51.2398215,-2.4257676
+174,Wells,H,Tuesday,4/26/2016,The Brambles,BA11 3RG,13:40,13:55,"Newbury Farm, Coleford CP, Mendip District, Somerset, South West England, England, UK",51.25223025,-2.43140550670557
+175,Wells,H,Tuesday,4/26/2016,Stockhill Road No.70,BA3 4JH,14:15,14:35,"Greenways, Chilcompton CP, Mendip District, Somerset, South West England, England, BS39, UK",51.2541436,-2.5141732
+176,Wells,H,Tuesday,4/26/2016,Village Hall,BA3 4PD,14:50,15:05,"Lower Street, Chewton Mendip CP, Mendip District, Somerset, South West England, England, BA3 4LL, UK",51.2776509,-2.579926
+177,Wells,I,Wednesday,4/27/2016,Red House Farm,BA3 4QE,9:20,9:45,"The Old Redhouse Barn, Stratton on the Fosse CP, Mendip District, Somerset, South West England, England, BS39, UK",51.26988325,-2.46945847515814
+178,Wells,I,Wednesday,4/27/2016,Bishop Henderson School,BA3 5PN,10:00,10:45,"Farley Dell, Coleford CP, Mendip District, Somerset, South West England, England, BA3 5, UK",51.2454774,-2.4570073
+179,Wells,I,Wednesday,4/27/2016,British Legion Car park,BA3 5PB,10:50,11:10,"Beacon View, Coleford CP, Mendip District, Somerset, South West England, England, BA3 5, UK",51.2432783,-2.4522049
+180,Wells,I,Wednesday,4/27/2016,Scotts Close,BA3 5DT,11:25,11:45,"Holcombe, Somerset, South West England, England, UK",51.2463758,-2.4725253
+181,Wells,I,Wednesday,4/27/2016,George Inn,BA3 5AB,11:55,12:15,"A367, Ashwick CP, Mendip District, Somerset, South West England, England, UK",51.2356811,-2.5060208
+182,Wells,I,Wednesday,4/27/2016,Hill Farm (Milk stand),BA4 6RQ,12:35,12:45,"Wraxall Vineyard, Ditcheat CP, Mendip District, Somerset, South West England, England, UK",51.12655405,-2.56886974730619
+183,Wells,I,Wednesday,4/27/2016,Church Farm,BA4 6SF,13:25,13:35,"Hornblotton Green, Somerset, South West England, England, UK",51.0988253,-2.5874268
+184,Wells,I,Wednesday,4/27/2016,Wadehithe,TA11 7HD,13:45,14:05,"East Lydford, Somerset, South West England, England, UK",51.0789834,-2.609183
+185,Wells,I,Wednesday,4/27/2016,Old School,TA11 7DB,14:15,14:30,"High Street, Lydford-on-Fosse CP, Mendip District, Somerset, South West England, England, UK",51.0811202,-2.6204968
+186,Wells,I,Wednesday,4/27/2016,Westwood Drove,TA11 7DL,14:35,14:45,"Fair Place, Lydford-on-Fosse CP, Mendip District, Somerset, South West England, England, UK",51.0870593,-2.6127232
+187,Wells,I,Wednesday,4/27/2016,Pound Close,BA6 8PA,14:55,15:05,"Bradley Lane, West Bradley CP, Mendip District, Somerset, South West England, England, UK",51.1277807,-2.619917
+188,Wells,J,Thursday,4/28/2016,Little Acre,BS26 2UG,9:45,10:00,"Rookery Close, East Brent CP, Sedgemoor District, Somerset, South West England, England, BS26, UK",51.271846,-2.9160939
+189,Wells,J,Thursday,4/28/2016,Yew Tree Nursery,BS26 2SA,10:05,10:20,"Tarnock, Somerset, South West England, England, UK",51.2693707,-2.8884907
+190,Wells,J,Thursday,4/28/2016,Old School,BS26 2RH,10:25,10:40,"Biddisham, Somerset, South West England, England, UK",51.2767992,-2.8888215
+191,Wells,J,Thursday,4/28/2016,Turnpike Road (Pre School),BS25 1TX,11:00,11:30,"Shipham Church of England First School, Turnpike Road, Shipham CP, Sedgemoor District, Somerset, South West England, England, BS25 1TX, UK",51.3158683,-2.79922256402992
+192,Wells,J,Thursday,4/28/2016,Beech Road,BS25 1TH,11:35,11:45,"Hollow Road, Shipham CP, Sedgemoor District, Somerset, South West England, England, UK",51.3142985,-2.7963583
+193,Wells,J,Thursday,4/28/2016,Elm Close,BS25 1SA,11:50,12:00,"Beech Road, Shipham CP, Sedgemoor District, Somerset, South West England, England, UK",51.3172553,-2.7960155
+194,Wells,J,Thursday,4/28/2016,Old Coach Road,BS26 2EH,12:15,12:25,,,
+195,Wells,J,Thursday,4/28/2016,Notting Hill Way (Avalon),BS26 2JN,12:30,12:45,"Turnpike Road, Weare CP, Sedgemoor District, Somerset, South West England, England, UK",51.2794198,-2.851974
+196,Wells,J,Thursday,4/28/2016,May Tree Farm,BS26 2NJ,12:55,13:20,"Rectory Hill, Chapel Allerton CP, Sedgemoor District, Somerset, South West England, England, UK",51.2532318,-2.847908
+197,Wells,J,Thursday,4/28/2016,Front Street (Bus shelter),BS26 2PB,13:25,13:35,"Chapel Allerton, Somerset, South West England, England, UK",51.2490264,-2.8478088
+198,Wells,K,Tuesday,4/5/2016,Merriott School,TA16 5PT,9:30,10:00,"Merriott First School, Church Street, Merriott, Merriott CP, South Somerset, Somerset, South West England, England, TA16 5PT, UK",50.9114037,-2.79541743716102
+199,Wells,K,Tuesday,4/5/2016,West Chinnock School,TA18 7PT,10:10,10:40,"Lower Street, West & Middle Chinnock CP, South Somerset, Somerset, South West England, England, UK",50.9199515,-2.7572501
+200,Wells,K,Tuesday,4/5/2016,Weston Street Playgroup,BA22 9EQ,10:50,11:20,"Forge Lane, East Chinnock CP, South Somerset, Somerset, South West England, England, UK",50.9153093,-2.7204397
+201,Wells,K,Tuesday,4/5/2016,Westbury Gardens,BA22 8UR,11:35,11:55,"Orchard Close, Odcombe CP, South Somerset, Somerset, South West England, England, UK",50.9353182,-2.7045636
+202,Wells,K,Tuesday,4/5/2016,Cedar Fields,BA22 9DB,12:10,12:30,"Cedar Fields, West Coker CP, South Somerset, Somerset, South West England, England, UK",50.9200406,-2.6884972
+203,Wells,K,Tuesday,4/5/2016,High Street  (Pippins),BA22 9PJ,12:45,12:55,"Bishops Lane, Hardington Mandeville CP, South Somerset, Somerset, South West England, England, UK",50.9013209,-2.6965219
+204,Wells,K,Tuesday,4/5/2016,Hardington Marsh,BA22 9QE,13:00,13:10,"Hardington Marsh, Somerset, South West England, England, UK",50.8854353,-2.7020083
+205,Wells,K,Tuesday,4/5/2016,Hill End,BA22 9PY,13:15,13:25,"Barry Lane, Hardington Mandeville CP, South Somerset, Somerset, South West England, England, UK",50.902723,-2.7065334
+206,Wells,K,Tuesday,4/5/2016,Helyar Arms,BA22 9JR,13:45,14:00,"East Coker, Somerset, South West England, England, UK",50.9086596,-2.6539833
+207,Wells,K,Tuesday,4/5/2016,Bower Farm,BA22 9QP,14:40,14:50,"Sutton Hill, Closworth CP, South Somerset, Somerset, South West England, England, UK",50.8999317,-2.64571
+208,Wells,L,Wednesday,4/6/2016,Podymore Inn,BA22 8JH,10:05,10:15,"Church Street, Yeovilton CP, South Somerset, Somerset, South West England, England, UK",51.021927,-2.6487216
+209,Wells,L,Wednesday,4/6/2016,Southwinds,BA22 8HF,10:20,10:40,"Bridgehampton, Yeovilton CP, South Somerset, Somerset, South West England, England, UK",51.0141868,-2.62391857244269
+210,Wells,L,Wednesday,4/6/2016,Corlarach Bineham Lane,BA22 8EZ,10:40,10:50,"Weir Lane, Yeovilton CP, South Somerset, Somerset, South West England, England, UK",51.0026861,-2.649144
+211,Wells,L,Wednesday,4/6/2016,Car Park,BA22 8LX,11:00,11:20,"Free Street, Ilchester CP, South Somerset, Somerset, South West England, England, BA22 8LN, UK",51.0008095,-2.6813138
+212,Wells,L,Wednesday,4/6/2016,Telephone Box Playgroup,TA12 6AL,11:40,11:55,"Milton, Somerset, South West England, England, UK",50.9917026,-2.7588423
+213,Wells,L,Wednesday,4/6/2016,Thurlocks,BA22 8QE,12:10,12:25,"Thurlocks, Tintinhull CP, South Somerset, Somerset, South West England, England, UK",50.9698535,-2.7190517
+214,Wells,L,Wednesday,4/6/2016,Higher Street Pippins,TA14 6SN,12:40,13:00,"Barrows Lane, Norton Sub Hamdon CP, South Somerset, Somerset, South West England, England, UK",50.9365195,-2.7597358
+215,Wells,L,Wednesday,4/6/2016,Village Hall,TA14 6TR,13:50,14:40,"North Street, Chiselborough CP, South Somerset, Somerset, South West England, England, UK",50.9313252,-2.7567804
+216,Wells,L,Wednesday,4/6/2016,Ilchester School,BA22 8JP,15:00,15:30,"Ilchester Community School, Taranto Hill, Ilchester CP, South Somerset, Somerset, South West England, England, BA22 8JL, UK",51.0118634,-2.68391965818894
+217,Wells,M,Thursday,4/7/2016,Greyhound,BA6 8QN,9:00,9:25,"Baltonsborough, Somerset, South West England, England, UK",51.1115378,-2.6552096
+218,Wells,M,Thursday,4/7/2016,Baltonsborough Playgroup,BA6 8PN,9:30,10:00,"Back Lane, Baltonsborough CP, Mendip District, Somerset, South West England, England, UK",51.1098184,-2.6312437
+219,Wells,M,Thursday,4/7/2016,Baltonsborough School,BA6 8PN,10:00,10:30,"Back Lane, Baltonsborough CP, Mendip District, Somerset, South West England, England, UK",51.1098184,-2.6312437
+220,Wells,M,Thursday,4/7/2016,Butleigh School,BA6 8SX,10:40,11:10,"Grenville Close, Butleigh CP, Mendip District, Somerset, South West England, England, UK",51.1005964,-2.6851916
+221,Wells,M,Thursday,4/7/2016,Barton Road Fairmile,BA6 8TH,11:15,11:30,"Holm Oaks, Butleigh CP, Mendip District, Somerset, South West England, England, UK",51.0976678,-2.684838
+222,Wells,M,Thursday,4/7/2016,Charlton Adam Post Office,TA11 7AY,11:45,12:00,"TA11 167, Combe Lane, Charlton Mackrell CP, South Somerset, Somerset, South West England, England, UK",51.0564309,-2.6614828
+223,Wells,M,Thursday,4/7/2016,Baker Street Bus shelter,TA11 7DU,13:00,13:15,"Babcary, Somerset, South West England, England, UK",51.0562191,-2.6251831
+224,Wells,M,Thursday,4/7/2016,Queen Street Layby,TA11 6EH,13:30,13:50,"6e, Paris, Île-de-France, France métropolitaine, 75006, France",48.84951285,2.3324173646735
+225,Wells,M,Thursday,4/7/2016,Main Street Telephone box,TA11 6BX,14:00,14:20,"Brook Lane, Barton St David CP, South Somerset, Somerset, South West England, England, UK",51.0855311,-2.6579599
+226,Wells,M,Thursday,4/7/2016,Southwood,BA6 8PG,14:30,14:45,"Southwood, Somerset, South West England, England, UK",51.0969495,-2.6310471
