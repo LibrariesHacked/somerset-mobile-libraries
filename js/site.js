@@ -30,11 +30,11 @@ function initAutocomplete() {
 function fillInAddress() {
     $('#divNearest').empty();
     var place = autocomplete.getPlace();
-    var lat = place.geometry.location.lat;
-    var lng = place.geometry.location.lng;
+    var lat = place.geometry.location.lat();
+    var lng = place.geometry.location.lng();
     SomersetMobiles.setCurrentDistances(lat, lng);
     var nearest = SomersetMobiles.getNearest();
-    $('#divNearest').append('<h3>' + nearest.location + '</h3>');
+    $('#divNearest').append('<h3>' + nearest.Location + '</h3>');
     $('#divNearest').append('<p>Due ' + nearest.Due + '<p>');
 
 }

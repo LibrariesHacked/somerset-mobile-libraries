@@ -100,9 +100,9 @@
         };
         
         $.each(this.data, function(key,val){
-            val.CurrentDistance = distance(lat, lng, val.lat, val.lng);
+            val.CurrentDistance = distance(lat, lng, val.Lat, val.Lng);
             this.data[key] = val;
-        });
+        }.bind(this));
     },
 
     getNearest: function () {
