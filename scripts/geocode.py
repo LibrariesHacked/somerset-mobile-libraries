@@ -6,7 +6,7 @@ import time
 with open('../data/somersetmobiles.csv', 'r') as mobilecsv:
     reader = csv.reader(mobilecsv, delimiter=',', quotechar='"')
     next(reader, None)  # skip the headers
-    writer = csv.writer(open('../data/somersetmobiles_geocoded.csv', 'w'), delimiter=',',quotechar='"', quoting=csv.QUOTE_MINIMAL)
+    writer = csv.writer(open('../data/somersetmobiles_geocoded.csv', 'w', encoding='utf8', newline=''), delimiter=',',quotechar='"', quoting=csv.QUOTE_MINIMAL)
     writer.writerow(['Id','Mobile','Route','Day','StartDate','Location','Postcode','Start','End','Address','Place','Lat','Lng'])
     
     for row in reader:

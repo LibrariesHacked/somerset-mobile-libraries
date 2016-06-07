@@ -4,10 +4,9 @@
 /////////////////////////////////////////////////
 var map = L.map('map').setView([51.505, -0.09], 13);
 
-L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+L.tileLayer('http://{s}.tiles.mapbox.com/v3/librarieshacked.jefmk67b/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
-
 
 
 /////////////////////////////////////////////////
@@ -71,6 +70,17 @@ $(function () {
     /////////////////////////////////////////////////
     SomersetMobiles.loadData(function () {
 
+
+        $.each(SomersetMobiles.data, function (key, val) {
+            // Add items to the map.
+            if (val.Lat && val.Lat != 'undefined' && val.Lat != null && val.Lat != '' && val.Lat != 'NaN' && val.Lat != 'TODO') {
+                L.circleMarker([val.Lat, val.Lng], {
+                    radius: 3
+                }).addTo(map)
+                .bindPopup('');
+            }
+        });
+
         // Set up DataTable
         $('#tblFullTimetable').DataTable(
                 {
@@ -90,25 +100,28 @@ $(function () {
                     ],
                     deferRender: true,
                     data: SomersetMobiles.getDataTable(),
-                    // We're expecting displayname, surname, givenname, jobtitle, manager, department, location, telephoneNumber, mobile, mail
+                    // We're expecting Mobile,Route,Day,Town,Location,Postcode,Due,Duration
                     columns: [
-                        { title: "Job title" },
-                        { title: "Manager" },
-                        { title: "Department" },
+                        { title: "Library" },
+                        { title: "RouteID", visible: false },
+                        { title: "Route" },
+                        { title: "Day" },
+                        { title: "Town" },
                         { title: "Location" },
-                        { title: "Telephone" },
-                        { title: "Mobile" },
-                        { title: "Email" }
+                        { title: "Postcode" },
+                        { title: "Due" },
+                        { title: "DueSystem", visible: false },
+                        { title: "Duration" }
                     ],
-                    order: [[2, 'asc']],
+                    order: [[8, 'asc']],
                     drawCallback: function (settings) {
                         var api = this.api();
                         var rows = api.rows({ page: 'current' }).nodes();
                         var last = null;
-                        api.column(2, { page: 'current' }).data().each(function (group, i) {
+                        api.column(7, { page: 'current' }).data().each(function (group, i) {
                             if (group != '' && last !== group) {
                                 $(rows).eq(i).before(
-                                    '<tr class="grouping"><td colspan="5">Route: ' + group + '</td></tr>'
+                                    '<tr class="grouping"><td colspan="5">Due ' + group + '</td></tr>'
                                 );
                                 last = group;
                             }

@@ -13,22 +13,45 @@
 
                 // Now we start adding some additional data.
                 // We need the next datetime for each stop.
-                stops = results.data;
+                stops = {};
 
-                $.each(stops, function (key, val) {
+                $.each(results.data.splice(1), function (key, val) {
                     // Each library is on a timescale of once every 4 weeks.
                     // Add 4 weeks onto the first stop time until we get a datetime in the future.
-                    var nextDateTime = new Date(val.StartDate + val.StartTime);
-                    var now = new Date();
+                    var strStartDate = val[4] + ' ' + val[7];
+                    var nextDateTime = moment(strStartDate, 'MM/DD/YYYY hh:mm');
+                    var strEndDate = val[4] + ' ' + val[8];
+                    var nextDateTimeEnd = moment(strEndDate, 'MM/DD/YYYY hh:mm');
+                    var now = moment();
                     while (now > nextDateTime) {
-                        nextDateTime.setDate(nextDateTime.getDate() + 28);
+                        nextDateTime.add(4, 'weeks');
                     }
-                    stops.Due = nextDateTime;
-                });
-                this.data = results.data;
+                    while (now > nextDateTimeEnd) {
+                        nextDateTimeEnd.add(4, 'weeks');
+                    }
+                    stops[val[0]] = {};
+                    stops[val[0]]['Library'] = val[1];
+                    stops[val[0]]['RouteId'] = val[1] + val[2];
+                    stops[val[0]]['Route'] = val[2];
+                    stops[val[0]]['Day'] = val[3];
+                    stops[val[0]]['StartDate'] = val[4];
+                    stops[val[0]]['Location'] = val[5];
+                    stops[val[0]]['Postcode'] = val[6];
+                    stops[val[0]]['Start'] = val[7];
+                    stops[val[0]]['End'] = val[8];
+                    stops[val[0]]['Address'] = val[9];
+                    stops[val[0]]['Town'] = val[10];
+                    stops[val[0]]['Lat'] = val[11];
+                    stops[val[0]]['Lng'] = val[12];
+                    stops[val[0]]['Due'] = nextDateTime.fromNow();
+                    stops[val[0]]['DueSystem'] = nextDateTime.format();
+                    stops[val[0]]['Duration'] = nextDateTimeEnd.diff(nextDateTime, 'minutes');
+
+                })
+                this.data = stops;
                 callback(results.data);
             }.bind(this)
-        });
+        })
     },
 
     /////////////////////////////////////
@@ -41,7 +64,8 @@
     getDataTable: function () {
         var dataArray = [];
         $.each(this.data, function (key, val) {
-            dataArray.push(['','','','','','']);
+            // Mobile,Route,Day,Town,Location,Postcode,Due,Duration
+            dataArray.push([val.Library, val.RouteId, val.Route, val.Day, val.Town, val.Location, val.Postcode, val.Due, val.DueSystem, val.Duration]);
         });
         return dataArray;
     },
