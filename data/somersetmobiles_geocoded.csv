@@ -39,7 +39,7 @@ Id,Mobile,Route,Day,StartDate,Location,Postcode,Start,End,Address,Place,Lat,Lng
 38,Taunton,E,Wednesday,4/20/2016,The Cottage (Bottom of hill),TA5 1DR,11:45,11:55,"Courtway, Bridgwater, Somerset TA5 1DR, UK",Bridgwater,51.0991762,-3.1396365
 39,Taunton,E,Wednesday,4/20/2016,Broomfield Church,TA5 2EQ,12:05,12:20,"Church Rd, Bridgwater, Somerset TA5, UK",Bridgwater,51.126074,-3.112217
 40,Taunton,E,Wednesday,4/20/2016,Entrance to Halswell House,TA5 2DE,12:40,13:00,"Goathurst, Bridgwater, Somerset TA5 2DE, UK",Bridgwater,51.1043935,-3.0631058
-41,Taunton,F,Thursday,4/21/2016,Village Hall,TA3 5QQ,9:35,10:05,"Somerset, Vale Grove, Slough, Slough SL1 2JE, UK",Slough,51.50352410000001,-0.5979835
+41,Taunton,F,Thursday,4/21/2016,Village Hall,TA3 5QQ,9:35,10:05,"Creech st Michael, UK",Creech St Michael,51.0256202,-3.0390439
 42,Taunton,F,Thursday,4/21/2016,Neroche School,TA19 9RG,10:25,11:15,"Broadway, Ilminster, Somerset TA19 9RG, UK",Ilminster,50.93448220000001,-2.9655278
 43,Taunton,F,Thursday,4/21/2016,Isle Brewers Garage,TA3 6QN,11:40,11:55,"Main Road Garage (SE-bound), Taunton, Somerset TA3, UK",Taunton,50.986568,-2.904924
 44,Taunton,F,Thursday,4/21/2016,Isle Abbotts Village Hall,TA3 6RR,12:10,12:30,"Abbotts Way, Taunton, Somerset TA3 6RL, UK",Taunton,50.9844223,-2.9242787
@@ -174,7 +174,7 @@ Id,Mobile,Route,Day,StartDate,Location,Postcode,Start,End,Address,Place,Lat,Lng
 173,Wells,H,Tuesday,4/26/2016,The Bridge,BA3 5RL,12:40,12:50,"The Bridge, Stoke St Michael, Radstock, Somerset BA3 5JP, UK",Radstock,51.2199171,-2.4819663
 174,Wells,H,Tuesday,4/26/2016,The Brambles,BA11 3RG,13:40,13:55,"The Brambles, Ridgeway Ln, Nunney, Frome, Somerset BA11 4NS, UK",Frome,51.2074565,-2.3782881
 175,Wells,H,Tuesday,4/26/2016,Stockhill Road No.70,BA3 4JH,14:15,14:35,"70 Stockhill Rd, Chilcompton, Radstock, Somerset BA3 4JH, UK",Radstock,51.2549054,-2.5130499
-176,Wells,H,Tuesday,4/26/2016,Village Hall,BA3 4PD,14:50,15:05,"Somerset, Vale Grove, Slough, Slough SL1 2JE, UK",Slough,51.50352410000001,-0.5979835
+176,Wells,H,Tuesday,4/26/2016,Village Hall,BA3 4PD,14:50,15:05,"Chewton Mendip, Somerset, BA3 4PD, UK",Chewton Mendip,51.2784306,-2.5800602
 177,Wells,I,Wednesday,4/27/2016,Red House Farm,BA3 4QE,9:20,9:45,"Stratton-on-the-Fosse, Radstock, Somerset BA3 4QE, UK",Radstock,51.270171,-2.4688366
 178,Wells,I,Wednesday,4/27/2016,Bishop Henderson School,BA3 5PN,10:00,10:45,"Farley Dell, Coleford, Radstock, Somerset BA3 5PN, UK",Radstock,51.24532929999999,-2.4567072
 179,Wells,I,Wednesday,4/27/2016,British Legion Car park,BA3 5PB,10:50,11:10,"Anchor Rd, Coleford, Radstock, Somerset BA3 5PB, UK",Radstock,51.2435869,-2.4515612
@@ -213,7 +213,7 @@ Id,Mobile,Route,Day,StartDate,Location,Postcode,Start,End,Address,Place,Lat,Lng
 212,Wells,L,Wednesday,4/6/2016,Telephone Box Playgroup,TA12 6AL,11:40,11:55,"Milton Ln, Milton, Martock, Somerset TA12 6AL, UK",Martock,50.9918525,-2.7587454
 213,Wells,L,Wednesday,4/6/2016,Thurlocks,BA22 8QE,12:10,12:25,"Thurlocks, Tintinhull, Yeovil, Somerset BA22 8QE, UK",Yeovil,50.9697402,-2.7189353
 214,Wells,L,Wednesday,4/6/2016,Higher Street Pippins,TA14 6SN,12:40,13:00,"Higher St, Norton-sub-Hamdon, Stoke-sub-Hamdon, Somerset TA14 6SN, UK",Stoke-sub-Hamdon,50.938145,-2.7594363
-215,Wells,L,Wednesday,4/6/2016,Village Hall,TA14 6TR,13:50,14:40,"Somerset, Vale Grove, Slough, Slough SL1 2JE, UK",Slough,51.50352410000001,-0.5979835
+215,Wells,L,Wednesday,4/6/2016,Village Hall,TA14 6TR,13:50,14:40,"Chiselborough, TA14 6TR, UK",Chiselborough,50.9303252,-2.7574875
 216,Wells,L,Wednesday,4/6/2016,Ilchester School,BA22 8JP,15:00,15:30,"School Cl, Tintinhull, Yeovil, Somerset BA22 8PX, UK",Yeovil,50.9720056,-2.7124602
 217,Wells,M,Thursday,4/7/2016,Greyhound,BA6 8QN,9:00,9:25,"The Greyhound, Martin St, Baltonsborough, Glastonbury, Somerset BA6 8QS, UK",Glastonbury,51.1102791,-2.6534328
 218,Wells,M,Thursday,4/7/2016,Baltonsborough Playgroup,BA6 8PN,9:30,10:00,"Ham Street, Baltonsborough, Glastonbury, Somerset BA6 8PN, UK",Glastonbury,51.1125959,-2.6327514

@@ -103,6 +103,13 @@
             val.CurrentDistance = distance(lat, lng, val.lat, val.lng);
             this.data[key] = val;
         });
-    }
+    },
 
+    getNearest: function () {
+        var currentNearest = null;
+        $.each(this.data, function (key, val) {
+            if (currentNearest == null || currentNearest.CurrentDistance > val.CurrentDistance) currentNearest = val;
+        });
+        return currentNearest;
+    }
 };

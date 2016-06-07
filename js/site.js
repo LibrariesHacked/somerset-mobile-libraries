@@ -28,21 +28,15 @@ function initAutocomplete() {
 }
 
 function fillInAddress() {
+    $('#divNearest').empty();
     var place = autocomplete.getPlace();
-    for (var component in componentForm) {
-        //document.getElementById(component).value = '';
-        //document.getElementById(component).disabled = false;
-    }
+    var lat = place.geometry.location.lat;
+    var lng = place.geometry.location.lng;
+    SomersetMobiles.setCurrentDistances(lat, lng);
+    var nearest = SomersetMobiles.getNearest();
+    $('#divNearest').append('<h3>' + nearest.location + '</h3>');
+    $('#divNearest').append('<p>Due ' + nearest.Due + '<p>');
 
-    // Get each component of the address from the place details
-    // and fill the corresponding field on the form.
-    for (var i = 0; i < place.address_components.length; i++) {
-        var addressType = place.address_components[i].types[0];
-        if (componentForm[addressType]) {
-            var val = place.address_components[i][componentForm[addressType]];
-            //document.getElementById(addressType).value = val;
-        }
-    }
 }
 
 // Bias the autocomplete object to the user's geographical location,
@@ -70,16 +64,17 @@ $(function () {
     /////////////////////////////////////////////////
     SomersetMobiles.loadData(function () {
 
-
+        var markerArray = [];
         $.each(SomersetMobiles.data, function (key, val) {
             // Add items to the map.
-            if (val.Lat && val.Lat != 'undefined' && val.Lat != null && val.Lat != '' && val.Lat != 'NaN' && val.Lat != 'TODO') {
-                L.circleMarker([val.Lat, val.Lng], {
+            if (val.Lat && val.Lat != 'TODO') {
+                markerArray.push(L.circleMarker([val.Lat, val.Lng], {
                     radius: 3
-                }).addTo(map)
-                .bindPopup('');
+                }).bindPopup('<h4>' + val.Location + '</h4><small>Due ' + val.Due + '</small>'));
             }
         });
+        var group = L.featureGroup(markerArray).addTo(map);
+        map.fitBounds(group.getBounds());
 
         // Set up DataTable
         $('#tblFullTimetable').DataTable(
