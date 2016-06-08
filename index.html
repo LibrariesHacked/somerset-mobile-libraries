@@ -32,8 +32,8 @@
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Custom timetables <span class="sr-only">(current)</span></a></li>
-                    <li><a href="#">Current Location Map</a></li>
+                    <li class="active"><a href="#">Departures <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">Map</a></li>
                     <li><a href="#">Full timetable</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
@@ -54,7 +54,12 @@
                             <label class="control-label" for="txtAddressSearch">Address</label>
                             <input class="form-control" id="txtAddressSearch" placeholder="Enter your address" onFocus="geolocate()" type="text">
                         </div>
-                        <div id="divNearest"></div>
+                        <div id="divNearest" class="alert alert-dismissible alert-info">
+                        </div>
+                        <div id="divNearestAdditional" class="well"></div>
+                        <a href="#" class="btn btn-danger btn-sm">Reject</a>
+                        <a href="#" class="btn btn-primary btn-sm">Zoom on map</a>
+                        
                     </div>
                 </div>
             </div>
@@ -79,9 +84,10 @@
                                     <a href="#" class="btn btn-success">Download</a>
                                     <a href="#" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="#">Action</a></li>
-                                        <li><a href="#">Another action</a></li>
-                                        <li><a href="#">Something else here</a></li>
+                                        <li><a href="#">Download route (CSV)</a></li>
+                                        <li><a href="#">Download route (Excel)</a></li>
+                                        <li><a href="#">Download route (PDF)</a></li>
+                                        <li><a href="#">Download stop calendar</a></li>
                                         <li class="divider"></li>
                                         <li><a href="#">Download Full Route PDF</a></li>
                                     </ul>
@@ -111,9 +117,10 @@
                                 <a href="#" class="btn btn-success">Download</a>
                                 <a href="#" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="#">Action</a></li>
-                                    <li><a href="#">Another action</a></li>
-                                    <li><a href="#">Something else here</a></li>
+                                    <li><a href="#">Download route (CSV)</a></li>
+                                    <li><a href="#">Download route (Excel)</a></li>
+                                    <li><a href="#">Download route (PDF)</a></li>
+                                    <li><a href="#">Download stop calendar</a></li>
                                     <li class="divider"></li>
                                     <li><a href="#">Download Full Route PDF</a></li>
                                 </ul>

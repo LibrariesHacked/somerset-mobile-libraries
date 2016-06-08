@@ -1,5 +1,5 @@
 ﻿/////////////////////////////////////////////////
-// MAP
+// Map
 // Initialise the map, set center, zoom, etc.
 /////////////////////////////////////////////////
 var map = L.map('map').setView([51.505, -0.09], 13);
@@ -8,58 +8,39 @@ L.tileLayer('http://{s}.tiles.mapbox.com/v3/librarieshacked.jefmk67b/{z}/{x}/{y}
     attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 
-
-/////////////////////////////////////////////////
-// AUTOCOMPLETE ADRESS SEARCH
-/////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+// Autocomplete address search
+// Initial code to set up the autocomplete search box
+//////////////////////////////////////////////////////
 var placeSearch, autocomplete;
-var componentForm = {
-    street_number: 'short_name',
-    route: 'long_name',
-    locality: 'long_name',
-    administrative_area_level_1: 'short_name',
-    country: 'long_name',
-    postal_code: 'short_name'
-};
 
 function initAutocomplete() {
     autocomplete = new google.maps.places.Autocomplete((document.getElementById('txtAddressSearch')), { types: ['geocode'] });
-    autocomplete.addListener('place_changed', fillInAddress);
+    autocomplete.addListener('place_changed', populateNearest);
 }
 
-function fillInAddress() {
+function populateNearest() {
     $('#divNearest').empty();
+    $('#divNearestAdditional').empty();
     var place = autocomplete.getPlace();
     var lat = place.geometry.location.lat();
     var lng = place.geometry.location.lng();
     SomersetMobiles.setCurrentDistances(lat, lng);
     var nearest = SomersetMobiles.getNearest();
-    $('#divNearest').append('<h3>' + nearest.Location + '</h3>');
-    $('#divNearest').append('<p>Due ' + nearest.Due + '<p>');
+    var nearestStop = SomersetMobiles.data[nearest];
+    $('#divNearestAdditional').html('<span class="lead">Nearest stop <strong>' + nearestStop.Location + ', ' + nearestStop.Town + '.  Arriving in ' + nearestStop.Due + '</span>');
+    $('#divNearestAdditional').append('<h4>' + nearestStop.Location + ', ' + nearestStop.Town + '</h4>');
+    $('#divNearestAdditional').append('<p><strong>Next due</strong> ' + nearest.Due + '<p>');
+    $('#divNearestAdditional').append('<p><strong>Departing</strong> ' + nearest.Due + '<p>');
 }
 
-// Bias the autocomplete object to the user's geographical location,
-// as supplied by the browser's 'navigator.geolocation' object.
-function geolocate() {
-    if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(function (position) {
-            var geolocation = {
-                lat: position.coords.latitude,
-                lng: position.coords.longitude
-            };
-            var circle = new google.maps.Circle({
-                center: geolocation,
-                radius: position.coords.accuracy
-            });
-            autocomplete.setBounds(circle.getBounds());
-        });
-    }
-}
-
-
+//////////////////////////////////////////////////
+// Following relies on jQuery etc so wait for page to complete
+//////////////////////////////////////////////////
 $(function () {
     //////////////////////////////////////////////////
-    // LOAD DATA
+    // Load Data
+    // 
     /////////////////////////////////////////////////
     SomersetMobiles.loadData(function () {
 
@@ -80,11 +61,11 @@ $(function () {
                 $('#spWellsCurrentPosition').html('<span class="lead">Arriving at <strong>' + SomersetMobiles.data[wellsNext]['Location'] + ', ' + SomersetMobiles.data[wellsNext]['Town'] + '</strong> ' + SomersetMobiles.data[wellsNext]['Due'] + '</span>');
             }
         };
-        // Set to update every 5 seconds.
         setCurrentPositions();
-        setInterval(setCurrentPositions, 5000);
+        
 
-        var markerArray = [];
+        var markerArrayTaunton = [];
+        var markerArrayWells = [];
         $.each(SomersetMobiles.data, function (key, val) {
             // Add items to the map.
             if (val.Lat && val.Lat != 'TODO') {
@@ -97,14 +78,23 @@ $(function () {
                 var className = 'taunton';
                 if (val.Library == 'Taunton') className = 'wells';
                 var stopIcon = L.divIcon({ html: '<div><span>' + val.Route + '</span></div>', className: "marker-cluster marker-cluster-" + className, iconSize: new L.Point(20, 20) });
-                markerArray.push(L.marker([val.Lat, val.Lng], { icon: stopIcon }).bindPopup(popup));
+                if (val.Library == 'Taunton') markerArrayTaunton.push(L.marker([val.Lat, val.Lng], { icon: stopIcon }).bindPopup(popup));
+                if (val.Library == 'Wells') markerArrayWells.push(L.marker([val.Lat, val.Lng], { icon: stopIcon }).bindPopup(popup));
             }
         });
-        var group = L.featureGroup(markerArray).addTo(map);
-        map.fitBounds(group.getBounds());
+        var tauntonGroup = L.layerGroup(markerArrayTaunton);
+        var wellsGroup = L.layerGroup(markerArrayWells);
+        map.addLayers(tauntonGroup);
+        map.addLayers(wellsGroup);
+        
+        
+        // Set up the option to show either set of library stops
+        var filterLibrariesMap = function(filter) {
+        
+        };
 
         // Set up DataTable
-        $('#tblFullTimetable').DataTable(
+        var table = $('#tblFullTimetable').dataTable(
                 {
                     processing: true,
                     dom: 'Bfrtip',
@@ -150,5 +140,11 @@ $(function () {
                         });
                     }
                 });
+                // Set an interval to refresh all the page data (that we want to refresh).
+                setInterval(function() {
+                					setCurrentPositions();
+                					table.fnDraw();
+                }, 5000);
+
     });
 });
