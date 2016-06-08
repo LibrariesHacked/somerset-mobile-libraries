@@ -24,7 +24,7 @@
                     stops[val[0]]['Town'] = val[10];
                     stops[val[0]]['Lat'] = val[11];
                     stops[val[0]]['Lng'] = val[12];
-                });
+                }.bind(this));
                 this.data = stops;
                 this.setDueDates();
                 callback(results.data);
@@ -33,19 +33,21 @@
     },
     /////////////////////////////////////////////////////////////////////////////
     // Function: SetDueDates
-    // Get the current id stop for the mobile library.
+    // Sets the next due date/times for all the stops based on start date.
     /////////////////////////////////////////////////////////////////////////////
-    setDueDates: function (mobile) { 
+    setDueDates: function (mobile) {
         var now = moment();
         $.each(this.data, function (key, val) {
             // Each library is on a timescale of once every 4 weeks.
             // Add 4 weeks onto the first stop time until we get a datetime in the future.
-            var strStartDate = val[4] + ' ' + val[7];
+            var strStartDate = val['StartDate'] + ' ' + val['Start'];
             var nextDateTime = moment(strStartDate, 'MM/DD/YYYY hh:mm');
-            var strEndDate = val[4] + ' ' + val[8];
+            var strEndDate = val['StartDate'] + ' ' + val['End'];
             var nextDateTimeEnd = moment(strEndDate, 'MM/DD/YYYY hh:mm');
-            while (now > nextDateTime) nextDateTime.add(4, 'weeks');
-            while (now > nextDateTimeEnd) nextDateTimeEnd.add(4, 'weeks');
+            while (now > nextDateTimeEnd) {
+                nextDateTime.add(4, 'weeks');
+                nextDateTimeEnd.add(4, 'weeks');
+            }
             this.data[key]['Due'] = nextDateTime.fromNow();
             this.data[key]['DueSystem'] = nextDateTime.format();
             this.data[key]['Departing'] = nextDateTime.format();
@@ -55,16 +57,37 @@
     },
     /////////////////////////////////////////////////////////////////////////////
     // Function: GetCurentLocation
-    // Get the current id stop for the mobile library.
+    // Get the current stop for the mobile library.
     /////////////////////////////////////////////////////////////////////////////
-    getCurrentLocation: function (mobile) { 
+    getCurrentLocation: function (mobile) {
         var timeNow = moment();
         // Refresh the due dates.
         this.setDueDates();
         var currentLocation = null;
         $.each(this.data, function (key, val) {
-            if (timeNow.isBefore(val.DepartingSystem) && date.isAfter(val.DueSystem)) return val.Id;
+            if (val.Library == mobile && timeNow.isAfter(val.DueSystem))
+            {
+                currentLocation = key;
+            }
         }.bind(this));
+        return currentLocation;
+    },
+    /////////////////////////////////////////////////////////////////////////////
+    // Function: GetNextLocation
+    // Get the next stop for the mobile library.
+    /////////////////////////////////////////////////////////////////////////////
+    getNextLocation: function (mobile) {
+        var timeNow = moment();
+        // Refresh the due dates.
+        this.setDueDates();
+        var nextLocation = null;
+        $.each(this.data, function (key, val) {
+            if (val.Library == mobile && timeNow.isBefore(val.DueSystem)) {
+                if (nextLocation == null) nextLocation = key;
+                if (val.DueSystem < this.data[nextLocation].DueSystem) nextLocation = key;
+            }
+        }.bind(this));
+        return nextLocation;
     },
     /////////////////////////////////////////////////////////////////////////////
     // Function: GetDataTable
@@ -80,16 +103,6 @@
         });
         return dataArray;
     },
-
-
-    getCalendar: function (mobile, route, stop) { },
-
-
-    getCSVRoute: function (mobile, route) { },
-
-
-    getExcelRoute: function (mobile, route) { },
-
     /////////////////////////////////////////////////////////////////////////////
     // Function: SetCurrentDistances
     // Get the nearest stop to a particular location.
@@ -112,7 +125,7 @@
             if (unit == "N") dist = dist * 0.8684;
             return dist;
         };
-        $.each(this.data, function(key,val){
+        $.each(this.data, function (key, val) {
             val.CurrentDistance = distance(lat, lng, val.Lat, val.Lng);
             this.data[key] = val;
         }.bind(this));

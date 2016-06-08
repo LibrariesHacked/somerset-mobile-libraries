@@ -3,5 +3,59 @@
 
 #map {
     height: 500px;
-    width: 100%
+    width: 100%;
 }
+
+.marker-cluster-taunton {
+    background-color: rgba(110, 204, 57, 0.6);;
+}
+
+    .marker-cluster-small div {
+        background-color: rgba(110, 204, 57, 0.6);
+    }
+
+.marker-cluster-wells {
+    background-color: rgba(240, 194, 12, 0.6);
+}
+
+    .marker-cluster-medium div {
+        background-color: rgba(240, 194, 12, 0.6);
+    }
+
+
+/* IE 6-8 fallback colors */
+.leaflet-oldie .marker-cluster-taunton {
+    background-color: rgb(181, 226, 140);
+}
+
+    .leaflet-oldie .marker-cluster-taunton div {
+        background-color: rgb(110, 204, 57);
+    }
+
+.leaflet-oldie .marker-cluster-wells {
+    background-color: rgb(241, 211, 87);
+}
+
+    .leaflet-oldie .marker-cluster-wells div {
+        background-color: rgb(240, 194, 12);
+    }
+
+
+.marker-cluster {
+    background-clip: padding-box;
+    border-radius: 15px;
+}
+
+    .marker-cluster div {
+        width: 20px;
+        height: 20px;
+        margin-left: 0px;
+        margin-top: 0px;
+        text-align: center;
+        border-radius: 10px;
+        font: 9px "Helvetica Neue", Arial, Helvetica, sans-serif;
+    }
+
+    .marker-cluster span {
+        line-height: 20px;
+    }

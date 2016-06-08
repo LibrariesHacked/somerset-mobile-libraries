@@ -36,7 +36,6 @@ function fillInAddress() {
     var nearest = SomersetMobiles.getNearest();
     $('#divNearest').append('<h3>' + nearest.Location + '</h3>');
     $('#divNearest').append('<p>Due ' + nearest.Due + '<p>');
-
 }
 
 // Bias the autocomplete object to the user's geographical location,
@@ -64,13 +63,41 @@ $(function () {
     /////////////////////////////////////////////////
     SomersetMobiles.loadData(function () {
 
+        var setCurrentPositions = function () {
+            // Set current positions.
+            var tauntonCurrent = SomersetMobiles.getCurrentLocation('Taunton');
+            var tauntonNext = SomersetMobiles.getNextLocation('Taunton');
+            if (tauntonCurrent != null) {
+                $('#spTauntonCurrentPosition').html('<span class="lead">Currently at <strong>' + SomersetMobiles.data[tauntonCurrent]['Location'] + ', ' + SomersetMobiles.data[tauntonNext]['Town'] + '</strong> for another ' + moment().diff(moment(SomersetMobiles.data[tauntonCurrent]['DepartingSystem']), 'minutes') + '</span> minutes');
+            } else {
+                $('#spTauntonCurrentPosition').html('<span class="lead">Arriving at <strong>' + SomersetMobiles.data[tauntonNext]['Location'] + ', ' + SomersetMobiles.data[tauntonNext]['Town'] + '</strong> ' + SomersetMobiles.data[tauntonNext]['Due'] + '</span>');
+            }
+            var wellsCurrent = SomersetMobiles.getCurrentLocation('Wells');
+            var wellsNext = SomersetMobiles.getNextLocation('Wells');
+            if (wellsCurrent != null) {
+                $('#spWellsCurrentPosition').html('<span class="lead">Currently at <strong>' + SomersetMobiles.data[wellsCurrent]['Location'] + ', ' + SomersetMobiles.data[wellsNext]['Town'] + '</strong> for another ' + moment().diff(SomersetMobiles.data[wellsCurrent]['DepartureSystem']) + '</span> minutes');
+            } else {
+                $('#spWellsCurrentPosition').html('<span class="lead">Arriving at <strong>' + SomersetMobiles.data[wellsNext]['Location'] + ', ' + SomersetMobiles.data[wellsNext]['Town'] + '</strong> ' + SomersetMobiles.data[wellsNext]['Due'] + '</span>');
+            }
+        };
+        // Set to update every 5 seconds.
+        setCurrentPositions();
+        setInterval(setCurrentPositions, 5000);
+
         var markerArray = [];
         $.each(SomersetMobiles.data, function (key, val) {
             // Add items to the map.
             if (val.Lat && val.Lat != 'TODO') {
-                markerArray.push(L.circleMarker([val.Lat, val.Lng], {
-                    radius: 3
-                }).bindPopup('<h4>' + val.Location + '</h4><small>Due ' + val.Due + '</small>'));
+                var popup = L.popup({
+                    maxWidth: 160,
+                    maxHeight: 140,
+                    closeButton: false,
+                    className: ''
+                }).setContent('');
+                var className = 'taunton';
+                if (val.Library == 'Taunton') className = 'wells';
+                var stopIcon = L.divIcon({ html: '<div><span>' + val.Route + '</span></div>', className: "marker-cluster marker-cluster-" + className, iconSize: new L.Point(20, 20) });
+                markerArray.push(L.marker([val.Lat, val.Lng], { icon: stopIcon }).bindPopup(popup));
             }
         });
         var group = L.featureGroup(markerArray).addTo(map);

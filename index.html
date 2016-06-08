@@ -61,12 +61,12 @@
             <div class="col col-lg-4 col-md-4">
                 <div class="panel panel-warning">
                     <div class="panel-heading">
-                        <h3 class="panel-title">Route Timetables</h3>
+                        <h3 class="panel-title">Taunton Mobile Library</h3>
                     </div>
                     <div class="panel-body">
-                        <p>
-                            Download a route timetable.
-                        </p>
+                        <div class="alert alert-info">
+                            <span id="spTauntonCurrentPosition"></span>
+                        </div>
                         <div class="form-group">
                             <label for="select" class="control-label">Stop</label>
                             <select class="form-control" id="selStopDownload">
@@ -74,8 +74,19 @@
                             </select>
                         </div>
                         <div class="form-group">
-                                <button class="btn btn-primary">Download</button>
-
+                            <div class="form-group">
+                                <div class="btn-group">
+                                    <a href="#" class="btn btn-success">Download</a>
+                                    <a href="#" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">Download Full Route PDF</a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -83,12 +94,12 @@
             <div class="col col-lg-4 col-md-4">
                 <div class="panel panel-danger">
                     <div class="panel-heading">
-                        <h3 class="panel-title">Stop calendars</h3>
+                        <h3 class="panel-title">Wells Mobile Library</h3>
                     </div>
                     <div class="panel-body">
-                        <p>
-                            Download a stop calendar to your mobile.
-                        </p>
+                        <div class="alert alert-info">
+                            <span id="spWellsCurrentPosition"></span>
+                        </div>
                         <div class="form-group">
                             <label for="select" class="control-label">Stop</label>
                             <select class="form-control" id="selStopDownload">
@@ -96,8 +107,17 @@
                             </select>
                         </div>
                         <div class="form-group">
-                                <button class="btn btn-primary">Download</button>
-
+                            <div class="btn-group">
+                                <a href="#" class="btn btn-success">Download</a>
+                                <a href="#" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Download Full Route PDF</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -106,6 +126,11 @@
     </div>
     <div class="jumbotron">
         <div class="container">
+            <ul class="nav nav-pills">
+                <li class="active"><a href="#">All Stops <span class="badge">42</span></a></li>
+                <li><a href="#">Taunton Stops <span class="badge"></span></a></li>
+                <li><a href="#">Wells Stops <span class="badge">3</span></a></li>
+            </ul><br/>
             <div class="panel panel-success">
                 <div class="panel-heading">
                     <h3 class="panel-title">Mobile Libraries Map</h3>
