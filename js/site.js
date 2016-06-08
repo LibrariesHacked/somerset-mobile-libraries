@@ -3,6 +3,7 @@
 // Initialise the map, set center, zoom, etc.
 /////////////////////////////////////////////////
 var map = L.map('map').setView([51.505, -0.09], 13);
+var filterLibrariesMap = function () { };
 
 L.tileLayer('http://{s}.tiles.mapbox.com/v3/librarieshacked.jefmk67b/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
@@ -62,13 +63,17 @@ $(function () {
             }
         };
         setCurrentPositions();
-        
+
 
         var markerArrayTaunton = [];
         var markerArrayWells = [];
+        var markersAllBounds = [];
+        var markersTivertonBounds = [];
+        var markersWellsBounds = [];
         $.each(SomersetMobiles.data, function (key, val) {
             // Add items to the map.
             if (val.Lat && val.Lat != 'TODO') {
+                markersAllBounds.push([val.Lat, val.Lng]);
                 var popup = L.popup({
                     maxWidth: 160,
                     maxHeight: 140,
@@ -78,19 +83,53 @@ $(function () {
                 var className = 'taunton';
                 if (val.Library == 'Taunton') className = 'wells';
                 var stopIcon = L.divIcon({ html: '<div><span>' + val.Route + '</span></div>', className: "marker-cluster marker-cluster-" + className, iconSize: new L.Point(20, 20) });
-                if (val.Library == 'Taunton') markerArrayTaunton.push(L.marker([val.Lat, val.Lng], { icon: stopIcon }).bindPopup(popup));
-                if (val.Library == 'Wells') markerArrayWells.push(L.marker([val.Lat, val.Lng], { icon: stopIcon }).bindPopup(popup));
+                if (val.Library == 'Taunton') {
+                    markerArrayTaunton.push(L.marker([val.Lat, val.Lng], { icon: stopIcon }).bindPopup(popup));
+                    markersTivertonBounds.push([val.Lat, val.Lng]);
+                }
+                if (val.Library == 'Wells') {
+                    markerArrayWells.push(L.marker([val.Lat, val.Lng], { icon: stopIcon }).bindPopup(popup));
+                    markersWellsBounds.push([val.Lat, val.Lng]);
+                }
             }
         });
         var tauntonGroup = L.layerGroup(markerArrayTaunton);
         var wellsGroup = L.layerGroup(markerArrayWells);
-        map.addLayers(tauntonGroup);
-        map.addLayers(wellsGroup);
-        
-        
+        map.addLayer(tauntonGroup);
+        map.addLayer(wellsGroup);
+        map.fitBounds(markersAllBounds);
+        var currentFilter = 'all';
+
         // Set up the option to show either set of library stops
-        var filterLibrariesMap = function(filter) {
-        
+        filterLibrariesMap = function (filter) {
+            if (currentFilter == 'all' && filter == 'taunton') {
+                map.removeLayer(wellsGroup);
+                map.fitBounds(tauntonGroup);
+            }
+            if (currentFilter == 'all' && filter == 'well') {
+                map.removeLayer(tauntonGroup);
+                map.addLayer(markerArrayWells);
+                map.fitBounds(wellsGroup);
+            }
+            if (currentFilter == 'wells' && filter == 'taunton') {
+                map.removeLayer(wellsGroup);
+                map.addLayer(tauntonGroup);
+                map.fitBounds(tauntonGroup);
+            }
+            if (currentFilter == 'taunton' && filter == 'wells') {
+                map.removeLayer(tauntonGroup);
+                map.addLayer(wellsGroup);
+                map.fitBounds(wellsGroup);
+            }
+            if (currentFilter == 'wells' && filter == 'all') {
+                map.addLayer(tauntonGroup);
+                map.fitBounds(markersAllBounds);
+            }
+            if (currentFilter == 'taunton' && filter == 'all') {
+                map.addLayer(wellsGroup);
+                map.fitBounds(markersAllBounds);
+            }
+            return false;
         };
 
         // Set up DataTable
@@ -140,11 +179,11 @@ $(function () {
                         });
                     }
                 });
-                // Set an interval to refresh all the page data (that we want to refresh).
-                setInterval(function() {
-                					setCurrentPositions();
-                					table.fnDraw();
-                }, 5000);
+        // Set an interval to refresh all the page data (that we want to refresh).
+        setInterval(function () {
+            setCurrentPositions();
+            table.fnDraw();
+        }, 5000);
 
     });
 });

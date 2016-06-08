@@ -57,7 +57,7 @@
                         <div id="divNearest" class="alert alert-dismissible alert-info">
                         </div>
                         <div id="divNearestAdditional" class="well"></div>
-                        <a href="#" class="btn btn-danger btn-sm">Reject</a>
+                        <a href="#" class="btn btn-danger btn-sm">Alternative</a>
                         <a href="#" class="btn btn-primary btn-sm">Zoom on map</a>
                         
                     </div>
@@ -133,11 +133,27 @@
     </div>
     <div class="jumbotron">
         <div class="container">
-            <ul class="nav nav-pills">
-                <li class="active"><a href="#">All Stops <span class="badge">42</span></a></li>
-                <li><a href="#">Taunton Stops <span class="badge"></span></a></li>
-                <li><a href="#">Wells Stops <span class="badge">3</span></a></li>
-            </ul><br/>
+            <a href="#" class="btn btn-default" onclick="filterLibrariesMap('all')">All Stops <span class="badge">3</span></a>
+            <div class="btn-group">
+                <a href="#" class="btn btn-default" onclick="">Taunton Stops</a>
+                <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></a>
+                <ul class="dropdown-menu" >
+                    <li><a href="#" onclick="filterLibrariesMap('taunton')">Show all taunton stops</a></li>
+                    <li class="divider"></li>
+                </ul>
+            </div>
+            <div class="btn-group">
+                <a href="#" class="btn btn-success">Wells stops</a>
+                <a href="#" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Download route (CSV)</a></li>
+                    <li><a href="#">Download route (Excel)</a></li>
+                    <li><a href="#">Download route (PDF)</a></li>
+                    <li><a href="#">Download stop calendar</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Download Full Route PDF</a></li>
+                </ul>
+            </div><br/>
             <div class="panel panel-success">
                 <div class="panel-heading">
                     <h3 class="panel-title">Mobile Libraries Map</h3>
