@@ -50,8 +50,8 @@
             }
             this.data[key]['Due'] = nextDateTime.fromNow();
             this.data[key]['DueSystem'] = nextDateTime.format();
-            this.data[key]['Departing'] = nextDateTime.format();
-            this.data[key]['DepartingSystem'] = nextDateTime.format();
+            this.data[key]['Departing'] = nextDateTimeEnd.format();
+            this.data[key]['DepartingSystem'] = nextDateTimeEnd.format();
             this.data[key]['Duration'] = nextDateTimeEnd.diff(nextDateTime, 'minutes');
         }.bind(this));
     },

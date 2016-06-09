@@ -21,6 +21,7 @@ function initAutocomplete() {
 }
 
 function populateNearest() {
+    $('#divNearest').show();
     $('#divNearest').empty();
     $('#divNearestAdditional').empty();
     var place = autocomplete.getPlace();
@@ -29,10 +30,7 @@ function populateNearest() {
     SomersetMobiles.setCurrentDistances(lat, lng);
     var nearest = SomersetMobiles.getNearest();
     var nearestStop = SomersetMobiles.data[nearest];
-    $('#divNearestAdditional').html('<span class="lead">Nearest stop <strong>' + nearestStop.Location + ', ' + nearestStop.Town + '.  Arriving in ' + nearestStop.Due + '</span>');
-    $('#divNearestAdditional').append('<h4>' + nearestStop.Location + ', ' + nearestStop.Town + '</h4>');
-    $('#divNearestAdditional').append('<p><strong>Next due</strong> ' + nearest.Due + '<p>');
-    $('#divNearestAdditional').append('<p><strong>Departing</strong> ' + nearest.Due + '<p>');
+    $('#divNearest').html('<span class="lead">Nearest stop <strong>' + nearestStop.Location + ', ' + nearestStop.Town + '.  Arriving in ' + nearestStop.Due + ' (' + moment(nearestStop.DueSystem).format('DD/MM/YYYY hh:mm') + ')</span>');
 }
 
 //////////////////////////////////////////////////
@@ -50,14 +48,14 @@ $(function () {
             var tauntonCurrent = SomersetMobiles.getCurrentLocation('Taunton');
             var tauntonNext = SomersetMobiles.getNextLocation('Taunton');
             if (tauntonCurrent != null) {
-                $('#spTauntonCurrentPosition').html('<span class="lead">Currently at <strong>' + SomersetMobiles.data[tauntonCurrent]['Location'] + ', ' + SomersetMobiles.data[tauntonNext]['Town'] + '</strong> for another ' + moment().diff(moment(SomersetMobiles.data[tauntonCurrent]['DepartingSystem']), 'minutes') + '</span> minutes');
+                $('#spTauntonCurrentPosition').html('<span class="lead">Currently at <strong>' + SomersetMobiles.data[tauntonCurrent]['Location'] + ', ' + SomersetMobiles.data[tauntonCurrent]['Town'] + '</strong> for another ' + moment(SomersetMobiles.data[tauntonCurrent]['DepartingSystem']).diff(moment(), 'minutes') + ' minutes</span>');
             } else {
                 $('#spTauntonCurrentPosition').html('<span class="lead">Arriving at <strong>' + SomersetMobiles.data[tauntonNext]['Location'] + ', ' + SomersetMobiles.data[tauntonNext]['Town'] + '</strong> ' + SomersetMobiles.data[tauntonNext]['Due'] + '</span>');
             }
             var wellsCurrent = SomersetMobiles.getCurrentLocation('Wells');
             var wellsNext = SomersetMobiles.getNextLocation('Wells');
             if (wellsCurrent != null) {
-                $('#spWellsCurrentPosition').html('<span class="lead">Currently at <strong>' + SomersetMobiles.data[wellsCurrent]['Location'] + ', ' + SomersetMobiles.data[wellsNext]['Town'] + '</strong> for another ' + moment().diff(SomersetMobiles.data[wellsCurrent]['DepartureSystem']) + '</span> minutes');
+                $('#spWellsCurrentPosition').html('<span class="lead">Currently at <strong>' + SomersetMobiles.data[wellsCurrent]['Location'] + ', ' + SomersetMobiles.data[wellsCurrent]['Town'] + '</strong> for another ' + moment(SomersetMobiles.data[wellsCurrent]['DepartureSystem']).diff() + ' minutes</span>');
             } else {
                 $('#spWellsCurrentPosition').html('<span class="lead">Arriving at <strong>' + SomersetMobiles.data[wellsNext]['Location'] + ', ' + SomersetMobiles.data[wellsNext]['Town'] + '</strong> ' + SomersetMobiles.data[wellsNext]['Due'] + '</span>');
             }
@@ -79,7 +77,7 @@ $(function () {
                     maxHeight: 140,
                     closeButton: false,
                     className: ''
-                }).setContent('');
+                }).setContent('<p>' + val.Location + ', ' + val.Town + '</p><small><strong>Date </strong>' + moment(val.DueSystem).format() + '</small>');
                 var className = 'taunton';
                 if (val.Library == 'Taunton') className = 'wells';
                 var stopIcon = L.divIcon({ html: '<div><span>' + val.Route + '</span></div>', className: "marker-cluster marker-cluster-" + className, iconSize: new L.Point(20, 20) });
@@ -141,12 +139,12 @@ $(function () {
                         {
                             extend: 'print',
                             text: 'Print',
-                            className: ''
+                            className: 'btn-sm'
                         },
                         {
                             extend: 'excelHtml5',
                             text: 'Export Excel',
-                            className: ''
+                            className: 'btn-sm'
                         }
                     ],
                     deferRender: true,
@@ -182,7 +180,7 @@ $(function () {
         // Set an interval to refresh all the page data (that we want to refresh).
         setInterval(function () {
             setCurrentPositions();
-            table.fnDraw();
+            // table.fnDraw();
         }, 5000);
 
     });
