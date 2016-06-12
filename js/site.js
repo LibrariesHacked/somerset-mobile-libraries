@@ -98,8 +98,8 @@ $(function () {
                 markerGroups[val.RouteId] = L.featureGroup($.map(markersArrays, function (v, k) {
                     if (k == val.RouteId) return v;
                 }));
-                if (val.Library == 'Taunton') $('#ulTauntonFilter').append('<li><a href="#" onclick="filterLibrariesMap(\'Taunton\')">' + val.Library + ' ' + val.Route + '</a></li>');
-                if (val.Library == 'Wells') $('#ulWellsFilter').append('<li><a href="#" onclick="filterLibrariesMap(\'' + val.RouteId + '\')">' + val.Library + ' ' + val.Route + '</a></li>');
+                if (val.Library == 'Taunton') $('#ulTauntonFilter').append('<li><a href="#" onclick="filterLibrariesMap(\'' + val.RouteId + '\')">Route ' + val.Route + '</a></li>');
+                if (val.Library == 'Wells') $('#ulWellsFilter').append('<li><a href="#" onclick="filterLibrariesMap(\'' + val.RouteId + '\')">Route ' + val.Route + '</a></li>');
             }
         });
         // Initial setup - Add Taunton and Wells and the overall bounds.
@@ -117,43 +117,31 @@ $(function () {
 
         // Set up the option to show either set of library stops
         filterLibrariesMap = function (filter) {
-            if (currentFilter == 'All' && filter == 'Taunton') {
-                map.removeLayer(markerGroups['Wells']);
-                map.fitBounds($.map(markersBounds, function (val, key) {
-                    if (key.indexOf('Taunton') != -1) return val;
-                }));
-            }
-            if (currentFilter == 'All' && filter == 'Wells') {
+            this.event.preventDefault();
+            if (currentFilter == filter) return false;
+            if (currentFilter == 'All') {
                 map.removeLayer(markerGroups['Taunton']);
-                map.fitBounds($.map(markersBounds, function (val, key) {
-                    if (key.indexOf('Wells') != -1) return val;
-                }));
-            }
-            if (currentFilter == 'Wells' && filter == 'Taunton') {
                 map.removeLayer(markerGroups['Wells']);
+            } else {
+                map.removeLayer(markerGroups[currentFilter]);
+            }
+            if (filter == 'All') {
                 map.addLayer(markerGroups['Taunton']);
-                map.fitBounds($.map(markersBounds, function (val, key) {
-                    if (key.indexOf('Taunton') != -1) return val;
-                }));
-            }
-            if (currentFilter == 'Taunton' && filter == 'Wells') {
-                map.removeLayer(markerGroups['Taunton']);
-                map.addLayer(markerGroups['Wells']);
-                map.fitBounds($.map(markersBounds, function (val, key) {
-                    if (key.indexOf('Wells') != -1) return val;
-                }));
-            }
-            if (currentFilter == 'Wells' && filter == 'All') {
-                map.addLayer(markerGroups['Taunton']);
-                map.fitBounds($.map(markersBounds, function (val, key) {
-                    return val;
-                }));
-            }
-            if (currentFilter == 'Taunton' && filter == 'All') {
                 map.addLayer(markerGroups['Wells']);
                 map.fitBounds($.map(markersBounds, function (val, key) {
                     return val;
                 }));
+            } else {
+                map.addLayer(markerGroups[filter]);
+                if (filter == 'Taunton' || filter == 'Wells') {
+                    map.fitBounds($.map(markersBounds, function (val, key) {
+                        if (key.indexOf(filter) != -1) return val;
+                    }));
+                } else {
+                    map.fitBounds($.map(markersBounds, function (val, key) {
+                        if (key == filter) return val;
+                    }));
+                }
             }
             currentFilter = filter;
             return false;
