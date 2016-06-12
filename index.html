@@ -132,20 +132,20 @@
     </div>
     <div class="jumbotron">
         <div class="container">
-            <a href="#" class="btn btn-default" onclick="filterLibrariesMap('all')">All Stops  <span class="badge" id="spStopCount"></span></a>
+            <a href="#" class="btn btn-default" onclick="filterLibrariesMap('All')">All Stops  <span class="badge" id="spStopCount"></span></a>
             <div class="btn-group">
-                <a href="#" class="btn btn-warning" onclick="filterLibrariesMap('taunton')">Taunton Stops  <span class="badge" id="spTauntonStopCount"></span></a>
+                <a href="#" class="btn btn-warning" onclick="filterLibrariesMap('Taunton')">Taunton Stops  <span class="badge" id="spTauntonStopCount"></span></a>
                 <a href="#" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></a>
-                <ul class="dropdown-menu" >
-                    <li><a href="#" onclick="filterLibrariesMap('taunton')">Show only Taunton stops</a></li>
+                <ul class="dropdown-menu" id="ulTauntonFilter">
+                    <li><a href="#" onclick="filterLibrariesMap('Taunton')">All Taunton stops</a></li>
                     <li class="divider"></li>
                 </ul>
             </div>
             <div class="btn-group">
-                <a href="#" class="btn btn-info" onclick="filterLibrariesMap('wells')">Wells stops  <span class="badge" id="spWellsStopCount"></span></a>
+                <a href="#" class="btn btn-info" onclick="filterLibrariesMap('Wells')">Wells stops  <span class="badge" id="spWellsStopCount"></span></a>
                 <a href="#" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                    <li><a href="#" onclick="filterLibrariesMap('wells')">Show only Wells stops</a></li>
+                <ul class="dropdown-menu" id="ulWellsFilter">
+                    <li><a href="#" onclick="filterLibrariesMap('Wells')">All Wells stops</a></li>
                     <li class="divider"></li>
                 </ul>
             </div><br/><br/>
