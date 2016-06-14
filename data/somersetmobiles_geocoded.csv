@@ -39,50 +39,50 @@ Id,Mobile,Route,Day,StartDate,Location,Postcode,Start,End,Address,Place,Lat,Lng
 38,Taunton,E,Wednesday,4/20/2016,The Cottage (Bottom of hill),TA5 1DR,11:45,11:55,"Courtway, Bridgwater, Somerset TA5 1DR, UK",Courtway,51.0991762,-3.1396365
 39,Taunton,E,Wednesday,4/20/2016,Broomfield Church,TA5 2EQ,12:05,12:20,"Broomfield, Bridgwater, Somerset TA5, UK",Broomfield,51.08205,-3.10908
 40,Taunton,E,Wednesday,4/20/2016,Entrance to Halswell House,TA5 2DE,12:40,13:00,"Goathurst, Bridgwater, Somerset TA5 2DE, UK",Goathurst,51.1043935,-3.0631058
-41,Taunton,F,Thursday,4/21/2016,Village Hall,TA3 5QQ,9:35,10:05,"Creech st Michael, UK",Creech St Michael,51.0256202,-3.0390439
-42,Taunton,F,Thursday,4/21/2016,Neroche School,TA19 9RG,10:25,11:15,"Broadway, Ilminster, Somerset TA19 9RG, UK",Ilminster,50.93448220000001,-2.9655278
-43,Taunton,F,Thursday,4/21/2016,Isle Brewers Garage,TA3 6QN,11:40,11:55,"Main Road Garage (SE-bound), Taunton, Somerset TA3, UK",Taunton,50.986568,-2.904924
-44,Taunton,F,Thursday,4/21/2016,Isle Abbotts Village Hall,TA3 6RR,12:10,12:30,"Abbotts Way, Taunton, Somerset TA3 6RL, UK",Taunton,50.9844223,-2.9242787
-45,Taunton,F,Thursday,4/21/2016,Curry Mallet Post Office,TA3 6SY,12:40,12:55,"Headwell Post Office (W-bound), Taunton, Somerset TA3, UK",Taunton,50.992355,-2.958684
-46,Taunton,F,Thursday,4/21/2016,St Martins Close,TA3 6PW,13:40,14:00,"St Martin's Cl, Fivehead, Taunton, Somerset TA3 6PW, UK",Taunton,51.00077169999999,-2.9225817
-47,Taunton,F,Thursday,4/21/2016,Parsonage Place,TA10 0EW,14:15,14:40,"Parsonage Pl, Curry Rivel, Langport, Somerset TA10 0EW, UK",Langport,51.02510239999999,-2.8653878
-48,Taunton,F,Thursday,4/21/2016,Stoke St Gregory Village Hall,TA3 6EG,15:00,15:40,"Stoke Rd, North Curry, Taunton, Somerset TA3, UK",Taunton,51.0255149,-2.964187
-49,Taunton,F,Thursday,4/21/2016,Stoke Road,TA3 6HW,15:50,16:05,"Stoke Rd, North Curry, Taunton, Somerset TA3 6HN, UK",Taunton,51.0255149,-2.964187
-50,Taunton,F,Thursday,4/21/2016,Queens Square,TA3 6JS,16:10,16:40,"Queen Square, North Curry, Taunton, Somerset TA3 6JS, UK",Taunton,51.0233228,-2.9727054
-51,Taunton,G,Friday,4/22/2016,Stockmoor School,TA6 6AH,9:30,10:00,"Stockmoor Dr, Bridgwater, Somerset TA6 6AH, UK",Bridgwater,51.1116163,-2.9976009
-52,Taunton,G,Friday,4/22/2016,Gardens Childrenï¿½s Centre,TA6 5HT,10:15,10:45,"Bridgwater, Somerset TA6 5HT, UK",Bridgwater,51.1268597,-2.9932136
-53,Taunton,G,Friday,4/22/2016,College Childrenï¿½s Centre,TA6 4PZ,10:55,11:55,"Bridgwater, Somerset TA6 4PZ, UK",Bridgwater,51.13147319999999,-2.9878532
+41,Taunton,F,Thursday,4/21/2016,Village Hall,TA3 5QQ,9:35,10:05,"Creech St Michael, UK",Creech St Michael,51.02631,-3.03841
+42,Taunton,F,Thursday,4/21/2016,Neroche School,TA19 9RG,10:25,11:15,"Broadway, Ilminster, Somerset TA19 9RG, UK",Broadway,50.93522,-2.96163
+43,Taunton,F,Thursday,4/21/2016,Isle Brewers Garage,TA3 6QN,11:40,11:55,"Main Road Garage (SE-bound), Taunton, Somerset TA3, UK",Isle Brewers,50.986568,-2.904924
+44,Taunton,F,Thursday,4/21/2016,Isle Abbotts Village Hall,TA3 6RR,12:10,12:30,"TA3 6RR, UK",Isle Abbots,50.98453,-2.92664
+45,Taunton,F,Thursday,4/21/2016,Curry Mallet Post Office,TA3 6SY,12:40,12:55,"Curry Mallet, TA3 6SY, UK",Curry Mallet,50.99221,-2.95878
+46,Taunton,F,Thursday,4/21/2016,St Martins Close,TA3 6PW,13:40,14:00,"St Martin's Cl, Fivehead, Taunton, Somerset TA3 6PW, UK",Fivehead,51.00077169999999,-2.9225817
+47,Taunton,F,Thursday,4/21/2016,Parsonage Place,TA10 0EW,14:15,14:40,"Parsonage Pl, Curry Rivel, Langport, Somerset TA10 0EW, UK",Curry Rivel,51.02510239999999,-2.8653878
+48,Taunton,F,Thursday,4/21/2016,Stoke St Gregory Village Hall,TA3 6EG,15:00,15:40,"Stoke St Gregory, Taunton, Somerset TA3 6EG, UK",Stoke St Gregory,51.0390053, -2.9328659
+49,Taunton,F,Thursday,4/21/2016,Stoke Road,TA3 6HW,15:50,16:05,"Stoke Rd, North Curry, Taunton, Somerset TA3 6HW, UK",North Curry,51.02797,-2.96000
+50,Taunton,F,Thursday,4/21/2016,Queens Square,TA3 6JS,16:10,16:40,"Queen Square, North Curry, Taunton, Somerset TA3 6JS, UK",North Curry,51.0233228,-2.9727054
+51,Taunton,G,Friday,4/22/2016,Stockmoor School,TA6 6AH,9:30,10:00,"Stockmoor Dr, Bridgwater, Somerset TA6 6AH, UK",Stockmoor,51.1116163,-2.9976009
+52,Taunton,G,Friday,4/22/2016,Gardens Children's Centre,TA6 5HT,10:15,10:45,"Bridgwater, Somerset TA6 5HT, UK",Bridgwater,51.1268597,-2.9932136
+53,Taunton,G,Friday,4/22/2016,College Children's Centre,TA6 4PZ,10:55,11:55,"Bridgwater, Somerset TA6 4PZ, UK",Bridgwater,51.13147319999999,-2.9878532
 54,Taunton,G,Friday,4/22/2016,Chedzoy Lane (Pre-school),TA7 8QW,12:05,12:50,"Bridgwater, Somerset TA7 8QW, UK",Bridgwater,51.14150309999999,-2.9691697
-55,Taunton,G,Friday,4/22/2016,Stawell Village Hall,TA7 9AE,13:00,13:15,"Stawell Rd, Bridgwater, Somerset TA7, UK",Bridgwater,51.140726,-2.9084244
-56,Taunton,G,Friday,4/22/2016,"Tapmoor Road, Junction",TA7 9BZ,14:00,14:25,"Moorlinch, Bridgwater, Somerset TA7 9BZ, UK",Bridgwater,51.1319334,-2.8699419
-57,Taunton,G,Friday,4/22/2016,Community Centre,TA7 0EX,14:45,15:45,"Cheer Ln, Westonzoyland, Bridgwater, Somerset TA7 0EX, UK",Bridgwater,51.1099352,-2.9219686
-58,Taunton,G,Friday,4/22/2016,"Main Road, Bus Stop",TA7 0NJ,15:55,16:15,"Main Rd, Middlezoy, Bridgwater, Somerset TA7 0NJ, UK",Bridgwater,51.0902931,-2.8922205
-59,Taunton,H,Tuesday,4/26/2016,Otterhampton School,TA5 2QS,9:45,10:40,"School Ln, Combwich, Bridgwater, Somerset TA5 2QS, UK",Bridgwater,51.1757406,-3.0639023
-60,Taunton,H,Tuesday,4/26/2016,Harbour,TA5 2QU,10:45,11:05,"Harbour View, Combwich, Bridgwater, Somerset TA5 2QU, UK",Bridgwater,51.1744894,-3.0610697
-61,Taunton,H,Tuesday,4/26/2016,Combwich Post Office,TA5 2QW,11:10,11:30,"Post Office, High St, Cannington, Bridgwater, Somerset TA5 2HE, UK",Bridgwater,51.151123,-3.0655092
+55,Taunton,G,Friday,4/22/2016,Stawell Village Hall,TA7 9AE,13:00,13:15,"Stawell Village Hall, Stawell, Bridgwater, Somerset TA7 9AE, UK",Stawell,51.14046,-2.90746
+56,Taunton,G,Friday,4/22/2016,"Tapmoor Road, Junction",TA7 9BZ,14:00,14:25,"Moorlinch, Bridgwater, Somerset TA7 9BZ, UK",Moorlinch,51.13152,-2.86674
+57,Taunton,G,Friday,4/22/2016,Community Centre,TA7 0EX,14:45,15:45,"Cheer Ln, Westonzoyland, Bridgwater, Somerset TA7 0EX, UK",Westonzoyland,51.1099352,-2.9219686
+58,Taunton,G,Friday,4/22/2016,"Main Road, Bus Stop",TA7 0NJ,15:55,16:15,"Main Rd, Middlezoy, Bridgwater, Somerset TA7 0NJ, UK",Middlezoy,51.0902931,-2.8922205
+59,Taunton,H,Tuesday,4/26/2016,Otterhampton School,TA5 2QS,9:45,10:40,"School Ln, Combwich, Bridgwater, Somerset TA5 2QS, UK",Combwich,51.1757406,-3.0639023
+60,Taunton,H,Tuesday,4/26/2016,Harbour,TA5 2QU,10:45,11:05,"Harbour View, Combwich, Bridgwater, Somerset TA5 2QU, UK",Combwich,51.1744894,-3.0610697
+61,Taunton,H,Tuesday,4/26/2016,Combwich Post Office,TA5 2QW,11:10,11:30,"Combwich, Bridgwater, Somerset TA5 2QW, UK",Combwich,51.1731529, -3.0656853
 62,Taunton,H,Tuesday,4/26/2016,Captains,TA5 2PY,11:40,11:55,"Stockland Bristol, Bridgwater, Somerset TA5 2PY, UK",Bridgwater,51.1874233,-3.0833025
-63,Taunton,H,Tuesday,4/26/2016,Ridgeway Lane (Telephone Box),TA5 1TN,12:05,12:20,"Stolford, Stogursey, Bridgwater, Somerset TA5 1TN, UK",Bridgwater,51.20259799999999,-3.1058592
-64,Taunton,H,Tuesday,4/26/2016,Shurton Inn,TA5 1QE,12:35,12:55,"Shurton Ln, Shurton, Stogursey, Bridgwater, Somerset TA5 1QE, UK",Bridgwater,51.1921253,-3.1438605
-65,Taunton,H,Tuesday,4/26/2016,Greyhound Inn,TA5 1QR,13:40,14:10,"Lime St, Stogursey, Bridgwater, Somerset TA5 1QR, UK",Bridgwater,51.1804485,-3.1415827
-66,Taunton,H,Tuesday,4/26/2016,Town Close No 30,TA5 1RN,14:15,14:40,"30 Town Cl, Stogursey, Bridgwater, Somerset TA5 1RN, UK",Bridgwater,51.1815744,-3.146559
-67,Taunton,H,Tuesday,4/26/2016,Brook Street,TA5 2HP,15:00,15:30,"Brook St, Cannington, Bridgwater, Somerset TA5 2HP, UK",Bridgwater,51.1501201,-3.0610825
-68,Taunton,I,Wednesday,4/27/2016,Dinhams Farm Corner,TA3 5JG,9:35,9:45,"Dinhams, Ruishton, Taunton, Somerset TA3 5JG, UK",Taunton,51.0196902,-3.0485493
-69,Taunton,I,Wednesday,4/27/2016,Hatch Beauchamp Village Hall,TA3 6SQ,9:55,10:20,"W Hatch Ln, Taunton, Somerset TA3, UK",Taunton,50.9875972,-3.012325
-70,Taunton,I,Wednesday,4/27/2016,Capland,TA3 6TW,10:20,10:40,"Capland Ct, Capland, Hatch Beauchamp, Taunton, Somerset TA3 6TP, UK",Taunton,50.9645075,-2.9897379
-71,Taunton,I,Wednesday,4/27/2016,Ilton School,TA19 9EX,10:55,11:30,"Old School House, Ilton, Ilminster, Somerset TA19 9EX, UK",Ilminster,50.9527221,-2.9251889
-72,Taunton,I,Wednesday,4/27/2016,Merrifields,TA19 9HA,11:40,11:50,"Merrifield Cottage, Merryfield Ln, Ilton, Ilminster, Somerset TA19 9HA, UK",Ilminster,50.9508756,-2.9312168
-73,Taunton,I,Wednesday,4/27/2016,Tatworth Memorial Hall,TA20 2QA,13:00,13:20,"Memorial Hall (SW-bound), South Chard, Chard, Somerset TA20, UK",Chard,50.84336099999999,-2.949987
-74,Taunton,I,Wednesday,4/27/2016,Davies Close,TA20 4JL,13:40,14:00,"Davies Cl, Winsham, Chard, Somerset TA20 4JL, UK",Chard,50.853512,-2.8933195
-75,Taunton,I,Wednesday,4/27/2016,Winsham School & Bell Inn,TA20 4HU,14:10,14:40,"School Ln, Beaminster, Dorset DT8 3LG, UK",Beaminster,50.8289238,-2.8549629
-76,Taunton,I,Wednesday,4/27/2016,Higher Chillington,TA19 0PT,14:55,15:10,"High Ridge House, Higher Chillington, Ilminster, Somerset TA19 0PT, UK",Ilminster,50.8883115,-2.8697878
-77,Taunton,J,Thursday,4/28/2016,Childrenï¿½s Centre,TA23 0EX,9:45,10:00,"Watchet, Somerset TA23 0EX, UK",Watchet,51.176823,-3.3218907
-78,Taunton,J,Thursday,4/28/2016,Roadwater Church,TA23 0RB,10:30,10:50,"Roadwater, Watchet, Somerset TA23 0RB, UK",Watchet,51.13806899999999,-3.3829912
-79,Taunton,J,Thursday,4/28/2016,Higher Rodhuish Farm,TA24 6QL,11:00,11:20,"Rodhuish, Minehead, Somerset TA24 6QL, UK",Minehead,51.14882129999999,-3.4147956
-80,Taunton,J,Thursday,4/28/2016,The Causeway,TA24 6PZ,11:30,11:50,"Withycombe, Minehead, Somerset TA24 6PZ, UK",Minehead,51.1624458,-3.4087768
-81,Taunton,J,Thursday,4/28/2016,Carantoc Place,TA24 6NE,12:00,12:15,"Carantoc Pl, Carhampton, Minehead, Somerset TA24 6NE, UK",Minehead,51.174005,-3.4225761
+63,Taunton,H,Tuesday,4/26/2016,Ridgeway Lane (Telephone Box),TA5 1TN,12:05,12:20,"Stolford, Stogursey, Bridgwater, Somerset TA5 1TN, UK",Stogursey,51.20259799999999,-3.1058592
+64,Taunton,H,Tuesday,4/26/2016,Shurton Inn,TA5 1QE,12:35,12:55,"Shurton Ln, Shurton, Stogursey, Bridgwater, Somerset TA5 1QE, UK",Stogursey,51.1921253,-3.1438605
+65,Taunton,H,Tuesday,4/26/2016,Greyhound Inn,TA5 1QR,13:40,14:10,"Lime St, Stogursey, Bridgwater, Somerset TA5 1QR, UK",Stogursey,51.1804485,-3.1415827
+66,Taunton,H,Tuesday,4/26/2016,Town Close No 30,TA5 1RN,14:15,14:40,"30 Town Cl, Stogursey, Bridgwater, Somerset TA5 1RN, UK",Stogursey,51.1815744,-3.146559
+67,Taunton,H,Tuesday,4/26/2016,Brook Street,TA5 2HP,15:00,15:30,"Brook St, Cannington, Bridgwater, Somerset TA5 2HP, UK",Cannington,51.1501201,-3.0610825
+68,Taunton,I,Wednesday,4/27/2016,Dinhams Farm Corner,TA3 5JG,9:35,9:45,"Dinhams, Ruishton, Taunton, Somerset TA3 5JG, UK",Ruishton,51.0196902,-3.0485493
+69,Taunton,I,Wednesday,4/27/2016,Hatch Beauchamp Village Hall,TA3 6SQ,9:55,10:20,"Hatch Beauchamp, Taunton, Somerset TA3 6SQ, UK",Hatch Beauchamp,50.9788742,-2.992599
+70,Taunton,I,Wednesday,4/27/2016,Capland,TA3 6TW,10:20,10:40,"Capland, Hatch Beauchamp, Taunton, Somerset TA3 6TW, UK",Hatch Beauchamp,50.9667053,-2.9962416
+71,Taunton,I,Wednesday,4/27/2016,Ilton School,TA19 9EX,10:55,11:30,"Old School House, Ilton, Ilminster, Somerset TA19 9EX, UK",Ilton,50.9527221,-2.9251889
+72,Taunton,I,Wednesday,4/27/2016,Merrifields,TA19 9HA,11:40,11:50,"Merrifield Cottage, Merryfield Ln, Ilton, Ilminster, Somerset TA19 9HA, UK",Ilton,50.9508756,-2.9312168
+73,Taunton,I,Wednesday,4/27/2016,Tatworth Memorial Hall,TA20 2QA,13:00,13:20,"Memorial Hall (SW-bound), South Chard, Chard, Somerset TA20, UK",South Chard,50.84336099999999,-2.949987
+74,Taunton,I,Wednesday,4/27/2016,Davies Close,TA20 4JL,13:40,14:00,"Davies Cl, Winsham, Chard, Somerset TA20 4JL, UK",Winsham,50.853512,-2.8933195
+75,Taunton,I,Wednesday,4/27/2016,Winsham School & Bell Inn,TA20 4HU,14:10,14:40,"Winsham, TA20 4HU, UK",Winsham,50.8531532,-2.8895164
+76,Taunton,I,Wednesday,4/27/2016,Higher Chillington,TA19 0PT,14:55,15:10,"Higher Chillington, Ilminster, Somerset TA19 0PT, UK",Higher Chillington,50.8883115,-2.8697878
+77,Taunton,J,Thursday,4/28/2016,Children's Centre,TA23 0EX,9:45,10:00,"Watchet, Somerset TA23 0EX, UK",Watchet,51.176823,-3.3218907
+78,Taunton,J,Thursday,4/28/2016,Roadwater Church,TA23 0RB,10:30,10:50,"Roadwater, Watchet, Somerset TA23 0RB, UK",Roadwater,51.13806899999999,-3.3829912
+79,Taunton,J,Thursday,4/28/2016,Higher Rodhuish Farm,TA24 6QL,11:00,11:20,"Rodhuish, Minehead, Somerset TA24 6QL, UK",Rodhuish,51.14882129999999,-3.4147956
+80,Taunton,J,Thursday,4/28/2016,The Causeway,TA24 6PZ,11:30,11:50,"Withycombe, Minehead, Somerset TA24 6PZ, UK",Withycombe,51.1624458,-3.4087768
+81,Taunton,J,Thursday,4/28/2016,Carantoc Place,TA24 6NE,12:00,12:15,"Carantoc Pl, Carhampton, Minehead, Somerset TA24 6NE, UK",Carhampton,51.174005,-3.4225761
 82,Taunton,J,Thursday,4/28/2016,Blue Anchor Garage,TA24 6JZ,12:25,12:40,"Blue Anchor, Minehead, Somerset TA24 6JZ, UK",Minehead,51.1786596,-3.4035198
 83,Taunton,J,Thursday,4/28/2016,Hill Top,TA5 1SR,13:45,14:05,"Hilltop Ln, Bridgwater, Somerset TA5 1SR, UK",Bridgwater,51.1788263,-3.2080424
-84,Taunton,J,Thursday,4/28/2016,Frog Street T junction,TA5 1EJ,14:10,14:25,"East Quantoxhead, Bridgwater, Somerset TA5 1EJ, UK",Bridgwater,51.1828702,-3.2351293
+84,Taunton,J,Thursday,4/28/2016,Frog Street T junction,TA5 1EJ,14:10,14:25,"East Quantoxhead, Bridgwater, Somerset TA5 1EJ, UK",East Quantoxhead,51.1828702,-3.2351293
 85,Taunton,K,Friday,4/29/2016,Slough,TA3 5RW,9:15,9:25,"Slough Ln, Taunton, Somerset TA3 6JQ, UK",Taunton,51.0449393,-2.9283727
 86,Taunton,K,Friday,4/29/2016,Farmers Arms,TA3 5RS,9:30,9:40,"West Hatch, Taunton, Somerset TA3 5RS, UK",Taunton,50.9729129,-3.0372545
 87,Taunton,K,Friday,4/29/2016,Allen's Farm,TA3 6AG,10:00,10:20,"Broadmead, Beercrocombe, Taunton, Somerset TA3 6AG, UK",Taunton,50.9790727,-2.9659683
