@@ -1,44 +1,44 @@
 Id,Mobile,Route,Day,StartDate,Location,Postcode,Start,End,Address,Place,Lat,Lng
-1,Taunton,A,Tuesday,4/12/2016,Week Lane,TA22 9JN,10:15,10:45,"Spring Cottages, Week Ln, Bridgetown, Dulverton, Somerset TA22 9JN, UK",Dulverton,51.0886034,-3.5499436
-2,Taunton,A,Tuesday,4/12/2016,Winsford Centre,TA24 7JQ,10:55,11:25,"Winsford, Minehead, Somerset TA24 7JQ, UK",Minehead,51.10371199999999,-3.5652386
-3,Taunton,A,Tuesday,4/12/2016,Folly Cottage,TA24 7JL,11:35,11:55,"Folly Cottage, Winsford, Minehead, Somerset TA24 7JL, UK",Minehead,51.0982333,-3.5800926
-4,Taunton,A,Tuesday,4/12/2016,Withypool Post Office,TA24 7QP,12:40,13:00,"Chibbet Post, Exford, Minehead, Somerset TA24 7ND, UK",Minehead,51.126393,-3.6596818
+1,Taunton,A,Tuesday,4/12/2016,Week Lane,TA22 9JN,10:15,10:45,"Spring Cottages, Week Ln, Bridgetown, Dulverton, Somerset TA22 9JN, UK",Bridgetown,51.0886034,-3.5499436
+2,Taunton,A,Tuesday,4/12/2016,Winsford Centre,TA24 7JQ,10:55,11:25,"Winsford, Minehead, Somerset TA24 7JQ, UK",Winsford,51.10371199999999,-3.5652386
+3,Taunton,A,Tuesday,4/12/2016,Folly Cottage,TA24 7JL,11:35,11:55,"Folly Cottage, Winsford, Minehead, Somerset TA24 7JL, UK",Winsford,51.0982333,-3.5800926
+4,Taunton,A,Tuesday,4/12/2016,Withypool Post Office,TA24 7QP,12:40,13:00,"Withypool Post Office, Withypool, TA24 7QP",Withypool,51.10708,-3.65049
 5,Taunton,A,Tuesday,4/12/2016,Sportsman Inn,EX36 3LU,13:20,13:40,"South Molton EX36 3LU, UK",South Molton,51.0872092,-3.722576199999999
-6,Taunton,A,Tuesday,4/12/2016,High Street,TA22 9QW,13:55,14:15,"High St, Dulverton, Somerset TA22 9HB, UK",Dulverton,51.0401209,-3.5501331
-7,Taunton,B,Wednesday,4/13/2016,Lower Holworthy,TA22 9NY,9:40,9:50,"Brompton Regis, Dulverton, Somerset TA22 9NY, UK",Dulverton,51.0737452,-3.4562409
+6,Taunton,A,Tuesday,4/12/2016,High Street,TA22 9QW,13:55,14:15,"Hawkridge, Dulverton, Somerset TA22 9QW, UK",Hawkridge,51.064096,-3.627221
+7,Taunton,B,Wednesday,4/13/2016,Lower Holworthy,TA22 9NY,9:40,9:50,"Brompton Regis, Dulverton, Somerset TA22 9NY, UK",Brompton Regis,51.0737452,-3.4562409
 8,Taunton,B,Wednesday,4/13/2016,Wimbleball Lake,TA22 9NU,10:00,10:20,"Wimbleball Lake Angling & Watersports Centre, Dulverton, Dulverton, Somerset TA22 9NU, UK",Dulverton,51.0668963,-3.4786169
-9,Taunton,B,Wednesday,4/13/2016,George Inn,TA22 9NL,10:25,10:50,"Brompton Regis, Dulverton, Somerset TA22 9NL, UK",Dulverton,51.0730689,-3.4990565
+9,Taunton,B,Wednesday,4/13/2016,George Inn,TA22 9NL,10:25,10:50,"Brompton Regis, Dulverton, Somerset TA22 9NL, UK",Brompton Regis,51.0730689,-3.4990565
 10,Taunton,B,Wednesday,4/13/2016,Combeshead,TA22 9LE,10:55,11:05,"Combeshead Hill, Dulverton, Somerset TA22, UK",Dulverton,51.0805209,-3.5076156
-11,Taunton,B,Wednesday,4/13/2016,Exford School,TA24 7PP,11:25,11:55,"Exford, Minehead, Somerset TA24 7PP, UK",Minehead,51.1334946,-3.6381967
-12,Taunton,B,Wednesday,4/13/2016,Whiterock,TA24 7JT,12:10,12:20,"Simonsbath, Minehead, Somerset TA24 7JT, UK",Minehead,51.13631669999999,-3.738569
-13,Taunton,B,Wednesday,4/13/2016,Hillcrest,TA24 7SL,12:30,12:40,"Hillcrest House, Simonsbath, Minehead, Somerset TA24 7SJ, UK",Minehead,51.1407761,-3.7614664
-14,Taunton,B,Wednesday,4/13/2016,Red Deer House,TA24 7JY,13:20,13:35,"Red Deer House, Oakford, Tiverton, Devon EX16 9JE, UK",Tiverton,50.99842599999999,-3.5797488
-15,Taunton,B,Wednesday,4/13/2016,West Ley,TA24 7NQ,13:40,13:50,"South Ley Bungalow, Exford, Minehead, Somerset TA24 7QD, UK",Minehead,51.13535,-3.6546
-16,Taunton,B,Wednesday,4/13/2016,Mill Lane House,TA24 7NS,14:00,14:15,"Mill Lane House, Mill Ln, Exford, Minehead, Somerset TA24 7NS, UK",Minehead,51.1427884,-3.6487759
-17,Taunton,B,Wednesday,4/13/2016,Exford Centre,TA24 7PU,14:25,15:00,"Bridge Cottages, Exford, Minehead, Somerset TA24 7PU, UK",Minehead,51.132648,-3.6408537
-18,Taunton,B,Wednesday,4/13/2016,Blagdon View,TA24 7ED,15:15,15:35,"Blagdon Ln, Minehead, Somerset TA24, UK",Minehead,51.0987516,-3.4686131
-19,Taunton,B,Wednesday,4/13/2016,Wheddon Cross car park,TA24 7DY,15:40,15:55,"Wheddon Cross Car Park, Wheddon Cross, Minehead, Somerset TA24, UK",Minehead,51.1381124,-3.5398138
-20,Taunton,C,Thursday,4/14/2016,Appley Pavilion,TA21 0HH,9:30,9:55,"Appley Cross, Stawley, Wellington TA21 0HH, UK",Wellington,50.98074940000001,-3.3249462
-21,Taunton,C,Thursday,4/14/2016,Raddington Mill,TA4 2QW,10:20,10:30,"Raddington, Taunton TA4 2QW, UK",Taunton,51.0238285,-3.4061525
-22,Taunton,C,Thursday,4/14/2016,Blackwell Farm,TA4 2QN,10:35,10:40,"Raddington, Taunton TA4 2QN, UK",Taunton,51.0287222,-3.4149567
-23,Taunton,C,Thursday,4/14/2016,Gamblyn Cottage,TA4 2DF,10:45,10:55,"Gamblyn Cottage, Skilgate, Taunton, Somerset TA4 2DF, UK",Taunton,51.0328112,-3.4321526
-24,Taunton,C,Thursday,4/14/2016,Roborough,TA4 2JD,11:10,11:30,"Upton, Taunton, Somerset TA4 2JD, UK",Taunton,51.0755022,-3.4245915
-25,Taunton,C,Thursday,4/14/2016,Middleton Lodge,TA4 2EN,11:45,12:00,"Middleton Court, Huish Champflower, Taunton, Somerset TA4 2EN, UK",Taunton,51.0797324,-3.4019795
-26,Taunton,C,Thursday,4/14/2016,Glebe Farm,TA4 3PR,12:25,12:35,"Tolland, Lydeard St Lawrence, Taunton, Somerset TA4 3PR, UK",Taunton,51.0814283,-3.2849627
-27,Taunton,C,Thursday,4/14/2016,Blackdown View lay-by (School),TA2 6TB,13:00,13:15,"Blackdown View, Norton Fitzwarren, Taunton, Somerset TA2 6TB, UK",Taunton,51.0284443,-3.1457436
+11,Taunton,B,Wednesday,4/13/2016,Exford School,TA24 7PP,11:25,11:55,"Exford, Minehead, Somerset TA24 7PP, UK",Exford,51.1334946,-3.6381967
+12,Taunton,B,Wednesday,4/13/2016,Whiterock,TA24 7JT,12:10,12:20,"Simonsbath, Minehead, Somerset TA24 7JT, UK",Simonsbath,51.13631669999999,-3.738569
+13,Taunton,B,Wednesday,4/13/2016,Hillcrest,TA24 7SL,12:30,12:40,"Hillcrest House, Simonsbath, Minehead, Somerset TA24 7SJ, UK",Simonsbath,51.1407761,-3.7614664
+14,Taunton,B,Wednesday,4/13/2016,Red Deer House,TA24 7JY,13:20,13:35,"Red Deer House, Oakford, Tiverton, Devon EX16 9JE, UK",Oakford,50.99842599999999,-3.5797488
+15,Taunton,B,Wednesday,4/13/2016,West Ley,TA24 7NQ,13:40,13:50,"Exford, Minehead, Somerset TA24 7NQ, UK",Exford,51.1392513,-3.6604145
+16,Taunton,B,Wednesday,4/13/2016,Mill Lane House,TA24 7NS,14:00,14:15,"Mill Lane House, Mill Ln, Exford, Minehead, Somerset TA24 7NS, UK",Exford,51.1427884,-3.6487759
+17,Taunton,B,Wednesday,4/13/2016,Exford Centre,TA24 7PU,14:25,15:00,"Bridge Cottages, Exford, Minehead, Somerset TA24 7PU, UK",Exford,51.132648,-3.6408537
+18,Taunton,B,Wednesday,4/13/2016,Blagdon View,TA24 7ED,15:15,15:35,"Blagdon Cross, Minehead, Somerset TA24 7ED, UK",Blagdon Cross,51.1440701,-3.5525219
+19,Taunton,B,Wednesday,4/13/2016,Wheddon Cross car park,TA24 7DY,15:40,15:55,"Wheddon Cross Car Park, Wheddon Cross, Minehead, Somerset TA24, UK",Wheddon Cross,51.1381124,-3.5398138
+20,Taunton,C,Thursday,4/14/2016,Appley Pavilion,TA21 0HH,9:30,9:55,"Appley Cross, Stawley, Wellington TA21 0HH, UK",Stawley,50.98074940000001,-3.3249462
+21,Taunton,C,Thursday,4/14/2016,Raddington Mill,TA4 2QW,10:20,10:30,"Raddington, Taunton TA4 2QW, UK",Raddington,51.0238285,-3.4061525
+22,Taunton,C,Thursday,4/14/2016,Blackwell Farm,TA4 2QN,10:35,10:40,"Raddington, Taunton TA4 2QN, UK",Raddington,51.0287222,-3.4149567
+23,Taunton,C,Thursday,4/14/2016,Gamblyn Cottage,TA4 2DF,10:45,10:55,"Gamblyn Cottage, Skilgate, Taunton, Somerset TA4 2DF, UK",Skilgate,51.0328112,-3.4321526
+24,Taunton,C,Thursday,4/14/2016,Roborough,TA4 2JD,11:10,11:30,"Upton, Taunton, Somerset TA4 2JD, UK",Upton,51.0755022,-3.4245915
+25,Taunton,C,Thursday,4/14/2016,Middleton Lodge,TA4 2EN,11:45,12:00,"Middleton Court, Huish Champflower, Taunton, Somerset TA4 2EN, UK",Huish Champflower,51.0797324,-3.4019795
+26,Taunton,C,Thursday,4/14/2016,Glebe Farm,TA4 3PR,12:25,12:35,"Tolland, Lydeard St Lawrence, Taunton, Somerset TA4 3PR, UK",Lydeard St Lawrence,51.0814283,-3.2849627
+27,Taunton,C,Thursday,4/14/2016,Blackdown View lay-by (School),TA2 6TB,13:00,13:15,"Blackdown View, Norton Fitzwarren, Taunton, Somerset TA2 6TB, UK",Norton Fitzwarren,51.0284443,-3.1457436
 28,Taunton,D,Friday,4/15/2016,Kingsbridge,TA23 0SH,9:45,10:00,"Kingsbridge, Watchet, Somerset TA23, UK",Watchet,51.130136,-3.452298
-29,Taunton,D,Friday,4/15/2016,Cutcombe School,TA24 7DZ,10:15,10:45,"Old School House, Wheddon Cross, Minehead, Somerset TA24 7DZ, UK",Minehead,51.1389491,-3.5378697
-30,Taunton,D,Friday,4/15/2016,Higher Park Lane,TA24 7AG,10:55,11:15,"Highfield, Higher Park Ln, Cutcombe, Minehead, Somerset TA24 7AG, UK",Minehead,51.140273,-3.5349753
-31,Taunton,D,Friday,4/15/2016,Timberscombe School & Playgroup,TA24 7TY,11:30,12:00,"Old School House, Wheddon Cross, Minehead, Somerset TA24 7DZ, UK",Minehead,51.1389491,-3.5378697
+29,Taunton,D,Friday,4/15/2016,Cutcombe School,TA24 7DZ,10:15,10:45,"Old School House, Wheddon Cross, Minehead, Somerset TA24 7DZ, UK",Wheddon Cross,51.1389491,-3.5378697
+30,Taunton,D,Friday,4/15/2016,Higher Park Lane,TA24 7AG,10:55,11:15,"Highfield, Higher Park Ln, Cutcombe, Minehead, Somerset TA24 7AG, UK",Cutcombe,51.140273,-3.5349753
+31,Taunton,D,Friday,4/15/2016,Timberscombe School & Playgroup,TA24 7TY,11:30,12:00,"Timberscombe, Minehead, Somerset TA24 7TY, UK",Timberscombe,51.1681686,-3.4968033
 32,Taunton,D,Friday,4/15/2016,Cheeky Cherubs Nursery,TA24 5EB,12:50,13:20,"Minehead, Somerset TA24 5EB, UK",Minehead,51.2007188,-3.4643645
-33,Taunton,D,Friday,4/15/2016,Butlins- Billyï¿½s All Stars Nursery,TA24 5SH,13:25,13:55,"Minehead, Somerset TA24 5SH, UK",Minehead,51.2059856,-3.4617114
-34,Taunton,D,Friday,4/15/2016,Willow Grove ,TA23 0PT,14:10,14:25,"Willow Grove, Washford, Watchet, Somerset TA23 0PT, UK",Watchet,51.16167120000001,-3.3633605
-35,Taunton,E,Wednesday,4/20/2016,"Bishops Hull Rd, Memorial (Plygrp)",TA1 5HR,9:30,9:45,"Parsonage Ct, Bishop's Hull, Taunton, Somerset TA1 5HR, UK",Taunton,51.0169471,-3.1360936
-36,Taunton,E,Wednesday,4/20/2016,Leachï¿½s Field,TA2 8JL,10:05,10:35,"Leach's Field, Kingston St Mary, Taunton, Somerset TA2 8JL, UK",Taunton,51.060319,-3.1154792
-37,Taunton,E,Wednesday,4/20/2016,Spaxton School,TA5 1BS,10:55,11:30,"School Ln, Combwich, Bridgwater, Somerset TA5 2QS, UK",Bridgwater,51.1756657,-3.0642773
-38,Taunton,E,Wednesday,4/20/2016,The Cottage (Bottom of hill),TA5 1DR,11:45,11:55,"Courtway, Bridgwater, Somerset TA5 1DR, UK",Bridgwater,51.0991762,-3.1396365
-39,Taunton,E,Wednesday,4/20/2016,Broomfield Church,TA5 2EQ,12:05,12:20,"Church Rd, Bridgwater, Somerset TA5, UK",Bridgwater,51.126074,-3.112217
-40,Taunton,E,Wednesday,4/20/2016,Entrance to Halswell House,TA5 2DE,12:40,13:00,"Goathurst, Bridgwater, Somerset TA5 2DE, UK",Bridgwater,51.1043935,-3.0631058
+33,Taunton,D,Friday,4/15/2016,Butlins- Billy's All Stars Nursery,TA24 5SH,13:25,13:55,"Minehead, Somerset TA24 5SH, UK",Minehead,51.2059856,-3.4617114
+34,Taunton,D,Friday,4/15/2016,Willow Grove ,TA23 0PT,14:10,14:25,"Willow Grove, Washford, Watchet, Somerset TA23 0PT, UK",Washford,51.16167120000001,-3.3633605
+35,Taunton,E,Wednesday,4/20/2016,"Bishops Hull Rd, Memorial (Plygrp)",TA1 5HR,9:30,9:45,"Parsonage Ct, Bishop's Hull, Taunton, Somerset TA1 5HR, UK",Bishop's Hull,51.0169471,-3.1360936
+36,Taunton,E,Wednesday,4/20/2016,Leach's Field,TA2 8JL,10:05,10:35,"Leach's Field, Kingston St Mary, Taunton, Somerset TA2 8JL, UK",Kingston St Mary,51.060319,-3.1154792
+37,Taunton,E,Wednesday,4/20/2016,Spaxton School,TA5 1BS,10:55,11:30,"Spaxton, Bridgwater, Somerset TA5 1BS, UK",Spaxton,51.12494,-3.10720
+38,Taunton,E,Wednesday,4/20/2016,The Cottage (Bottom of hill),TA5 1DR,11:45,11:55,"Courtway, Bridgwater, Somerset TA5 1DR, UK",Courtway,51.0991762,-3.1396365
+39,Taunton,E,Wednesday,4/20/2016,Broomfield Church,TA5 2EQ,12:05,12:20,"Broomfield, Bridgwater, Somerset TA5, UK",Broomfield,51.08205,-3.10908
+40,Taunton,E,Wednesday,4/20/2016,Entrance to Halswell House,TA5 2DE,12:40,13:00,"Goathurst, Bridgwater, Somerset TA5 2DE, UK",Goathurst,51.1043935,-3.0631058
 41,Taunton,F,Thursday,4/21/2016,Village Hall,TA3 5QQ,9:35,10:05,"Creech st Michael, UK",Creech St Michael,51.0256202,-3.0390439
 42,Taunton,F,Thursday,4/21/2016,Neroche School,TA19 9RG,10:25,11:15,"Broadway, Ilminster, Somerset TA19 9RG, UK",Ilminster,50.93448220000001,-2.9655278
 43,Taunton,F,Thursday,4/21/2016,Isle Brewers Garage,TA3 6QN,11:40,11:55,"Main Road Garage (SE-bound), Taunton, Somerset TA3, UK",Taunton,50.986568,-2.904924
