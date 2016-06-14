@@ -11,37 +11,37 @@
 }
 
 .marker-cluster-taunton {
-    background-color: rgba(110, 204, 57, 0.6);;
+    background-color: #F47C3C;
 }
 
     .marker-cluster-small div {
-        background-color: rgba(110, 204, 57, 0.6);
+        background-color: #F47C3C;
     }
 
 .marker-cluster-wells {
-    background-color: rgba(240, 194, 12, 0.6);
+    background-color: #29ABE0;
 }
 
     .marker-cluster-medium div {
-        background-color: rgba(240, 194, 12, 0.6);
+        background-color: #29ABE0;
     }
 
 
 /* IE 6-8 fallback colors */
 .leaflet-oldie .marker-cluster-taunton {
-    background-color: rgb(181, 226, 140);
+    background-color: #F47C3C;
 }
 
     .leaflet-oldie .marker-cluster-taunton div {
-        background-color: rgb(110, 204, 57);
+        background-color: #F47C3C;
     }
 
 .leaflet-oldie .marker-cluster-wells {
-    background-color: rgb(241, 211, 87);
+    background-color: #29ABE0;
 }
 
     .leaflet-oldie .marker-cluster-wells div {
-        background-color: rgb(240, 194, 12);
+        background-color: #29ABE0;
     }
 
 
@@ -52,6 +52,7 @@
 
     .marker-cluster div {
         width: 20px;
+        color: #fff;
         height: 20px;
         margin-left: 0px;
         margin-top: 0px;
@@ -63,3 +64,15 @@
     .marker-cluster span {
         line-height: 20px;
     }
+
+/* css to customize Leaflet default styles  */
+.taunton-popup .leaflet-popup-tip,
+.taunton-popup .leaflet-popup-content-wrapper {
+    background: #F47C3C;
+    color: #ffffff;
+}
+.wells-popup .leaflet-popup-tip,
+.wells-popup .leaflet-popup-content-wrapper {
+    background: #29ABE0;
+    color: #ffffff;
+}

@@ -85,7 +85,7 @@ Id,Mobile,Route,Day,StartDate,Location,Postcode,Start,End,Address,Place,Lat,Lng
 84,Taunton,J,Thursday,4/28/2016,Frog Street T junction,TA5 1EJ,14:10,14:25,"East Quantoxhead, Bridgwater, Somerset TA5 1EJ, UK",Bridgwater,51.1828702,-3.2351293
 85,Taunton,K,Friday,4/29/2016,Slough,TA3 5RW,9:15,9:25,"Slough Ln, Taunton, Somerset TA3 6JQ, UK",Taunton,51.0449393,-2.9283727
 86,Taunton,K,Friday,4/29/2016,Farmers Arms,TA3 5RS,9:30,9:40,"West Hatch, Taunton, Somerset TA3 5RS, UK",Taunton,50.9729129,-3.0372545
-87,Taunton,K,Friday,4/29/2016,Allenï¿½s Farm,TA3 6AG,10:00,10:20,"Broadmead, Beercrocombe, Taunton, Somerset TA3 6AG, UK",Taunton,50.9790727,-2.9659683
+87,Taunton,K,Friday,4/29/2016,Allen's Farm,TA3 6AG,10:00,10:20,"Broadmead, Beercrocombe, Taunton, Somerset TA3 6AG, UK",Taunton,50.9790727,-2.9659683
 88,Taunton,K,Friday,4/29/2016,Barrington School,TA19 0JR,10:45,11:00,"School Ln, Seavington St Michael, Ilminster, Somerset TA19 0QD, UK",Ilminster,50.932128,-2.8409525
 89,Taunton,K,Friday,4/29/2016,Buttle Close,TA19 0LU,11:10,11:25,"Buttle Cl, Shepton Beauchamp, Ilminster, Somerset TA19 0LU, UK",Ilminster,50.9495831,-2.849535
 90,Taunton,K,Friday,4/29/2016,Opposite Ruskway Lane,TA10 0BN,11:40,11:50,"Westport, Langport, Somerset TA10 0BN, UK",Langport,50.9738838,-2.878308
@@ -93,7 +93,7 @@ Id,Mobile,Route,Day,StartDate,Location,Postcode,Start,End,Address,Place,Lat,Lng
 92,Taunton,K,Friday,4/29/2016,Outwood Rd Station Post Box,TA3 5AJ,13:20,13:35,"West Lyng, Taunton, Somerset TA3 5AJ, UK",Taunton,51.0497126,-2.9912625
 93,Taunton,K,Friday,4/29/2016,Durston Village Hall,TA3 5AG,13:40,13:55,"Somerset Ducks, Moon Ln, North Petherton, Bridgwater, Somerset TA7 0DS, UK",Bridgwater,51.0673401,-3.014046
 94,Taunton,L,Tuesday,4/5/2016,Amberley,TA3 7SG,9:30,9:45,"Blagdon Hill, Taunton, Somerset TA3 7SG, UK",Taunton,50.9608695,-3.124914
-95,Taunton,L,Tuesday,4/5/2016,Pear Tree Cottage,TA3 7QB,10:00,10:20,"Pear Tree, Mount Pleasant, Pilton, Shepton Mallet, Somerset BA4 4BL, UK",Shepton Mallet,51.1635788,-2.5830942
+95,Taunton,L,Tuesday,4/5/2016,Pear Tree Cottage,TA3 7QB,10:00,10:20,"Pear Tree Cottage, Stapley, Somerset, TA3 7QB, UK",Stapley,50.919191,-3.1513944
 96,Taunton,L,Tuesday,4/5/2016,Churchinford Village Hall & Playgroup,TA3 7RG,10:30,11:15,TODO,TODO,TODO,TODO
 97,Taunton,L,Tuesday,4/5/2016,Old School,TA21 0BJ,11:40,12:00,"The Old School, Holywell Lake, Wellington, Somerset TA21 0EJ, UK",Wellington,50.9756517,-3.2747474
 98,Taunton,L,Tuesday,4/5/2016,Hillfarance Church,TA4 1AW,12:10,12:30,"Hillfarrance, Taunton, Somerset TA4 1AW, UK",Taunton,51.0154959,-3.1897324

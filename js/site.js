@@ -72,16 +72,16 @@ $(function () {
                     maxHeight: 140,
                     closeButton: false,
                     className: ''
-                }).setContent('<p>' + val.Location + ', ' + val.Town + '</p><strong>Date </strong>' + moment(val.DueSystem).format('DD MMM YYYY hh:mm') + '');
+                }).setContent('<h4>' + val.Location + ', ' + val.Town + '</h4>' + moment(val.DueSystem).format('DD MMM YYYY hh:mm') + '<br/>' + 'Route ' + val.Route + '<br/>' + val.Duration + ' minute stop');
                 var className = 'taunton';
 
                 // Set up the associative arrays for layers and bounds
                 if (!markersArrays[val.RouteId]) markersArrays[val.RouteId] = [];
                 if (!markersBounds[val.RouteId]) markersBounds[val.RouteId] = [];
 
-                if (val.Library == 'Taunton') className = 'wells';
+                if (val.Library == 'Wells') className = 'wells';
                 var stopIcon = L.divIcon({ html: '<div><span>' + val.Route + '</span></div>', className: "marker-cluster marker-cluster-" + className, iconSize: new L.Point(20, 20) });
-                markersArrays[val.RouteId].push(L.marker([val.Lat, val.Lng], { icon: stopIcon }).bindPopup(popup));
+                markersArrays[val.RouteId].push(L.marker([val.Lat, val.Lng], { icon: stopIcon }).bindPopup(popup, { className: className + '-popup' }));
                 markersBounds[val.RouteId].push([val.Lat, val.Lng]);
             }
         });
