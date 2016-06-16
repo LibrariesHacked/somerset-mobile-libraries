@@ -30,7 +30,7 @@ function populateNearest() {
     SomersetMobiles.setCurrentDistances(lat, lng);
     var nearest = SomersetMobiles.getNearest();
     var nearestStop = SomersetMobiles.data[nearest];
-    $('#divNearest').html('<span class="lead">Nearest stop <strong>' + nearestStop.Location + ', ' + nearestStop.Town + '.  Arriving in ' + nearestStop.Due + ' (' + moment(nearestStop.DueSystem).format('DD/MM/YYYY hh:mm') + ')</span>');
+    $('#divNearest').html('<span class="lead">Nearest stop ' + nearestStop.Location + ', ' + nearestStop.Town + '.  Arriving ' + nearestStop.Due + ' (' + moment(nearestStop.DueSystem).format('Do MMM hh:mm a') + ')</span>');
 }
 
 //////////////////////////////////////////////////
