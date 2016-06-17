@@ -10,26 +10,46 @@
             complete: function (results) {
                 stops = {};
                 $.each(results.data.splice(1), function (key, val) {
-                    stops[val[0]] = {};
-                    stops[val[0]]['Library'] = val[1];
-                    stops[val[0]]['RouteId'] = val[1] + val[2];
-                    stops[val[0]]['Route'] = val[2];
-                    stops[val[0]]['Day'] = val[3];
-                    stops[val[0]]['StartDate'] = val[4];
-                    stops[val[0]]['Location'] = val[5];
-                    stops[val[0]]['Postcode'] = val[6];
-                    stops[val[0]]['Start'] = val[7];
-                    stops[val[0]]['End'] = val[8];
-                    stops[val[0]]['Address'] = val[9];
-                    stops[val[0]]['Town'] = val[10];
-                    stops[val[0]]['Lat'] = val[11];
-                    stops[val[0]]['Lng'] = val[12];
+                    var routeId = val[1] + val[2];
+                    stops[routeId] = {};
+                    stops[routeId]['Library'] = val[1];
+                    stops[routeId]['Route'] = val[2];
+                    stops[routeId]['Day'] = val[3];
+                    stops[routeId]['StartDate'] = val[4];
+                    stops[routeId]['Location'] = val[5];
+                    stops[routeId]['Postcode'] = val[6];
+                    stops[routeId]['Start'] = val[7];
+                    stops[routeId]['End'] = val[8];
+                    stops[routeId]['Address'] = val[9];
+                    stops[routeId]['Town'] = val[10];
+                    stops[routeId]['Lat'] = val[11];
+                    stops[routeId]['Lng'] = val[12];
                 }.bind(this));
                 this.data = stops;
                 this.setDueDates();
                 callback(results.data);
             }.bind(this)
-        })
+        });
+    },
+    /////////////////////////////////////
+    // Function: loadRoute
+    // Loads the route line data for a particular route
+    /////////////////////////////////////
+    loadRoute: function (routeId, callback) {
+        $.ajax({
+            type: 'GET',
+            url: '../data/' + routeId + '.xml',
+            dataType: 'xml',
+            success: function (xml) {
+                this.data[routeId].routeLine = [];
+                $(xml).find('xls\\:RouteGeometry gml\\:pos').each(function (i, x) {
+                    this.data[routeId].routeLine.push([x.textContent.split(' ')[1], x.textContent.split(' ')[0]]);
+                });
+            }.bind(this),
+            error: function (error) {
+                console.log(error);
+            }
+        }.bind(this));
     },
     /////////////////////////////////////////////////////////////////////////////
     // Function: SetDueDates
@@ -65,8 +85,7 @@
         this.setDueDates();
         var currentLocation = null;
         $.each(this.data, function (key, val) {
-            if (val.Library == mobile && timeNow.isAfter(val.DueSystem))
-            {
+            if (val.Library == mobile && timeNow.isAfter(val.DueSystem)) {
                 currentLocation = key;
             }
         }.bind(this));
@@ -99,7 +118,7 @@
         var dataArray = [];
         $.each(this.data, function (key, val) {
             // Mobile,Route,Day,Town,Location,Postcode,Due,Duration
-            dataArray.push([val.Library, val.RouteId, val.Route, val.Day, val.Town, val.Location, val.Postcode, val.Due, val.DueSystem, val.Duration]);
+            dataArray.push([val.Library, key, val.Route, val.Day, val.Town, val.Location, val.Postcode, val.Due, val.DueSystem, val.Duration]);
         });
         return dataArray;
     },

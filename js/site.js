@@ -39,16 +39,16 @@ function populateNearest() {
 L.Polyline = L.Polyline.extend({
     getDistance: function (system) {
         // distance in meters
-        var mDistanse = 0,
+        var mDistance = 0,
             length = this._latlngs.length;
         for (var i = 1; i < length; i++) {
-            mDistanse += this._latlngs[i].distanceTo(this._latlngs[i - 1]);
+            mDistance += this._latlngs[i].distanceTo(this._latlngs[i - 1]);
         }
         // optional
         if (system === 'imperial') {
-            return mDistanse / 1609.34;
+            return Math.round(mDistance / 1609.34);
         } else {
-            return mDistanse / 1000;
+            return Math.round(mDistance / 1000);
         }
     }
 });
@@ -138,6 +138,7 @@ $(function () {
 
         // Set up the option to show either set of library stops
         filterLibrariesMap = function (filter) {
+            $('#spQuickStats').html('');
             this.event.preventDefault();
             if (currentFilter == filter) return false;
             if (currentFilter == 'All') {
@@ -158,34 +159,40 @@ $(function () {
                 }));
             } else {
                 map.addLayer(markerGroups[filter]);
+
+                var updateQuickStats = function (filter) {
+                    var className = 'warning';
+                    if (filter.indexOf('Wells') != -1) className = 'info';
+                    $('#spQuickStats').html('<span class="text-' + className + '">' + filter + ' quick stats.</span> '
+                        + 'Distance travelled: <span class="text-' + className + '">' + routes[filter].getDistance('imperial') + ' miles</span>. '
+                        + 'Number of stops: <span class="text-' + className + '">' + markersArrays[filter].length + '</span>');
+                };
+
                 if (filter == 'Taunton' || filter == 'Wells') {
                     map.fitBounds($.map(markersBounds, function (val, key) {
                         if (key.indexOf(filter) != -1) return val;
                     }));
                 } else {
-                    // We also want to add the route lines (taken from GML).
-                    var routeLatLngs = [];
-                    $.ajax({
-                        type: 'GET',
-                        url: '../data/' + filter + '.xml',
-                        dataType: 'xml',
-                        success: function (xml) {
-                            $(xml).find('xls\\:RouteGeometry gml\\:pos').each(function (i, x) {
-                                routeLatLngs.push(L.latLng(x.textContent.split(' ')[1], x.textContent.split(' ')[0]));
-                            });
-                            var lineColour = '#F47C3C';
-                            if (filter.indexOf('Wells') != -1) lineColour = '#29ABE0';
-                            var routeLine = L.polyline(routeLatLngs, { color: lineColour, dashArray: '20,15', opacity: 0.4 });
-                            routes[filter] = routeLine;
-                            map.addLayer(routes[filter]);
+                    // We also want to add the route lines
 
-                            // Update the quick stats bar
-                            $('#spQuickStats').text('Quick stats.  Distance travelled: ' + routes[filter].getDistance());
-                        },
-                        error: function (error) {
-                            console.log(error);
-                        }
-                    });
+                    if (!routes[filter]) {
+                        var routeLatLngs = [];
+                        var lineColour = '#F47C3C';
+                        if (filter.indexOf('Wells') != -1) lineColour = '#29ABE0';
+                        SomersetMobiles.loadRoute(filter, function () {
+                            $.each(SomersetMobiles.data[filter].routeLine, function (latlng) {
+                                routeLatLngs.push(L.latLng(latlng[0], latlng[1]));
+                            });
+                        });
+                        var routeLine = L.polyline(routeLatLngs, { color: lineColour, dashArray: '20,15', opacity: 0.4 });
+                        routes[filter] = routeLine;
+                        map.addLayer(routes[filter]);
+
+                        // Update the quick stats bar
+                        updateQuickStats(filter);
+                    } else {
+                        map.addLayer(routes[filter]);
+                    }
 
                     map.fitBounds($.map(markersBounds, function (val, key) {
                         if (key == filter) return val;
