@@ -33,6 +33,26 @@ function populateNearest() {
     $('#divNearest').html('<span class="lead">Nearest stop ' + nearestStop.Location + ', ' + nearestStop.Town + '.  Arriving ' + nearestStop.Due + ' (' + moment(nearestStop.DueSystem).format('Do MMM hh:mm a') + ')</span>');
 }
 
+/////////////////////////
+//
+/////////////////////////
+L.Polyline = L.Polyline.extend({
+    getDistance: function (system) {
+        // distance in meters
+        var mDistanse = 0,
+            length = this._latlngs.length;
+        for (var i = 1; i < length; i++) {
+            mDistanse += this._latlngs[i].distanceTo(this._latlngs[i - 1]);
+        }
+        // optional
+        if (system === 'imperial') {
+            return mDistanse / 1609.34;
+        } else {
+            return mDistanse / 1000;
+        }
+    }
+});
+
 //////////////////////////////////////////////////
 // Following relies on jQuery etc so wait for page to complete
 //////////////////////////////////////////////////
@@ -64,9 +84,10 @@ $(function () {
         var markersArrays = {};
         var markerGroups = {};
         var markersBounds = {};
+        var routes = {};
         $.each(SomersetMobiles.data, function (key, val) {
             // Add items to the map.
-            if (val.Lat && val.Lat != 'TODO') {
+            if (val.Lat) {
                 var popup = L.popup({
                     maxWidth: 160,
                     maxHeight: 140,
@@ -122,8 +143,12 @@ $(function () {
             if (currentFilter == 'All') {
                 map.removeLayer(markerGroups['Taunton']);
                 map.removeLayer(markerGroups['Wells']);
+            } else if (currentFilter == 'Taunton' || currentFilter == 'Wells' ){
+                map.removeLayer(markerGroups[currentFilter]);
             } else {
                 map.removeLayer(markerGroups[currentFilter]);
+                // Only the individual routes have route lines on
+                map.removeLayer(routes[currentFilter]);
             }
             if (filter == 'All') {
                 map.addLayer(markerGroups['Taunton']);
@@ -138,6 +163,30 @@ $(function () {
                         if (key.indexOf(filter) != -1) return val;
                     }));
                 } else {
+                    // We also want to add the route lines (taken from GML).
+                    var routeLatLngs = [];
+                    $.ajax({
+                        type: 'GET',
+                        url: '../data/' + filter + '.xml',
+                        dataType: 'xml',
+                        success: function (xml) {
+                            $(xml).find('xls\\:RouteGeometry gml\\:pos').each(function (i, x) {
+                                routeLatLngs.push(L.latLng(x.textContent.split(' ')[1], x.textContent.split(' ')[0]));
+                            });
+                            var lineColour = '#F47C3C';
+                            if (filter.indexOf('Wells') != -1) lineColour = '#29ABE0';
+                            var routeLine = L.polyline(routeLatLngs, { color: lineColour, dashArray: '20,15', opacity: 0.4 });
+                            routes[filter] = routeLine;
+                            map.addLayer(routes[filter]);
+
+                            // Update the quick stats bar
+                            $('#spQuickStats').text('Quick stats.  Distance travelled: ' + routes[filter].getDistance());
+                        },
+                        error: function (error) {
+                            console.log(error);
+                        }
+                    });
+
                     map.fitBounds($.map(markersBounds, function (val, key) {
                         if (key == filter) return val;
                     }));

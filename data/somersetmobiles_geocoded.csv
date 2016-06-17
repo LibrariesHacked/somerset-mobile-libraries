@@ -46,7 +46,7 @@ Id,Mobile,Route,Day,StartDate,Location,Postcode,Start,End,Address,Place,Lat,Lng
 45,Taunton,F,Thursday,4/21/2016,Curry Mallet Post Office,TA3 6SY,12:40,12:55,"Curry Mallet, TA3 6SY, UK",Curry Mallet,50.99221,-2.95878
 46,Taunton,F,Thursday,4/21/2016,St Martins Close,TA3 6PW,13:40,14:00,"St Martin's Cl, Fivehead, Taunton, Somerset TA3 6PW, UK",Fivehead,51.00077169999999,-2.9225817
 47,Taunton,F,Thursday,4/21/2016,Parsonage Place,TA10 0EW,14:15,14:40,"Parsonage Pl, Curry Rivel, Langport, Somerset TA10 0EW, UK",Curry Rivel,51.02510239999999,-2.8653878
-48,Taunton,F,Thursday,4/21/2016,Stoke St Gregory Village Hall,TA3 6EG,15:00,15:40,"Stoke St Gregory, Taunton, Somerset TA3 6EG, UK",Stoke St Gregory,51.0390053, -2.9328659
+48,Taunton,F,Thursday,4/21/2016,Stoke St Gregory Village Hall,TA3 6EG,15:00,15:40,"Stoke St Gregory, Taunton, Somerset TA3 6EG, UK",Stoke St Gregory,51.0390053,-2.9328659
 49,Taunton,F,Thursday,4/21/2016,Stoke Road,TA3 6HW,15:50,16:05,"Stoke Rd, North Curry, Taunton, Somerset TA3 6HW, UK",North Curry,51.02797,-2.96000
 50,Taunton,F,Thursday,4/21/2016,Queens Square,TA3 6JS,16:10,16:40,"Queen Square, North Curry, Taunton, Somerset TA3 6JS, UK",North Curry,51.0233228,-2.9727054
 51,Taunton,G,Friday,4/22/2016,Stockmoor School,TA6 6AH,9:30,10:00,"Stockmoor Dr, Bridgwater, Somerset TA6 6AH, UK",Stockmoor,51.1116163,-2.9976009
@@ -59,7 +59,7 @@ Id,Mobile,Route,Day,StartDate,Location,Postcode,Start,End,Address,Place,Lat,Lng
 58,Taunton,G,Friday,4/22/2016,"Main Road, Bus Stop",TA7 0NJ,15:55,16:15,"Main Rd, Middlezoy, Bridgwater, Somerset TA7 0NJ, UK",Middlezoy,51.0902931,-2.8922205
 59,Taunton,H,Tuesday,4/26/2016,Otterhampton School,TA5 2QS,9:45,10:40,"School Ln, Combwich, Bridgwater, Somerset TA5 2QS, UK",Combwich,51.1757406,-3.0639023
 60,Taunton,H,Tuesday,4/26/2016,Harbour,TA5 2QU,10:45,11:05,"Harbour View, Combwich, Bridgwater, Somerset TA5 2QU, UK",Combwich,51.1744894,-3.0610697
-61,Taunton,H,Tuesday,4/26/2016,Combwich Post Office,TA5 2QW,11:10,11:30,"Combwich, Bridgwater, Somerset TA5 2QW, UK",Combwich,51.1731529, -3.0656853
+61,Taunton,H,Tuesday,4/26/2016,Combwich Post Office,TA5 2QW,11:10,11:30,"Combwich, Bridgwater, Somerset TA5 2QW, UK",Combwich,51.1731529,-3.0656853
 62,Taunton,H,Tuesday,4/26/2016,Captains,TA5 2PY,11:40,11:55,"Stockland Bristol, Bridgwater, Somerset TA5 2PY, UK",Bridgwater,51.1874233,-3.0833025
 63,Taunton,H,Tuesday,4/26/2016,Ridgeway Lane (Telephone Box),TA5 1TN,12:05,12:20,"Stolford, Stogursey, Bridgwater, Somerset TA5 1TN, UK",Stogursey,51.20259799999999,-3.1058592
 64,Taunton,H,Tuesday,4/26/2016,Shurton Inn,TA5 1QE,12:35,12:55,"Shurton Ln, Shurton, Stogursey, Bridgwater, Somerset TA5 1QE, UK",Stogursey,51.1921253,-3.1438605
@@ -111,7 +111,7 @@ Id,Mobile,Route,Day,StartDate,Location,Postcode,Start,End,Address,Place,Lat,Lng
 110,Wells,A,Wednesday,4/13/2016,North Cadbury Village Hall,BA22 7DW,10:00,10:20,"North Cadbury, Somerset BA22 7DW, UK",North Cadbury,51.0435944,-2.5205176
 111,Wells,A,Wednesday,4/13/2016,Chapel Road (Telephone Box),BA22 7EX,10:25,10:40,"Chapel Rd, South Cadbury, Yeovil, Somerset BA22 7EX, UK",South Cadbury,51.0297715,-2.5250714
 112,Wells,A,Wednesday,4/13/2016,Sutton Montis Church,BA22 7HE,10:50,11:05,"Church Hill, Yeovil, Somerset BA22 7HE, UK",South Cadbury,51.0213681,-2.5366754
-113,Wells,A,Wednesday,4/13/2016,Queen Camel Village Hall,BA22 7NQ,11:15,11:35,"Queen Camel, Yeovil, Somerset BA22 7NQ, UK",Queen Camel,51.0211258, -2.5773525
+113,Wells,A,Wednesday,4/13/2016,Queen Camel Village Hall,BA22 7NQ,11:15,11:35,"Queen Camel, Yeovil, Somerset BA22 7NQ, UK",Queen Camel,51.0211258,-2.5773525
 114,Wells,A,Wednesday,4/13/2016,Townsend,BA22 8BP,11:45,12:05,"Townsend, Marston Magna, Yeovil, Somerset BA22 8BP, UK",Marston Magna,50.9997188,-2.5856827
 115,Wells,A,Wednesday,4/13/2016,Road to Rimpton House,BA22 8AQ,12:10,12:40,"Rimpton, Yeovil, Somerset BA22 8AQ, UK",Rimpton,50.9953312,-2.5617596
 116,Wells,A,Wednesday,4/13/2016,Red Tile Farm,BA22 8DF,13:30,13:40,"Marston Magna, Yeovil, Somerset BA22 8DF, UK",Marston Magna,50.999089,-2.5785352
@@ -218,7 +218,7 @@ Id,Mobile,Route,Day,StartDate,Location,Postcode,Start,End,Address,Place,Lat,Lng
 217,Wells,M,Thursday,4/7/2016,Greyhound,BA6 8QN,9:00,9:25,"The Greyhound, Martin St, Baltonsborough, Glastonbury, Somerset BA6 8QS, UK",Baltonsborough,51.1102791,-2.6534328
 218,Wells,M,Thursday,4/7/2016,Baltonsborough Playgroup,BA6 8PN,9:30,10:00,"Ham Street, Baltonsborough, Glastonbury, Somerset BA6 8PN, UK",Baltonsborough,51.1125959,-2.6327514
 219,Wells,M,Thursday,4/7/2016,Baltonsborough School,BA6 8PN,10:00,10:30,"School Rd, Glastonbury, Somerset BA6 8PD, UK",Baltonsborough,51.1254745,-2.6175079
-220,Wells,M,Thursday,4/7/2016,Butleigh School,BA6 8SX,10:40,11:10,"Somerset BA6 8SX, UK",Butleigh,51.100936,-2.68495 
+220,Wells,M,Thursday,4/7/2016,Butleigh School,BA6 8SX,10:40,11:10,"Somerset BA6 8SX, UK",Butleigh,51.100936,-2.68495
 221,Wells,M,Thursday,4/7/2016,Barton Road Fairmile,BA6 8TH,11:15,11:30,"Barton Rd, Butleigh, Glastonbury, Somerset BA6 8TH, UK",Butleigh,51.0951235,-2.68395
 222,Wells,M,Thursday,4/7/2016,Charlton Adam Post Office,TA11 7AY,11:45,12:00,"Charlton Adam, Somerton, Somerset TA11 7AY, UK",Charlton Adam,51.05702,-2.661087
 223,Wells,M,Thursday,4/7/2016,Baker Street Bus shelter,TA11 7DU,13:00,13:15,"Baker St, Babcary, Somerton, Somerset TA11 7DU, UK",Babcary,51.055505,-2.6259516
