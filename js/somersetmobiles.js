@@ -11,12 +11,8 @@
                 $.each(results.data.splice(1), function (key, val) {
                     var stopId = val[0];
                     var routeId = val[1] + val[2];
-                    if (!this.routes[routeId]) this.routes[routeId] = { library: val[1], day: val[3], stops: {} };
+                    if (!this.routes[routeId]) this.routes[routeId] = { library: val[1], route: val[2], day: val[3], startDate: val[4], stops: {} };
                     this.routes[routeId].stops[stopId] = {};
-                    this.routes[routeId].stops[stopId]['library'] = val[1];
-                    this.routes[routeId].stops[stopId]['route'] = val[2];
-                    this.routes[routeId].stops[stopId]['day'] = val[3];
-                    this.routes[routeId].stops[stopId]['startDate'] = val[4];
                     this.routes[routeId].stops[stopId]['location'] = val[5];
                     this.routes[routeId].stops[stopId]['postcode'] = val[6];
                     this.routes[routeId].stops[stopId]['start'] = val[7];
@@ -60,9 +56,9 @@
             $.each(val.stops, function (k, v) {
                 // Each library is on a timescale of once every 4 weeks.
                 // Add 4 weeks onto the first stop time until we get a datetime in the future.
-                var strStartDate = v['startDate'] + ' ' + v['start'];
+                var strStartDate = val.startDate + ' ' + v.start;
                 var nextDateTime = moment(strStartDate, 'MM/DD/YYYY hh:mm');
-                var strEndDate = v['startDate'] + ' ' + v['end'];
+                var strEndDate = val.startDate + ' ' + v.end;
                 var nextDateTimeEnd = moment(strEndDate, 'MM/DD/YYYY hh:mm');
                 while (now > nextDateTimeEnd) {
                     nextDateTime.add(4, 'weeks');

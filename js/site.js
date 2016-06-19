@@ -121,14 +121,14 @@ $(function () {
                         maxHeight: 140,
                         closeButton: false,
                         className: ''
-                    }).setContent('<h4>' + v.location + ', ' + v.town + '</h4>' + moment(v.dueSystem).format('DD MMM YYYY hh:mm') + '<br/>' + 'Route ' + v.route + '<br/>' + v.duration + ' minute stop');
+                    }).setContent('<h4>' + v.location + ', ' + v.town + '</h4>' + moment(v.dueSystem).format('DD MMM YYYY hh:mm') + '<br/>' + 'Route ' + val.route + '<br/>' + v.duration + ' minute stop');
 
                     // Set up the associative arrays for layers and bounds
                     if (!markersArrays[key]) markersArrays[key] = [];
                     if (!markersBounds[key]) markersBounds[key] = [];
 
-                    var stopIcon = L.divIcon({ html: '<div><span>' + v.route + '</span></div>', className: "marker-cluster marker-cluster-" + v.library.toLowerCase(), iconSize: new L.Point(20, 20) });
-                    markersArrays[key].push(L.marker([v.lat, v.lng], { icon: stopIcon }).bindPopup(popup, { className: v.library.toLowerCase() + '-popup' }));
+                    var stopIcon = L.divIcon({ html: '<div><span>' + val.route + '</span></div>', className: "marker-cluster marker-cluster-" + val.library.toLowerCase(), iconSize: new L.Point(20, 20) });
+                    markersArrays[key].push(L.marker([v.lat, v.lng], { icon: stopIcon }).bindPopup(popup, { className: val.library.toLowerCase() + '-popup' }));
                     markersBounds[key].push([v.lat, v.lng]);
                 }
             });
@@ -136,21 +136,19 @@ $(function () {
 
         // Add marker groups for all the routes (and overall library)
         $.each(SomersetMobiles.routes, function (key, val) {
-            $.each(val.stops, function (k, v) {
-                // Add the library marker group
-                if (!markerGroups[v.library]) {
-                    markerGroups[v.library] = L.featureGroup($.map(markersArrays, function (x, y) {
-                        if (y.indexOf(v.library) != -1) return x;
-                    }));
-                }
-                // Add the route marker group
-                if (!markerGroups[v.library + v.route]) {
-                    markerGroups[v.library + v.route] = L.featureGroup($.map(markersArrays, function (x, y) {
-                        if (y == (v.library + v.route)) return x;
-                    }));
-                    $('#ul' + v.library  + 'Filter').append('<li><a href="#" onclick="filterLibrariesMap(\'' + v.library + v.route + '\')">Route ' + v.route + '</a></li>');
-                }
-            });
+            // Add the library marker group
+            if (!markerGroups[val.library]) {
+                markerGroups[val.library] = L.featureGroup($.map(markersArrays, function (x, y) {
+                    if (y.indexOf(val.library) != -1) return x;
+                }));
+            }
+            // Add the route marker group
+            if (!markerGroups[val.library + val.route]) {
+                markerGroups[val.library + val.route] = L.featureGroup($.map(markersArrays, function (x, y) {
+                    if (y == (val.library + val.route)) return x;
+                }));
+            }
+            $('#ul' + val.library + 'Filter').append('<li><a href="#" onclick="filterLibrariesMap(\'' + val.library + val.route + '\')">Route ' + val.route + '</a></li>');
         });
 
         // Initial setup - Add all libraries and the overall bounds
@@ -190,14 +188,12 @@ $(function () {
                 }));
             } else {
                 map.addLayer(markerGroups[filter]);
-
                 var updateQuickStats = function (filter) {
                     var className = mobilesConfig.libBootswatchClass[filter.substring(0, filter.length - 1)];
-                    $('#spQuickStats').html('<span class="text-' + className + '">' + filter + ' quick stats.</span> '
+                    $('#spQuickStats').html('<span class="text-' + className + '">' + SomersetMobiles.routes[filter].library + ' Route ' + SomersetMobiles.routes[filter].route + ' quick stats.</span> '
                         + 'Distance travelled: <span class="text-' + className + '">' + routes[filter].getDistance('imperial') + ' miles</span>. '
                         + 'Number of stops: <span class="text-' + className + '">' + markersArrays[filter].length + '</span>');
                 };
-
                 if (libraries.indexOf(filter) != -1) {
                     map.fitBounds($.map(markersBounds, function (val, key) {
                         if (key.indexOf(filter) != -1) return val;
@@ -220,7 +216,6 @@ $(function () {
                     } else {
                         map.addLayer(routes[filter]);
                     }
-
                     map.fitBounds($.map(markersBounds, function (val, key) {
                         if (key == filter) return val;
                     }));
