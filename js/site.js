@@ -2,7 +2,7 @@
 // Map
 // Initialise the map, set center, zoom, etc.
 /////////////////////////////////////////////////
-var map = L.map('map').setView([51.15, 2.72], 13);
+var map = L.map('map').setView(mobilesConfig.mapInitialView, 13);
 var filterLibrariesMap = function () { };
 
 L.tileLayer('http://{s}.tiles.mapbox.com/v3/librarieshacked.jefmk67b/{z}/{x}/{y}.png', {
@@ -121,7 +121,7 @@ $(function () {
                         maxHeight: 140,
                         closeButton: false,
                         className: ''
-                    }).setContent('<h4>' + v.location + ', ' + v.town + '</h4>' + moment(v.dueSystem).format('DD MMM YYYY hh:mm') + '<br/>' + 'Route ' + val.route + '<br/>' + v.duration + ' minute stop');
+                    }).setContent('<h4>' + v.location + ', ' + v.town + '</h4>' + moment(v.dueSystem).format('Do MMM hh:mma') + '<br/>' + 'Route ' + val.route + '<br/>' + v.duration + ' minute stop');
 
                     // Set up the associative arrays for layers and bounds
                     if (!markersArrays[key]) markersArrays[key] = [];
@@ -265,7 +265,7 @@ $(function () {
                         api.column(7, { page: 'current' }).data().each(function (group, i) {
                             if (group != '' && last !== group) {
                                 $(rows).eq(i).before(
-                                    '<tr class="grouping"><td colspan="5">Due ' + group + '</td></tr>'
+                                    '<tr class="grouping"><td colspan="8">Due ' + group + '</td></tr>'
                                 );
                                 last = group;
                             }

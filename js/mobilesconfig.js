@@ -1,4 +1,5 @@
 ﻿var mobilesConfig = {
+    mapInitialView:[51.15, 2.72],
     libBootswatchClass: {
         Taunton: 'warning',
         Wells: 'info'

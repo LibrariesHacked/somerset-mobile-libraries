@@ -2,7 +2,15 @@
 }
 
 #divNearest, #divNearestAdditional, #btnFindAlternative, #btnZoomOnMap {
-    display:none;
+    display: none;
+}
+
+tr.grouping {
+    text-transform: uppercase;
+    color: #98978b;
+    font-size: 11px;
+    font-weight: 500;
+    text-align: right;
 }
 
 #map {
@@ -14,17 +22,17 @@
     background-color: #F47C3C;
 }
 
-    .marker-cluster-small div {
-        background-color: #F47C3C;
-    }
+.marker-cluster-small div {
+    background-color: #F47C3C;
+}
 
 .marker-cluster-wells {
     background-color: #29ABE0;
 }
 
-    .marker-cluster-medium div {
-        background-color: #29ABE0;
-    }
+.marker-cluster-medium div {
+    background-color: #29ABE0;
+}
 
 
 /* IE 6-8 fallback colors */
@@ -71,6 +79,7 @@
     background: #F47C3C;
     color: #ffffff;
 }
+
 .wells-popup .leaflet-popup-tip,
 .wells-popup .leaflet-popup-content-wrapper {
     background: #29ABE0;
