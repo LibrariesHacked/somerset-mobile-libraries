@@ -43,7 +43,8 @@
         </div>
     </nav>
     <div class="container">
-        <div class="row">
+        <a name="departures"></a>
+        <div class="row" id="divDepartures">
             <div class="col col-lg-4 col-md-4">
                 <div class="panel panel-default">
                     <div class="panel-heading">
@@ -62,42 +63,14 @@
                     </div>
                 </div>
             </div>
-            <div class="col col-lg-4 col-md-4">
-                <a name="departures"></a>
-                <div class="alert alert-warning">
-                    Taunton<br />
-                    <span id="spTauntonCurrentPosition"></span>
-                </div>
-            </div>
-            <div class="col col-lg-4 col-md-4">
-                <div class="alert alert-info">
-                    Wells<br />
-                    <span id="spWellsCurrentPosition"></span>
-                </div>
-            </div>
         </div>
     </div>
     <div class="jumbotron">
         <a name="mapview"></a>
         <div class="container">
-            <a href="#" class="btn btn-default" onclick="filterLibrariesMap('All')">All Stops  <span class="badge" id="spStopCount"></span></a>
-            <div class="btn-group">
-                <a href="#" class="btn btn-warning" onclick="filterLibrariesMap('Taunton')">Taunton Stops  <span class="badge" id="spTauntonStopCount"></span></a>
-                <a href="#" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></a>
-                <ul class="dropdown-menu" id="ulTauntonFilter">
-                    <li><a href="#" onclick="filterLibrariesMap('Taunton')">All Taunton stops</a></li>
-                    <li class="divider"></li>
-                </ul>
-            </div>
-
-            <div class="btn-group">
-                <a href="#" class="btn btn-info" onclick="filterLibrariesMap('Wells')">Wells stops  <span class="badge" id="spWellsStopCount"></span></a>
-                <a href="#" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></a>
-                <ul class="dropdown-menu" id="ulWellsFilter">
-                    <li><a href="#" onclick="filterLibrariesMap('Wells')">All Wells stops</a></li>
-                    <li class="divider"></li>
-                </ul>
-            </div><br /><br />
+            <div class="container" id="divMapFilters">
+                <a href="#" class="btn btn-default" onclick="filterLibrariesMap('All')">All Stops  <span class="badge" id="spStopCount"></span></a>
+            </div><br />
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h3 class="panel-title">Mobile Libraries Map</h3>
@@ -129,6 +102,7 @@
     <script src="bower_components/moment/moment.js"></script>
     <script src="bower_components/papaparse/papaparse.min.js"></script>
     <script src="js/somersetmobiles.js?v=2"></script>
+    <script src="js/mobilesconfig.js?v=2"></script>
     <script src="js/site.js?v=2"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyACfUNmYxQHTkb2QqsuPJP5gsnqkS-N8aQ&libraries=places&callback=initAutocomplete" async defer></script>
 </body>

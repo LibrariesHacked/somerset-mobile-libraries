@@ -1,5 +1,5 @@
 ﻿var SomersetMobiles = {
-    data: {},
+    routes: {},
     /////////////////////////////////////
     // Function: loadData
     // Loads the data asynchonously.
@@ -8,24 +8,24 @@
         Papa.parse('/data/somersetmobiles_geocoded.csv', {
             download: true,
             complete: function (results) {
-                stops = {};
                 $.each(results.data.splice(1), function (key, val) {
+                    var stopId = val[0];
                     var routeId = val[1] + val[2];
-                    stops[routeId] = {};
-                    stops[routeId]['Library'] = val[1];
-                    stops[routeId]['Route'] = val[2];
-                    stops[routeId]['Day'] = val[3];
-                    stops[routeId]['StartDate'] = val[4];
-                    stops[routeId]['Location'] = val[5];
-                    stops[routeId]['Postcode'] = val[6];
-                    stops[routeId]['Start'] = val[7];
-                    stops[routeId]['End'] = val[8];
-                    stops[routeId]['Address'] = val[9];
-                    stops[routeId]['Town'] = val[10];
-                    stops[routeId]['Lat'] = val[11];
-                    stops[routeId]['Lng'] = val[12];
+                    if (!this.routes[routeId]) this.routes[routeId] = { library: val[1], day: val[3], stops: {} };
+                    this.routes[routeId].stops[stopId] = {};
+                    this.routes[routeId].stops[stopId]['library'] = val[1];
+                    this.routes[routeId].stops[stopId]['route'] = val[2];
+                    this.routes[routeId].stops[stopId]['day'] = val[3];
+                    this.routes[routeId].stops[stopId]['startDate'] = val[4];
+                    this.routes[routeId].stops[stopId]['location'] = val[5];
+                    this.routes[routeId].stops[stopId]['postcode'] = val[6];
+                    this.routes[routeId].stops[stopId]['start'] = val[7];
+                    this.routes[routeId].stops[stopId]['end'] = val[8];
+                    this.routes[routeId].stops[stopId]['address'] = val[9];
+                    this.routes[routeId].stops[stopId]['town'] = val[10];
+                    this.routes[routeId].stops[stopId]['lat'] = val[11];
+                    this.routes[routeId].stops[stopId]['lng'] = val[12];
                 }.bind(this));
-                this.data = stops;
                 this.setDueDates();
                 callback(results.data);
             }.bind(this)
@@ -41,15 +41,14 @@
             url: '../data/' + routeId + '.xml',
             dataType: 'xml',
             success: function (xml) {
-                this.data[routeId].routeLine = [];
+                this.routes[routeId].routeLine = [];
                 $(xml).find('xls\\:RouteGeometry gml\\:pos').each(function (i, x) {
-                    this.data[routeId].routeLine.push([x.textContent.split(' ')[1], x.textContent.split(' ')[0]]);
-                });
+                    this.routes[routeId].routeLine.push([x.textContent.split(' ')[1], x.textContent.split(' ')[0]]);
+                }.bind(this));
+                callback();
             }.bind(this),
-            error: function (error) {
-                console.log(error);
-            }
-        }.bind(this));
+            error: function () { }
+        });
     },
     /////////////////////////////////////////////////////////////////////////////
     // Function: SetDueDates
@@ -57,22 +56,24 @@
     /////////////////////////////////////////////////////////////////////////////
     setDueDates: function (mobile) {
         var now = moment();
-        $.each(this.data, function (key, val) {
-            // Each library is on a timescale of once every 4 weeks.
-            // Add 4 weeks onto the first stop time until we get a datetime in the future.
-            var strStartDate = val['StartDate'] + ' ' + val['Start'];
-            var nextDateTime = moment(strStartDate, 'MM/DD/YYYY hh:mm');
-            var strEndDate = val['StartDate'] + ' ' + val['End'];
-            var nextDateTimeEnd = moment(strEndDate, 'MM/DD/YYYY hh:mm');
-            while (now > nextDateTimeEnd) {
-                nextDateTime.add(4, 'weeks');
-                nextDateTimeEnd.add(4, 'weeks');
-            }
-            this.data[key]['Due'] = nextDateTime.fromNow();
-            this.data[key]['DueSystem'] = nextDateTime.format();
-            this.data[key]['Departing'] = nextDateTimeEnd.format();
-            this.data[key]['DepartingSystem'] = nextDateTimeEnd.format();
-            this.data[key]['Duration'] = nextDateTimeEnd.diff(nextDateTime, 'minutes');
+        $.each(this.routes, function (key, val) {
+            $.each(val.stops, function (k, v) {
+                // Each library is on a timescale of once every 4 weeks.
+                // Add 4 weeks onto the first stop time until we get a datetime in the future.
+                var strStartDate = v['startDate'] + ' ' + v['start'];
+                var nextDateTime = moment(strStartDate, 'MM/DD/YYYY hh:mm');
+                var strEndDate = v['startDate'] + ' ' + v['end'];
+                var nextDateTimeEnd = moment(strEndDate, 'MM/DD/YYYY hh:mm');
+                while (now > nextDateTimeEnd) {
+                    nextDateTime.add(4, 'weeks');
+                    nextDateTimeEnd.add(4, 'weeks');
+                }
+                this.routes[key].stops[k]['due'] = nextDateTime.fromNow();
+                this.routes[key].stops[k]['dueSystem'] = nextDateTime.format();
+                this.routes[key].stops[k]['departing'] = nextDateTimeEnd.format();
+                this.routes[key].stops[k]['departingSystem'] = nextDateTimeEnd.format();
+                this.routes[key].stops[k]['duration'] = nextDateTimeEnd.diff(nextDateTime, 'minutes');
+            }.bind(this));
         }.bind(this));
     },
     /////////////////////////////////////////////////////////////////////////////
@@ -84,12 +85,25 @@
         // Refresh the due dates.
         this.setDueDates();
         var currentLocation = null;
-        $.each(this.data, function (key, val) {
-            if (val.Library == mobile && timeNow.isAfter(val.DueSystem)) {
-                currentLocation = key;
+        $.each(this.routes, function (key, val) {
+            if (val.library == mobile) {
+                $.each(val.stops, function (k, v) {
+                    if (timeNow.isAfter(v.dueSystem)) currentLocation = [key, k];
+                });
             }
         }.bind(this));
         return currentLocation;
+    },
+    /////////////////////////////////////////////////////////////////////////////
+    // Function: GetLibraries
+    // Get an array of libraries
+    /////////////////////////////////////////////////////////////////////////////
+    getLibraries: function () {
+        var libs = [];
+        $.each(this.routes, function (key, val) {
+            if (libs.indexOf(val.library) == -1) libs.push(val.library);
+        });
+        return libs;
     },
     /////////////////////////////////////////////////////////////////////////////
     // Function: GetNextLocation
@@ -100,10 +114,12 @@
         // Refresh the due dates.
         this.setDueDates();
         var nextLocation = null;
-        $.each(this.data, function (key, val) {
-            if (val.Library == mobile && timeNow.isBefore(val.DueSystem)) {
-                if (nextLocation == null) nextLocation = key;
-                if (val.DueSystem < this.data[nextLocation].DueSystem) nextLocation = key;
+        $.each(this.routes, function (key, val) {
+            if (val.library == mobile) {
+                $.each(val.stops, function (k, v) {
+                    if (nextLocation == null) nextLocation = [key, k];
+                    if (v.dueSystem < this.routes[nextLocation[0]].stops[nextLocation[1]].dueSystem) nextLocation = [key,k];
+                }.bind(this));
             }
         }.bind(this));
         return nextLocation;
@@ -116,9 +132,10 @@
     /////////////////////////////////////////////////////////////////////////////
     getDataTable: function () {
         var dataArray = [];
-        $.each(this.data, function (key, val) {
-            // Mobile,Route,Day,Town,Location,Postcode,Due,Duration
-            dataArray.push([val.Library, key, val.Route, val.Day, val.Town, val.Location, val.Postcode, val.Due, val.DueSystem, val.Duration]);
+        $.each(this.routes, function (key, val) {
+            $.each(val.stops, function (k, v) {
+                dataArray.push([val.library, k, val.route, val.day, v.town, v.location, v.postcode, v.due, v.dueSystem, v.duration]);
+            });
         });
         return dataArray;
     },
@@ -144,9 +161,11 @@
             if (unit == "N") dist = dist * 0.8684;
             return dist;
         };
-        $.each(this.data, function (key, val) {
-            val.CurrentDistance = distance(lat, lng, val.Lat, val.Lng);
-            this.data[key] = val;
+        $.each(this.routes, function (key, val) {
+            $.each(val.stops, function (k, v) {
+                v.currentDistance = distance(lat, lng, v.lat, v.lng);
+                this.routes[key][k] = v;
+            });
         }.bind(this));
         return;
     },
@@ -154,12 +173,14 @@
     // Function: GetNearest
     // Get the nearest stop to a particular location.
     // Input: None
-    // Output: The Id of the stop.
+    // Output: The route Id and stopId of the stop ([TauntonA, 3]).
     /////////////////////////////////////////////////////////////////////////////
     getNearest: function () {
         var currentNearest = null;
-        $.each(this.data, function (key, val) {
-            if (currentNearest == null || currentNearest.CurrentDistance > val.CurrentDistance) currentNearest = key;
+        $.each(this.routes, function (key, val) {
+            $.each(val.stops, function (k, v) {
+                if (currentNearest == null || v.currentDistance < this.routes[currentNearest[0]].stops[currentNearest[1]].currentDistance) currentNearest = [key,k];
+            });
         });
         return currentNearest;
     }

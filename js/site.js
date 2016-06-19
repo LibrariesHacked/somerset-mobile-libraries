@@ -2,7 +2,7 @@
 // Map
 // Initialise the map, set center, zoom, etc.
 /////////////////////////////////////////////////
-var map = L.map('map').setView([51.505, -0.09], 13);
+var map = L.map('map').setView([51.15, 2.72], 13);
 var filterLibrariesMap = function () { };
 
 L.tileLayer('http://{s}.tiles.mapbox.com/v3/librarieshacked.jefmk67b/{z}/{x}/{y}.png', {
@@ -25,22 +25,23 @@ function populateNearest() {
     $('#divNearest').empty();
     $('#divNearestAdditional').empty();
     var place = autocomplete.getPlace();
-    var lat = place.geometry.location.lat();
-    var lng = place.geometry.location.lng();
-    SomersetMobiles.setCurrentDistances(lat, lng);
+    SomersetMobiles.setCurrentDistances(place.geometry.location.lat(), place.geometry.location.lng());
     var nearest = SomersetMobiles.getNearest();
-    var nearestStop = SomersetMobiles.data[nearest];
-    $('#divNearest').html('<span class="lead">Nearest stop ' + nearestStop.Location + ', ' + nearestStop.Town + '.  Arriving ' + nearestStop.Due + ' (' + moment(nearestStop.DueSystem).format('Do MMM hh:mm a') + ')</span>');
+    var nearestRoute = SomersetMobiles.routes[nearest[0]];
+    var nearestStop = nearestRoute.stops[nearest[1]];
+    $('#divNearest').html('<span class="lead">Nearest stop ' + nearestStop.location + ', ' + nearestStop.town + '. '
+        + 'Arriving ' + nearestStop.due + ' (' + moment(nearestStop.dueSystem).format('Do MMM hh:mma') + '). '
+        + nearestStop.curentDistance + ' miles away.</span>');
 }
 
-/////////////////////////
-//
-/////////////////////////
+/////////////////////////////
+// Extend Leaflet Polyline.
+/////////////////////////////
 L.Polyline = L.Polyline.extend({
     getDistance: function (system) {
         // distance in meters
-        var mDistance = 0,
-            length = this._latlngs.length;
+        var mDistance = 0;
+        var length = this._latlngs.length;
         for (var i = 1; i < length; i++) {
             mDistance += this._latlngs[i].distanceTo(this._latlngs[i - 1]);
         }
@@ -63,78 +64,106 @@ $(function () {
     /////////////////////////////////////////////////
     SomersetMobiles.loadData(function () {
 
+        // First get how many mobile libraries we have.
+        var libraries = SomersetMobiles.getLibraries();
+
+        // Set up the HTML departure for each library
+        $.each(libraries, function (key, lib) {
+            $('#divDepartures').append('<div class="col col-lg-4 col-md-4">'
+                + '<div class="alert alert-' + mobilesConfig.libBootswatchClass[lib] + '">'
+                + lib + '<br />'
+                + '<span id="sp' + lib + 'CurrentPosition"></span>'
+                + '</div></div>');
+
+            $('#divMapFilters').append('<div class="btn-group">'
+                    + '<a href="#" class="btn btn-' + mobilesConfig.libBootswatchClass[lib] + '" onclick="filterLibrariesMap(\'' + lib + '\')">' + lib + ' Stops  <span class="badge" id="sp' + lib + 'StopCount"></span></a>'
+                    + '<a href="#" class="btn btn-' + mobilesConfig.libBootswatchClass[lib] + ' dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></a>'
+                    + '<ul class="dropdown-menu" id="ul' + lib + 'Filter">'
+                    + '<li><a href="#" onclick="filterLibrariesMap(\'' + lib + '\')">All ' + lib + ' stops</a></li>'
+                    + '<li class="divider"></li>'
+                    + '</ul></div>');
+        });
+
+        /////////////////////////////////////////////
+        // Function: SetCurrentPositions
+        // Sets the current positions for each library on the
+        // departures board.
+        ////////////////////////////////////////////////
         var setCurrentPositions = function () {
-            // Set current positions.
-            var tauntonCurrent = SomersetMobiles.getCurrentLocation('Taunton');
-            var tauntonNext = SomersetMobiles.getNextLocation('Taunton');
-            if (tauntonCurrent != null) {
-                $('#spTauntonCurrentPosition').html('<span class="lead">Currently at ' + SomersetMobiles.data[tauntonCurrent]['Location'] + ', ' + SomersetMobiles.data[tauntonCurrent]['Town'] + ' for another ' + moment(SomersetMobiles.data[tauntonCurrent]['DepartingSystem']).diff(moment(), 'minutes') + ' minutes</span>');
-            } else {
-                $('#spTauntonCurrentPosition').html('<span class="lead">Arriving at ' + SomersetMobiles.data[tauntonNext]['Location'] + ', ' + SomersetMobiles.data[tauntonNext]['Town'] + ' ' + SomersetMobiles.data[tauntonNext]['Due'] + '</span>');
-            }
-            var wellsCurrent = SomersetMobiles.getCurrentLocation('Wells');
-            var wellsNext = SomersetMobiles.getNextLocation('Wells');
-            if (wellsCurrent != null) {
-                $('#spWellsCurrentPosition').html('<span class="lead">Currently at ' + SomersetMobiles.data[wellsCurrent]['Location'] + ', ' + SomersetMobiles.data[wellsCurrent]['Town'] + ' for another ' + moment(SomersetMobiles.data[wellsCurrent]['DepartingSystem']).diff(moment(), 'minutes') + ' minutes</span>');
-            } else {
-                $('#spWellsCurrentPosition').html('<span class="lead">Arriving at ' + SomersetMobiles.data[wellsNext]['Location'] + ', ' + SomersetMobiles.data[wellsNext]['Town'] + ' ' + SomersetMobiles.data[wellsNext]['Due'] + '</span>');
-            }
+            $.each(libraries, function (key, lib) {
+                // Get current and next positions.
+                var current = SomersetMobiles.getCurrentLocation(lib);
+                if (current) var currentRoute = SomersetMobiles.routes[current[0]];
+                if (current) var currentStop = currentRoute.stops[current[1]];
+                var next = SomersetMobiles.getNextLocation(lib);
+                var nextRoute = SomersetMobiles.routes[next[0]];
+                var nextStop = nextRoute.stops[next[1]];
+
+                if (current != null) {
+                    $('#sp' + lib + 'CurrentPosition').html('<span class="lead">Currently at ' + currentStop.location + ', ' + currentStop.town + ' for another ' + moment(currentStop.departingSystem).diff(moment(), 'minutes') + ' minutes</span>');
+                } else {
+                    $('#sp' + lib + 'CurrentPosition').html('<span class="lead">Expected at ' + nextStop.location + ', ' + nextStop.town + ' ' + nextStop.due + '</span>');
+                }
+            });
         };
         setCurrentPositions();
         var markersArrays = {};
         var markerGroups = {};
         var markersBounds = {};
         var routes = {};
-        $.each(SomersetMobiles.data, function (key, val) {
-            // Add items to the map.
-            if (val.Lat) {
-                var popup = L.popup({
-                    maxWidth: 160,
-                    maxHeight: 140,
-                    closeButton: false,
-                    className: ''
-                }).setContent('<h4>' + val.Location + ', ' + val.Town + '</h4>' + moment(val.DueSystem).format('DD MMM YYYY hh:mm') + '<br/>' + 'Route ' + val.Route + '<br/>' + val.Duration + ' minute stop');
-                var className = 'taunton';
 
-                // Set up the associative arrays for layers and bounds
-                if (!markersArrays[val.RouteId]) markersArrays[val.RouteId] = [];
-                if (!markersBounds[val.RouteId]) markersBounds[val.RouteId] = [];
+        $.each(SomersetMobiles.routes, function (key, val) {
+            $.each(val.stops, function (k, v) {
+                // Add items to the map.
+                if (v.lat) {
+                    var popup = L.popup({
+                        maxWidth: 160,
+                        maxHeight: 140,
+                        closeButton: false,
+                        className: ''
+                    }).setContent('<h4>' + v.location + ', ' + v.town + '</h4>' + moment(v.dueSystem).format('DD MMM YYYY hh:mm') + '<br/>' + 'Route ' + v.route + '<br/>' + v.duration + ' minute stop');
 
-                if (val.Library == 'Wells') className = 'wells';
-                var stopIcon = L.divIcon({ html: '<div><span>' + val.Route + '</span></div>', className: "marker-cluster marker-cluster-" + className, iconSize: new L.Point(20, 20) });
-                markersArrays[val.RouteId].push(L.marker([val.Lat, val.Lng], { icon: stopIcon }).bindPopup(popup, { className: className + '-popup' }));
-                markersBounds[val.RouteId].push([val.Lat, val.Lng]);
-            }
+                    // Set up the associative arrays for layers and bounds
+                    if (!markersArrays[key]) markersArrays[key] = [];
+                    if (!markersBounds[key]) markersBounds[key] = [];
+
+                    var stopIcon = L.divIcon({ html: '<div><span>' + v.route + '</span></div>', className: "marker-cluster marker-cluster-" + v.library.toLowerCase(), iconSize: new L.Point(20, 20) });
+                    markersArrays[key].push(L.marker([v.lat, v.lng], { icon: stopIcon }).bindPopup(popup, { className: v.library.toLowerCase() + '-popup' }));
+                    markersBounds[key].push([v.lat, v.lng]);
+                }
+            });
         });
+
         // Add marker groups for all the routes (and overall library)
-        $.each(SomersetMobiles.data, function (key, val) {
-            // Add the library marker group
-            if (!markerGroups[val.Library]) {
-                markerGroups[val.Library] = L.featureGroup($.map(markersArrays, function (v, k) {
-                    if (k.indexOf(val.Library) != -1) return v;
-                }));
-            }
-            // Add the route marker group
-            if (!markerGroups[val.RouteId]) {
-                markerGroups[val.RouteId] = L.featureGroup($.map(markersArrays, function (v, k) {
-                    if (k == val.RouteId) return v;
-                }));
-                if (val.Library == 'Taunton') $('#ulTauntonFilter').append('<li><a href="#" onclick="filterLibrariesMap(\'' + val.RouteId + '\')">Route ' + val.Route + '</a></li>');
-                if (val.Library == 'Wells') $('#ulWellsFilter').append('<li><a href="#" onclick="filterLibrariesMap(\'' + val.RouteId + '\')">Route ' + val.Route + '</a></li>');
-            }
+        $.each(SomersetMobiles.routes, function (key, val) {
+            $.each(val.stops, function (k, v) {
+                // Add the library marker group
+                if (!markerGroups[v.library]) {
+                    markerGroups[v.library] = L.featureGroup($.map(markersArrays, function (x, y) {
+                        if (y.indexOf(v.library) != -1) return x;
+                    }));
+                }
+                // Add the route marker group
+                if (!markerGroups[v.library + v.route]) {
+                    markerGroups[v.library + v.route] = L.featureGroup($.map(markersArrays, function (x, y) {
+                        if (y == (v.library + v.route)) return x;
+                    }));
+                    $('#ul' + v.library  + 'Filter').append('<li><a href="#" onclick="filterLibrariesMap(\'' + v.library + v.route + '\')">Route ' + v.route + '</a></li>');
+                }
+            });
         });
-        // Initial setup - Add Taunton and Wells and the overall bounds.
-        map.addLayer(markerGroups['Taunton']);
-        map.addLayer(markerGroups['Wells']);
+
+        // Initial setup - Add all libraries and the overall bounds
+        $.each(libraries, function (key, lib) {
+            map.addLayer(markerGroups[lib]);
+            $('#sp' + lib + 'StopCount').text($.map(markersArrays, function (v, k) { if (k.indexOf(lib) != -1) return v; }).length);
+        });
+        $('#spStopCount').text($.map(markersArrays, function (v, k) { return v; }).length);
+
         map.fitBounds($.map(markersBounds, function (val, key) {
             return val;
         }));
         var currentFilter = 'All';
-
-        // Set the stop counts
-        $('#spTauntonStopCount').text($.map(markersArrays, function (v, k) { if (k.indexOf('Taunton') != -1) return v; }).length);
-        $('#spWellsStopCount').text($.map(markersArrays, function (v, k) { if (k.indexOf('Wells') != -1) return v; }).length);
-        $('#spStopCount').text($.map(markersArrays, function (v, k) { return v; }).length);
 
         // Set up the option to show either set of library stops
         filterLibrariesMap = function (filter) {
@@ -142,9 +171,10 @@ $(function () {
             this.event.preventDefault();
             if (currentFilter == filter) return false;
             if (currentFilter == 'All') {
-                map.removeLayer(markerGroups['Taunton']);
-                map.removeLayer(markerGroups['Wells']);
-            } else if (currentFilter == 'Taunton' || currentFilter == 'Wells' ){
+                $.each(libraries, function (key, lib) {
+                    map.removeLayer(markerGroups[lib]);
+                });
+            } else if (libraries.indexOf(currentFilter) != -1){
                 map.removeLayer(markerGroups[currentFilter]);
             } else {
                 map.removeLayer(markerGroups[currentFilter]);
@@ -152,8 +182,9 @@ $(function () {
                 map.removeLayer(routes[currentFilter]);
             }
             if (filter == 'All') {
-                map.addLayer(markerGroups['Taunton']);
-                map.addLayer(markerGroups['Wells']);
+                $.each(libraries, function (key, lib) {
+                    map.addLayer(markerGroups[lib]);
+                });
                 map.fitBounds($.map(markersBounds, function (val, key) {
                     return val;
                 }));
@@ -161,35 +192,31 @@ $(function () {
                 map.addLayer(markerGroups[filter]);
 
                 var updateQuickStats = function (filter) {
-                    var className = 'warning';
-                    if (filter.indexOf('Wells') != -1) className = 'info';
+                    var className = mobilesConfig.libBootswatchClass[filter.substring(0, filter.length - 1)];
                     $('#spQuickStats').html('<span class="text-' + className + '">' + filter + ' quick stats.</span> '
                         + 'Distance travelled: <span class="text-' + className + '">' + routes[filter].getDistance('imperial') + ' miles</span>. '
                         + 'Number of stops: <span class="text-' + className + '">' + markersArrays[filter].length + '</span>');
                 };
 
-                if (filter == 'Taunton' || filter == 'Wells') {
+                if (libraries.indexOf(filter) != -1) {
                     map.fitBounds($.map(markersBounds, function (val, key) {
                         if (key.indexOf(filter) != -1) return val;
                     }));
                 } else {
                     // We also want to add the route lines
-
                     if (!routes[filter]) {
                         var routeLatLngs = [];
-                        var lineColour = '#F47C3C';
-                        if (filter.indexOf('Wells') != -1) lineColour = '#29ABE0';
+                        var lineColour = mobilesConfig.routeColour[filter.substring(0, filter.length -1)];
                         SomersetMobiles.loadRoute(filter, function () {
-                            $.each(SomersetMobiles.data[filter].routeLine, function (latlng) {
+                            $.each(SomersetMobiles.routes[filter].routeLine, function (i, latlng) {
                                 routeLatLngs.push(L.latLng(latlng[0], latlng[1]));
                             });
+                            var routeLine = L.polyline(routeLatLngs, { color: lineColour, dashArray: '20,15', opacity: 0.4 });
+                            routes[filter] = routeLine;
+                            map.addLayer(routes[filter]);
+                            // Update the quick stats bar
+                            updateQuickStats(filter);
                         });
-                        var routeLine = L.polyline(routeLatLngs, { color: lineColour, dashArray: '20,15', opacity: 0.4 });
-                        routes[filter] = routeLine;
-                        map.addLayer(routes[filter]);
-
-                        // Update the quick stats bar
-                        updateQuickStats(filter);
                     } else {
                         map.addLayer(routes[filter]);
                     }
