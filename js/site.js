@@ -253,7 +253,7 @@ $(function () {
                         { title: "Town" },
                         { title: "Location" },
                         { title: "Postcode" },
-                        { title: "Due" },
+                        { title: "Due", iDataSort: 8 },
                         { title: "DueSystem", visible: false },
                         { title: "Duration" }
                     ],
