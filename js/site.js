@@ -31,7 +31,7 @@ function populateNearest() {
     var nearestStop = nearestRoute.stops[nearest[1]];
     $('#divNearest').html('<span class="lead">Nearest stop ' + nearestStop.location + ', ' + nearestStop.town + '. '
         + 'Arriving ' + nearestStop.due + ' (' + moment(nearestStop.dueSystem).format('Do MMM hh:mma') + '). '
-        + nearestStop.curentDistance + ' miles away.</span>');
+        + nearestStop.currentDistance + ' miles away.</span>');
 }
 
 /////////////////////////////
@@ -67,6 +67,10 @@ $(function () {
         // First get how many mobile libraries we have.
         var libraries = SomersetMobiles.getLibraries();
 
+        $('#btnAllStops').on('click', function () {
+            filterLibrariesMap('All');
+            return false;
+        });
         // Set up the HTML departure for each library
         $.each(libraries, function (key, lib) {
             $('#divDepartures').append('<div class="col col-lg-4 col-md-4">'
@@ -76,12 +80,17 @@ $(function () {
                 + '</div></div>');
 
             $('#divMapFilters').append('<div class="btn-group">'
-                    + '<a href="#" class="btn btn-' + mobilesConfig.libBootswatchClass[lib] + '" onclick="filterLibrariesMap(\'' + lib + '\')">' + lib + ' Stops  <span class="badge" id="sp' + lib + 'StopCount"></span></a>'
+                    + '<a href="#" id="btnAllStops' + lib + '" class="btn btn-' + mobilesConfig.libBootswatchClass[lib] + '">' + lib + ' Stops  <span class="badge" id="sp' + lib + 'StopCount"></span></a>'
                     + '<a href="#" class="btn btn-' + mobilesConfig.libBootswatchClass[lib] + ' dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></a>'
                     + '<ul class="dropdown-menu" id="ul' + lib + 'Filter">'
-                    + '<li><a href="#" onclick="filterLibrariesMap(\'' + lib + '\')">All ' + lib + ' stops</a></li>'
+                    + '<li><a href="#" id="aAllStops' + lib + '">All ' + lib + ' stops</a></li>'
                     + '<li class="divider"></li>'
                     + '</ul></div>');
+
+            $('#btnAllStops' + lib + ',' + '#aAllStops' + lib).on('click', function () {
+                filterLibrariesMap(lib);
+                return false;
+            });
         });
 
         /////////////////////////////////////////////
@@ -148,7 +157,11 @@ $(function () {
                     if (y == (val.library + val.route)) return x;
                 }));
             }
-            $('#ul' + val.library + 'Filter').append('<li><a href="#" onclick="filterLibrariesMap(\'' + val.library + val.route + '\')">Route ' + val.route + '</a></li>');
+            $('#ul' + val.library + 'Filter').append('<li><a href="#" id="aFilter' + val.library + val.route + '")">Route ' + val.route + '</a></li>');
+            $('#aFilter' + val.library + val.route).on('click', function () {
+                filterLibrariesMap(val.library + val.route);
+                return false;
+            });
         });
 
         // Initial setup - Add all libraries and the overall bounds
@@ -166,7 +179,6 @@ $(function () {
         // Set up the option to show either set of library stops
         filterLibrariesMap = function (filter) {
             $('#spQuickStats').html('');
-            this.event.preventDefault();
             if (currentFilter == filter) return false;
             if (currentFilter == 'All') {
                 $.each(libraries, function (key, lib) {

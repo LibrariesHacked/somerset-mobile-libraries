@@ -38,7 +38,7 @@
             dataType: 'xml',
             success: function (xml) {
                 this.routes[routeId].routeLine = [];
-                $(xml).find('xls\\:RouteGeometry gml\\:pos').each(function (i, x) {
+                $(xml).find("xls\\:RouteGeometry, RouteGeometry").find("gml\\:pos, pos").each(function (i, x) {
                     this.routes[routeId].routeLine.push([x.textContent.split(' ')[1], x.textContent.split(' ')[0]]);
                 }.bind(this));
                 callback();
@@ -114,7 +114,7 @@
             if (val.library == mobile) {
                 $.each(val.stops, function (k, v) {
                     if (nextLocation == null) nextLocation = [key, k];
-                    if (v.dueSystem < this.routes[nextLocation[0]].stops[nextLocation[1]].dueSystem) nextLocation = [key,k];
+                    if (v.dueSystem < this.routes[nextLocation[0]].stops[nextLocation[1]].dueSystem) nextLocation = [key, k];
                 }.bind(this));
             }
         }.bind(this));
@@ -159,9 +159,8 @@
         };
         $.each(this.routes, function (key, val) {
             $.each(val.stops, function (k, v) {
-                v.currentDistance = distance(lat, lng, v.lat, v.lng);
-                this.routes[key][k] = v;
-            });
+                this.routes[key].stops[k].currentDistance = Math.round(distance(lat, lng, v.lat, v.lng));
+            }.bind(this));
         }.bind(this));
         return;
     },
@@ -175,9 +174,9 @@
         var currentNearest = null;
         $.each(this.routes, function (key, val) {
             $.each(val.stops, function (k, v) {
-                if (currentNearest == null || v.currentDistance < this.routes[currentNearest[0]].stops[currentNearest[1]].currentDistance) currentNearest = [key,k];
-            });
-        });
+                if (currentNearest == null || v.currentDistance < this.routes[currentNearest[0]].stops[currentNearest[1]].currentDistance) currentNearest = [key, k];
+            }.bind(this));
+        }.bind(this));
         return currentNearest;
     }
 };
