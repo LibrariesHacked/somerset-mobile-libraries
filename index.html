@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Somerset Mobile Libraries</title>
+    <title>somerset mobile libraries</title>
     <link href="bower_components/bootswatch/sandstone/bootstrap.min.css" rel="stylesheet">
     <link href="bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet">
     <link href="bower_components/datatables.net-buttons-bs/css/buttons.bootstrap.min.css" rel="stylesheet">
     <link href="bower_components/leaflet/dist/leaflet.css" rel="stylesheet">
-    <link href="css/site.css?v=2" rel="stylesheet">
+    <link href="css/site.css?v=3" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -18,7 +18,7 @@
       <![endif]-->
 </head>
 <body>
-    <nav class="navbar">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
@@ -27,13 +27,13 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <span class="navbar-brand">{ Somerset:Mobiles }</span>
+                <span class="navbar-brand">{ libraries: somerset mobiles }</span>
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#departures">Departures <span class="sr-only">(current)</span></a></li>
-                    <li><a href="#mapview">Map</a></li>
-                    <li><a href="#timetable">Full timetable</a></li>
+                    <li class="active"><a href="#departures">departures <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#mapview">map</a></li>
+                    <li><a href="#timetable">full timetable</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <!--<li><a href="#">Info</a></li>-->
@@ -47,17 +47,17 @@
             <div class="col col-lg-4 col-md-4">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h3 class="panel-title">Find your nearest stop</h3>
+                        <h3 class="panel-title">find your nearest stop</h3>
                     </div>
                     <div class="panel-body">
                         <div class="form-group">
-                            <label class="control-label" for="txtAddressSearch">Address</label>
+                            <label class="control-label" for="txtAddressSearch">address</label>
                             <input class="form-control" id="txtAddressSearch" placeholder="Enter your address" onFocus="geolocate()" type="text">
                         </div>
                         <div id="divNearest" class="alert alert-dismissible alert-success">
                         </div>
                         <div id="divNearestAdditional" class="well"></div>
-                        <a href="#" id="btnFindAlternative" onclick="findAlternative()" class="btn btn-danger btn-sm">Alternative</a>
+                        <a href="#" id="btnFindAlternative" onclick="findAlternative()" class="btn btn-danger btn-sm">alternative</a>
                         <a href="#" id="btnZoomOnMap" onclick="zoomOnMap()" class="btn btn-primary btn-sm">Zoom on map</a>
                     </div>
                 </div>
@@ -72,7 +72,7 @@
             </div><br />
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h3 class="panel-title">Mobile Libraries Map</h3>
+                    <h3 class="panel-title">mobile library stops map</h3>
                     <span id="spQuickStats"></span>
                 </div>
                 <div id="map"></div>
@@ -82,7 +82,7 @@
     <div class="container">
         <a name="timetable"></a>
         <div class="panel panel-default">
-            <div class="panel-heading">Full timetable</div>
+            <div class="panel-heading">full timetable</div>
             <div class="panel-body">
                 <table id="tblFullTimetable" class="table table-condensed"></table>
             </div>
@@ -91,7 +91,7 @@
     <hr />
     <footer>
         <div class="container">
-            <p>A <a href="https://www.librarieshacked.org" target="_blank">{ Libraries:Hacked }</a> Project</p>
+            <p>a <a href="https://www.librarieshacked.org" target="_blank">{ libraries: hacked }</a> project available on <a href="https://github.com/LibrariesHacked/somerset-mobile-libraries" target="_blank" title="mobile libraries on GitHub">GitHub</a></p>
         </div>
     </footer>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
