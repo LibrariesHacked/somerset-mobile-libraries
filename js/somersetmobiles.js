@@ -178,5 +178,22 @@
             }.bind(this));
         }.bind(this));
         return currentNearest;
+    },
+    /////////////////////////////////////////////////////////////////////////////
+    // Function: GetLibraryTotalHours
+    // Gets the total hours of a mobile library (over the timetable duration).
+    // Input: Library Name
+    // Output: The route Id and stopId of the stop ([TauntonA, 3]).
+    /////////////////////////////////////////////////////////////////////////////
+    getLibraryTotalHours: function (lib) {
+        var duration = 0;
+        $.each(this.routes, function (key, val) {
+            if (val.library == lib) {
+                $.each(val.stops, function (k, v) {
+                    duration += v.duration;
+                }.bind(this));
+            }
+        }.bind(this));
+        return duration;
     }
 };

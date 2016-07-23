@@ -2,7 +2,7 @@
 // Map
 // Initialise the map, set center, zoom, etc.
 /////////////////////////////////////////////////
-var map = L.map('map').setView(mobilesConfig.mapInitialView, 13);
+var map = L.map('map').setView(mobilesConfig.mapInitialView, 12);
 var filterLibrariesMap = function () { };
 
 L.tileLayer('http://{s}.tiles.mapbox.com/v3/librarieshacked.jefmk67b/{z}/{x}/{y}.png', {
@@ -85,7 +85,7 @@ $(function () {
                     + '<ul class="dropdown-menu" id="ul' + lib + 'Filter">'
                     + '<li><a href="#" id="aAllStops' + lib + '">All ' + lib + ' stops</a></li>'
                     + '<li class="divider"></li>'
-                    + '</ul></div>');
+                    + '</ul></div>  ');
 
             $('#btnAllStops' + lib + ',' + '#aAllStops' + lib).on('click', function () {
                 filterLibrariesMap(lib);
@@ -136,7 +136,7 @@ $(function () {
                     if (!markersArrays[key]) markersArrays[key] = [];
                     if (!markersBounds[key]) markersBounds[key] = [];
 
-                    var stopIcon = L.divIcon({ html: '<div><span>' + val.route + '</span></div>', className: "marker-cluster marker-cluster-" + val.library.toLowerCase(), iconSize: new L.Point(20, 20) });
+                    var stopIcon = L.divIcon({ html: '<div><span>' + val.route + '</span></div>', className: "marker-cluster marker-cluster-" + val.library.toLowerCase(), iconSize: new L.Point(15, 15) });
                     markersArrays[key].push(L.marker([v.lat, v.lng], { icon: stopIcon }).bindPopup(popup, { className: val.library.toLowerCase() + '-popup' }));
                     markersBounds[key].push([v.lat, v.lng]);
                 }
@@ -210,6 +210,15 @@ $(function () {
                     map.fitBounds($.map(markersBounds, function (val, key) {
                         if (key.indexOf(filter) != -1) return val;
                     }));
+                    var className = mobilesConfig.libBootswatchClass[filter];
+                    var stopCount = 0;
+                    $.each(markersArrays, function (key,val) {
+                        if (key.indexOf(filter) != -1) stopCount += val.length;
+                    });
+                    var duration = SomersetMobiles.getLibraryTotalHours(filter);
+                    $('#spQuickStats').html('<span class="text-' + className + '">' + filter + ' Mobile Library quick stats.</span> '
+                        + 'Number of stops: <span class="text-' + className + '">' + stopCount + '</span> '
+                        + 'Total duration: ' + duration);
                 } else {
                     // We also want to add the route lines
                     if (!routes[filter]) {

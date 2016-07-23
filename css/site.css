@@ -61,18 +61,18 @@ tr.grouping {
 }
 
     .marker-cluster div {
-        width: 20px;
+        width: 15px;
         color: #fff;
-        height: 20px;
+        height: 15px;
         margin-left: 0px;
         margin-top: 0px;
         text-align: center;
-        border-radius: 10px;
-        font: 9px "Helvetica Neue", Arial, Helvetica, sans-serif;
+        border-radius: 7px;
+        font-size: 8px;
     }
 
     .marker-cluster span {
-        line-height: 20px;
+        line-height: 15px;
     }
 
 /* css to customize Leaflet default styles  */
