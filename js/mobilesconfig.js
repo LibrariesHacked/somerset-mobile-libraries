@@ -1,5 +1,6 @@
 ﻿var mobilesConfig = {
-    mapInitialView:[51.15, 2.72],
+    mapInitialView: [51.15, 2.72],
+    datafile: 'somersetmobiles.csv',
     libBootswatchClass: {
         Taunton: 'warning',
         Wells: 'info'

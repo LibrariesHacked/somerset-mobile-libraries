@@ -1,227 +1,227 @@
-Id,Mobile,Route,Day,StartDate,Location,Postcode,Start,End
-1,Taunton,A,Tuesday,4/12/2016,Week Lane,TA22 9JN,10:15,10:45
-2,Taunton,A,Tuesday,4/12/2016,Winsford Centre,TA24 7JQ,10:55,11:25
-3,Taunton,A,Tuesday,4/12/2016,Folly Cottage,TA24 7JL,11:35,11:55
-4,Taunton,A,Tuesday,4/12/2016,Withypool Post Office,TA24 7QP,12:40,13:00
-5,Taunton,A,Tuesday,4/12/2016,Sportsman Inn,EX36 3LU,13:20,13:40
-6,Taunton,A,Tuesday,4/12/2016,High Street,TA22 9QW,13:55,14:15
-7,Taunton,B,Wednesday,4/13/2016,Lower Holworthy,TA22 9NY,9:40,9:50
-8,Taunton,B,Wednesday,4/13/2016,Wimbleball Lake,TA22 9NU,10:00,10:20
-9,Taunton,B,Wednesday,4/13/2016,George Inn,TA22 9NL,10:25,10:50
-10,Taunton,B,Wednesday,4/13/2016,Combeshead,TA22 9LE,10:55,11:05
-11,Taunton,B,Wednesday,4/13/2016,Exford School,TA24 7PP,11:25,11:55
-12,Taunton,B,Wednesday,4/13/2016,Whiterock,TA24 7JT,12:10,12:20
-13,Taunton,B,Wednesday,4/13/2016,Hillcrest,TA24 7SL,12:30,12:40
-14,Taunton,B,Wednesday,4/13/2016,Red Deer House,TA24 7JY,13:20,13:35
-15,Taunton,B,Wednesday,4/13/2016,West Ley,TA24 7NQ,13:40,13:50
-16,Taunton,B,Wednesday,4/13/2016,Mill Lane House,TA24 7NS,14:00,14:15
-17,Taunton,B,Wednesday,4/13/2016,Exford Centre,TA24 7PU,14:25,15:00
-18,Taunton,B,Wednesday,4/13/2016,Blagdon View,TA24 7ED,15:15,15:35
-19,Taunton,B,Wednesday,4/13/2016,Wheddon Cross car park,TA24 7DY,15:40,15:55
-20,Taunton,C,Thursday,4/14/2016,Appley Pavilion,TA21 0HH,9:30,9:55
-21,Taunton,C,Thursday,4/14/2016,Raddington Mill,TA4 2QW,10:20,10:30
-22,Taunton,C,Thursday,4/14/2016,Blackwell Farm,TA4 2QN,10:35,10:40
-23,Taunton,C,Thursday,4/14/2016,Gamblyn Cottage,TA4 2DF,10:45,10:55
-24,Taunton,C,Thursday,4/14/2016,Roborough,TA4 2JD,11:10,11:30
-25,Taunton,C,Thursday,4/14/2016,Middleton Lodge,TA4 2EN,11:45,12:00
-26,Taunton,C,Thursday,4/14/2016,Glebe Farm,TA4 3PR,12:25,12:35
-27,Taunton,C,Thursday,4/14/2016,Blackdown View lay-by (School),TA2 6TB,13:00,13:15
-28,Taunton,D,Friday,4/15/2016,Kingsbridge,TA23 0SH,9:45,10:00
-29,Taunton,D,Friday,4/15/2016,Cutcombe School,TA24 7DZ,10:15,10:45
-30,Taunton,D,Friday,4/15/2016,Higher Park Lane,TA24 7AG,10:55,11:15
-31,Taunton,D,Friday,4/15/2016,Timberscombe School & Playgroup,TA24 7TY,11:30,12:00
-32,Taunton,D,Friday,4/15/2016,Cheeky Cherubs Nursery,TA24 5EB,12:50,13:20
-33,Taunton,D,Friday,4/15/2016,Butlins- Billy�s All Stars Nursery,TA24 5SH,13:25,13:55
-34,Taunton,D,Friday,4/15/2016,Willow Grove ,TA23 0PT,14:10,14:25
-35,Taunton,E,Wednesday,4/20/2016,"Bishops Hull Rd, Memorial (Plygrp)",TA1 5HR,9:30,9:45
-36,Taunton,E,Wednesday,4/20/2016,Leach�s Field,TA2 8JL,10:05,10:35
-37,Taunton,E,Wednesday,4/20/2016,Spaxton School,TA5 1BS,10:55,11:30
-38,Taunton,E,Wednesday,4/20/2016,The Cottage (Bottom of hill),TA5 1DR,11:45,11:55
-39,Taunton,E,Wednesday,4/20/2016,Broomfield Church,TA5 2EQ,12:05,12:20
-40,Taunton,E,Wednesday,4/20/2016,Entrance to Halswell House,TA5 2DE,12:40,13:00
-41,Taunton,F,Thursday,4/21/2016,Village Hall,TA3 5QQ,9:35,10:05
-42,Taunton,F,Thursday,4/21/2016,Neroche School,TA19 9RG,10:25,11:15
-43,Taunton,F,Thursday,4/21/2016,Isle Brewers Garage,TA3 6QN,11:40,11:55
-44,Taunton,F,Thursday,4/21/2016,Isle Abbotts Village Hall,TA3 6RR,12:10,12:30
-45,Taunton,F,Thursday,4/21/2016,Curry Mallet Post Office,TA3 6SY,12:40,12:55
-46,Taunton,F,Thursday,4/21/2016,St Martins Close,TA3 6PW,13:40,14:00
-47,Taunton,F,Thursday,4/21/2016,Parsonage Place,TA10 0EW,14:15,14:40
-48,Taunton,F,Thursday,4/21/2016,Stoke St Gregory Village Hall,TA3 6EG,15:00,15:40
-49,Taunton,F,Thursday,4/21/2016,Stoke Road,TA3 6HW,15:50,16:05
-50,Taunton,F,Thursday,4/21/2016,Queens Square,TA3 6JS,16:10,16:40
-51,Taunton,G,Friday,4/22/2016,Stockmoor School,TA6 6AH,9:30,10:00
-52,Taunton,G,Friday,4/22/2016,Gardens Children�s Centre,TA6 5HT,10:15,10:45
-53,Taunton,G,Friday,4/22/2016,College Children�s Centre,TA6 4PZ,10:55,11:55
-54,Taunton,G,Friday,4/22/2016,Chedzoy Lane (Pre-school),TA7 8QW,12:05,12:50
-55,Taunton,G,Friday,4/22/2016,Stawell Village Hall,TA7 9AE,13:00,13:15
-56,Taunton,G,Friday,4/22/2016,"Tapmoor Road, Junction",TA7 9BZ,14:00,14:25
-57,Taunton,G,Friday,4/22/2016,Community Centre,TA7 0EX,14:45,15:45
-58,Taunton,G,Friday,4/22/2016,"Main Road, Bus Stop",TA7 0NJ,15:55,16:15
-59,Taunton,H,Tuesday,4/26/2016,Otterhampton School,TA5 2QS,9:45,10:40
-60,Taunton,H,Tuesday,4/26/2016,Harbour,TA5 2QU,10:45,11:05
-61,Taunton,H,Tuesday,4/26/2016,Combwich Post Office,TA5 2QW,11:10,11:30
-62,Taunton,H,Tuesday,4/26/2016,Captains,TA5 2PY,11:40,11:55
-63,Taunton,H,Tuesday,4/26/2016,Ridgeway Lane (Telephone Box),TA5 1TN,12:05,12:20
-64,Taunton,H,Tuesday,4/26/2016,Shurton Inn,TA5 1QE,12:35,12:55
-65,Taunton,H,Tuesday,4/26/2016,Greyhound Inn,TA5 1QR,13:40,14:10
-66,Taunton,H,Tuesday,4/26/2016,Town Close No 30,TA5 1RN,14:15,14:40
-67,Taunton,H,Tuesday,4/26/2016,Brook Street,TA5 2HP,15:00,15:30
-68,Taunton,I,Wednesday,4/27/2016,Dinhams Farm Corner,TA3 5JG,9:35,9:45
-69,Taunton,I,Wednesday,4/27/2016,Hatch Beauchamp Village Hall,TA3 6SQ,9:55,10:20
-70,Taunton,I,Wednesday,4/27/2016,Capland,TA3 6TW,10:20,10:40
-71,Taunton,I,Wednesday,4/27/2016,Ilton School,TA19 9EX,10:55,11:30
-72,Taunton,I,Wednesday,4/27/2016,Merrifields,TA19 9HA,11:40,11:50
-73,Taunton,I,Wednesday,4/27/2016,Tatworth Memorial Hall,TA20 2QA,13:00,13:20
-74,Taunton,I,Wednesday,4/27/2016,Davies Close,TA20 4JL,13:40,14:00
-75,Taunton,I,Wednesday,4/27/2016,Winsham School & Bell Inn,TA20 4HU,14:10,14:40
-76,Taunton,I,Wednesday,4/27/2016,Higher Chillington,TA19 0PT,14:55,15:10
-77,Taunton,J,Thursday,4/28/2016,Children�s Centre,TA23 0EX,9:45,10:00
-78,Taunton,J,Thursday,4/28/2016,Roadwater Church,TA23 0RB,10:30,10:50
-79,Taunton,J,Thursday,4/28/2016,Higher Rodhuish Farm,TA24 6QL,11:00,11:20
-80,Taunton,J,Thursday,4/28/2016,The Causeway,TA24 6PZ,11:30,11:50
-81,Taunton,J,Thursday,4/28/2016,Carantoc Place,TA24 6NE,12:00,12:15
-82,Taunton,J,Thursday,4/28/2016,Blue Anchor Garage,TA24 6JZ,12:25,12:40
-83,Taunton,J,Thursday,4/28/2016,Hill Top,TA5 1SR,13:45,14:05
-84,Taunton,J,Thursday,4/28/2016,Frog Street T junction,TA5 1EJ,14:10,14:25
-85,Taunton,K,Friday,4/29/2016,Slough,TA3 5RW,9:15,9:25
-86,Taunton,K,Friday,4/29/2016,Farmers Arms,TA3 5RS,9:30,9:40
-87,Taunton,K,Friday,4/29/2016,Allen�s Farm,TA3 6AG,10:00,10:20
-88,Taunton,K,Friday,4/29/2016,Barrington School,TA19 0JR,10:45,11:00
-89,Taunton,K,Friday,4/29/2016,Buttle Close,TA19 0LU,11:10,11:25
-90,Taunton,K,Friday,4/29/2016,Opposite Ruskway Lane,TA10 0BN,11:40,11:50
-91,Taunton,K,Friday,4/29/2016,Homelea,TA7 0SA,12:50,13:00
-92,Taunton,K,Friday,4/29/2016,Outwood Rd Station Post Box,TA3 5AJ,13:20,13:35
-93,Taunton,K,Friday,4/29/2016,Durston Village Hall,TA3 5AG,13:40,13:55
-94,Taunton,L,Tuesday,4/5/2016,Amberley,TA3 7SG,9:30,9:45
-95,Taunton,L,Tuesday,4/5/2016,Pear Tree Cottage,TA3 7QB,10:00,10:20
-96,Taunton,L,Tuesday,4/5/2016,Churchinford Village Hall & Playgroup,TA3 7RG,10:30,11:15
-97,Taunton,L,Tuesday,4/5/2016,Old School,TA21 0BJ,11:40,12:00
-98,Taunton,L,Tuesday,4/5/2016,Hillfarance Church,TA4 1AW,12:10,12:30
-99,Taunton,L,Tuesday,4/5/2016,Cotford St Luke School,TA4 1JD,13:15,13:45
-100,Taunton,L,Tuesday,4/5/2016,Lydeard St Lawrence School,TA4 3SF,14:00,14:45
-101,Taunton,L,Tuesday,4/5/2016,Old Post Office,TA4 3SB,14:50,15:10
-102,Taunton,M,Friday,4/6/2016,Crowcombe School,TA4 4AA,10:00,10:30
-103,Taunton,M,Friday,4/6/2016,Hagleys Green,TA4 4AH,10:40,10:50
-104,Taunton,M,Friday,4/6/2016,Stogumber School,TA4 3TQ,11:00,11:30
-105,Taunton,M,Friday,4/6/2016,Notley Arms,TA4 4JB,11:40,12:10
-106,Taunton,M,Friday,4/6/2016,Castlake Farm,TA4 3TT,12:25,12:35
-107,Taunton,M,Friday,4/6/2016,Higher Vexford Farm,TA4 3QF,12:45,12:55
-108,Taunton,M,Friday,4/6/2016,Station,TA4 4PA,13:10,13:40
-109,Wells,A,Wednesday,4/13/2016,South Barrow Church,BA22 7LN,9:25,9:45
-110,Wells,A,Wednesday,4/13/2016,North Cadbury Village Hall,BA22 7DW,10:00,10:20
-111,Wells,A,Wednesday,4/13/2016,Chapel Road (Telephone Box),BA22 7EX,10:25,10:40
-112,Wells,A,Wednesday,4/13/2016,Sutton Montis Church,BA22 7HE,10:50,11:05
-113,Wells,A,Wednesday,4/13/2016,Queen Camel Village Hall,BA22 7NQ,11:15,11:35
-114,Wells,A,Wednesday,4/13/2016,Townsend,BA22 8BP,11:45,12:05
-115,Wells,A,Wednesday,4/13/2016,Road to Rimpton House,BA22 8AQ,12:10,12:40
-116,Wells,A,Wednesday,4/13/2016,Red Tile Farm,BA22 8DF,13:30,13:40
-117,Wells,A,Wednesday,4/13/2016,Hales Meadow,BA21 5TA,13:50,14:05
-118,Wells,A,Wednesday,4/13/2016,Fore Street Middle Farmhouse,BA22 7QW,14:20,14:40
-119,Wells,B,Thursday,4/14/2016,Ashcott School,TA7 9PP,9:30,10:00
-120,Wells,B,Thursday,4/14/2016,Middle Street,TA7 9QB,10:05,10:20
-121,Wells,B,Thursday,4/14/2016,Wellfield House,TA7 9HT,10:35,10:55
-122,Wells,B,Thursday,4/14/2016,Church Lane,TA7 9DY,11:10,11:40
-123,Wells,B,Thursday,4/14/2016,Station Road,TA7 8JZ,11:50,12:20
-124,Wells,B,Thursday,4/14/2016,Westham Farm,BS28 4UR,12:50,13:05
-125,Wells,B,Thursday,4/14/2016,Central Car Park,BS28 4AN,13:45,14:45
-126,Wells,B,Thursday,4/14/2016,Little Owls (Childcare),BS28 4SA,14:50,15:05
-127,Wells,B,Thursday,4/14/2016,Honeycombe House,BS28 4TD,15:10,15:30
-128,Wells,C,Friday,4/15/2016,Woolavington Village Hall,TA7 8DY,9:15,10:00
-129,Wells,C,Friday,4/15/2016,Puriton Village Hall,TA7 8BP,10:10,10:25
-130,Wells,C,Friday,4/15/2016,Gaunts Road,TA6 4SF,10:30,10:50
-131,Wells,C,Friday,4/15/2016,Chapel Road,TA6 4SH,10:55,11:10
-132,Wells,C,Friday,4/15/2016,Brent Knoll Post Office,TA9 4DT,11:30,12:00
-133,Wells,C,Friday,4/15/2016,Pinewood Estate,TA8 2RU,12:15,12:30
-134,Wells,C,Friday,4/15/2016,War Memorial,BS24 0DS,13:20,13:50
-135,Wells,C,Friday,4/15/2016,Stone Bow Farm,BS24 0HT,13:55,14:00
-136,Wells,C,Friday,4/15/2016,East Drive (off Strowlands),TA9 4JQ,14:05,14:25
-137,Wells,D,Tuesday,4/19/2016,Hemington School,BA3 5XU,9:30,10:00
-138,Wells,D,Tuesday,4/19/2016,Tellisford Lane Estate,BA2 7LL,10:15,10:55
-139,Wells,D,Tuesday,4/19/2016,Marsh Road (Pre school),BA11 6PB,11:05,11:20
-140,Wells,D,Tuesday,4/19/2016,The Green,BA11 6PE,11:25,11:45
-141,Wells,D,Tuesday,4/19/2016,Market Place,BA11 4LY,12:05,12:20
-142,Wells,D,Tuesday,4/19/2016,Seymour Arms,BA11 5HF,12:35,12:45
-143,Wells,E,Wednesday,4/20/2016,Nine Barrows Corner,BA5 3BH,9:15,9:35
-144,Wells,E,Wednesday,4/20/2016,Priddy School (Pre-school),BA5 3BE,9:40,10:00
-145,Wells,E,Wednesday,4/20/2016,Stoneleigh Housing Estate,BA5 1HG,10:15,10:25
-146,Wells,E,Wednesday,4/20/2016,Henley Corner Farm (Telephone Box),TA10 9BQ,11:10,11:20
-147,Wells,E,Wednesday,4/20/2016,Chapel,TA10 9BH,11:25,11:35
-148,Wells,E,Wednesday,4/20/2016,Broadacre Farm,TA10 9AY,11:40,11:50
-149,Wells,E,Wednesday,4/20/2016,Nythe Road Sunnymead,TA7 9BL,12:30,12:50
-150,Wells,E,Wednesday,4/20/2016,Cricket Club,TA7 9LN,13:30,13:50
-151,Wells,E,Wednesday,4/20/2016,Holywell Road,TA7 9LD,14:00,14:15
-152,Wells,E,Wednesday,4/20/2016,Church Layby,TA7 8NT,14:25,14:40
-153,Wells,E,Wednesday,4/20/2016,Catcott Burtle,TA7 8NB,14:50,15:05
-154,Wells,E,Wednesday,4/20/2016,Abbots Close,BA6 9TF,15:20,15:50
-155,Wells,F,Thursday,4/21/2016,Next Steps Childcare Centre,BA4 6QL,9:55,10:25
-156,Wells,F,Thursday,4/21/2016,North Wootton Church,BA4 4HA,10:40,11:10
-157,Wells,F,Thursday,4/21/2016,Doulting School,BA4 4PL,11:30,12:00
-158,Wells,F,Thursday,4/21/2016,Barley Mow,BA4 6DY,12:15,12:40
-159,Wells,F,Thursday,4/21/2016,Gartons Mead,BA4 6JH,12:55,13:25
-160,Wells,G,Friday,4/22/2016,Elliscombe Park,BA9 8EA,9:30,9:55
-161,Wells,G,Friday,4/22/2016,Old Orchard layby,BA9 8NE,10:15,10:25
-162,Wells,G,Friday,4/22/2016,Chapel Lane,BA8 0BR,10:40,11:10
-163,Wells,G,Friday,4/22/2016,School Lane (Playgroup),BA8 0HP,11:25,12:00
-164,Wells,G,Friday,4/22/2016,North Road,DT9 4NS,12:15,12:35
-165,Wells,G,Friday,4/22/2016,Sigwells � Beech Farm,DT9 4LQ,12:45,12:55
-166,Wells,G,Friday,4/22/2016,Sparkford Village Hall,BA22 7JN,13:15,13:45
-167,Wells,H,Tuesday,4/26/2016,West Horrington School,BA5 3EB,9:15,10:00
-168,Wells,H,Tuesday,4/26/2016,Neville�s Batch,BA3 4TR,10:15,10:40
-169,Wells,H,Tuesday,4/26/2016,Fire Engine,BA3 5BJ,10:50,11:05
-170,Wells,H,Tuesday,4/26/2016,Moonshill Road,BA3 5LG,11:15,11:30
-171,Wells,H,Tuesday,4/26/2016,Memorial Hall,BA3 5QQ,11:40,12:00
-172,Wells,H,Tuesday,4/26/2016,Bullen Mead,BA11 3LG,12:15,12:30
-173,Wells,H,Tuesday,4/26/2016,The Bridge,BA3 5RL,12:40,12:50
-174,Wells,H,Tuesday,4/26/2016,The Brambles,BA11 3RG,13:40,13:55
-175,Wells,H,Tuesday,4/26/2016,Stockhill Road No.70,BA3 4JH,14:15,14:35
-176,Wells,H,Tuesday,4/26/2016,Village Hall,BA3 4PD,14:50,15:05
-177,Wells,I,Wednesday,4/27/2016,Red House Farm,BA3 4QE,9:20,9:45
-178,Wells,I,Wednesday,4/27/2016,Bishop Henderson School,BA3 5PN,10:00,10:45
-179,Wells,I,Wednesday,4/27/2016,British Legion Car park,BA3 5PB,10:50,11:10
-180,Wells,I,Wednesday,4/27/2016,Scotts Close,BA3 5DT,11:25,11:45
-181,Wells,I,Wednesday,4/27/2016,George Inn,BA3 5AB,11:55,12:15
-182,Wells,I,Wednesday,4/27/2016,Hill Farm (Milk stand),BA4 6RQ,12:35,12:45
-183,Wells,I,Wednesday,4/27/2016,Church Farm,BA4 6SF,13:25,13:35
-184,Wells,I,Wednesday,4/27/2016,Wadehithe,TA11 7HD,13:45,14:05
-185,Wells,I,Wednesday,4/27/2016,Old School,TA11 7DB,14:15,14:30
-186,Wells,I,Wednesday,4/27/2016,Westwood Drove,TA11 7DL,14:35,14:45
-187,Wells,I,Wednesday,4/27/2016,Pound Close,BA6 8PA,14:55,15:05
-188,Wells,J,Thursday,4/28/2016,Little Acre,BS26 2UG,9:45,10:00
-189,Wells,J,Thursday,4/28/2016,Yew Tree Nursery,BS26 2SA,10:05,10:20
-190,Wells,J,Thursday,4/28/2016,Old School,BS26 2RH,10:25,10:40
-191,Wells,J,Thursday,4/28/2016,Turnpike Road (Pre School),BS25 1TX,11:00,11:30
-192,Wells,J,Thursday,4/28/2016,Beech Road,BS25 1TH,11:35,11:45
-193,Wells,J,Thursday,4/28/2016,Elm Close,BS25 1SA,11:50,12:00
-194,Wells,J,Thursday,4/28/2016,Old Coach Road,BS26 2EH,12:15,12:25
-195,Wells,J,Thursday,4/28/2016,Notting Hill Way (Avalon),BS26 2JN,12:30,12:45
-196,Wells,J,Thursday,4/28/2016,May Tree Farm,BS26 2NJ,12:55,13:20
-197,Wells,J,Thursday,4/28/2016,Front Street (Bus shelter),BS26 2PB,13:25,13:35
-198,Wells,K,Tuesday,4/5/2016,Merriott School,TA16 5PT,9:30,10:00
-199,Wells,K,Tuesday,4/5/2016,West Chinnock School,TA18 7PT,10:10,10:40
-200,Wells,K,Tuesday,4/5/2016,Weston Street Playgroup,BA22 9EQ,10:50,11:20
-201,Wells,K,Tuesday,4/5/2016,Westbury Gardens,BA22 8UR,11:35,11:55
-202,Wells,K,Tuesday,4/5/2016,Cedar Fields,BA22 9DB,12:10,12:30
-203,Wells,K,Tuesday,4/5/2016,High Street  (Pippins),BA22 9PJ,12:45,12:55
-204,Wells,K,Tuesday,4/5/2016,Hardington Marsh,BA22 9QE,13:00,13:10
-205,Wells,K,Tuesday,4/5/2016,Hill End,BA22 9PY,13:15,13:25
-206,Wells,K,Tuesday,4/5/2016,Helyar Arms,BA22 9JR,13:45,14:00
-207,Wells,K,Tuesday,4/5/2016,Bower Farm,BA22 9QP,14:40,14:50
-208,Wells,L,Wednesday,4/6/2016,Podymore Inn,BA22 8JH,10:05,10:15
-209,Wells,L,Wednesday,4/6/2016,Southwinds,BA22 8HF,10:20,10:40
-210,Wells,L,Wednesday,4/6/2016,Corlarach Bineham Lane,BA22 8EZ,10:40,10:50
-211,Wells,L,Wednesday,4/6/2016,Car Park,BA22 8LX,11:00,11:20
-212,Wells,L,Wednesday,4/6/2016,Telephone Box Playgroup,TA12 6AL,11:40,11:55
-213,Wells,L,Wednesday,4/6/2016,Thurlocks,BA22 8QE,12:10,12:25
-214,Wells,L,Wednesday,4/6/2016,Higher Street Pippins,TA14 6SN,12:40,13:00
-215,Wells,L,Wednesday,4/6/2016,Village Hall,TA14 6TR,13:50,14:40
-216,Wells,L,Wednesday,4/6/2016,Ilchester School,BA22 8JP,15:00,15:30
-217,Wells,M,Thursday,4/7/2016,Greyhound,BA6 8QN,9:00,9:25
-218,Wells,M,Thursday,4/7/2016,Baltonsborough Playgroup,BA6 8PN,9:30,10:00
-219,Wells,M,Thursday,4/7/2016,Baltonsborough School,BA6 8PN,10:00,10:30
-220,Wells,M,Thursday,4/7/2016,Butleigh School,BA6 8SX,10:40,11:10
-221,Wells,M,Thursday,4/7/2016,Barton Road Fairmile,BA6 8TH,11:15,11:30
-222,Wells,M,Thursday,4/7/2016,Charlton Adam Post Office,TA11 7AY,11:45,12:00
-223,Wells,M,Thursday,4/7/2016,Baker Street Bus shelter,TA11 7DU,13:00,13:15
-224,Wells,M,Thursday,4/7/2016,Queen Street Layby,TA11 6EH,13:30,13:50
-225,Wells,M,Thursday,4/7/2016,Main Street Telephone box,TA11 6BX,14:00,14:20
-226,Wells,M,Thursday,4/7/2016,Southwood,BA6 8PG,14:30,14:45
+Id,Mobile,Route,Day,StartDate,Location,Postcode,Start,End,Address,Place,Lat,Lng
+1,Taunton,A,Tuesday,4/12/2016,Week Lane,TA22 9JN,10:15,10:45,"Spring Cottages, Week Ln, Bridgetown, Dulverton, Somerset TA22 9JN, UK",Bridgetown,51.0886034,-3.5499436
+2,Taunton,A,Tuesday,4/12/2016,Winsford Centre,TA24 7JQ,10:55,11:25,"Winsford, Minehead, Somerset TA24 7JQ, UK",Winsford,51.10371199999999,-3.5652386
+3,Taunton,A,Tuesday,4/12/2016,Folly Cottage,TA24 7JL,11:35,11:55,"Folly Cottage, Winsford, Minehead, Somerset TA24 7JL, UK",Winsford,51.0982333,-3.5800926
+4,Taunton,A,Tuesday,4/12/2016,Withypool Post Office,TA24 7QP,12:40,13:00,"Withypool Post Office, Withypool, TA24 7QP",Withypool,51.10708,-3.65049
+5,Taunton,A,Tuesday,4/12/2016,Sportsman Inn,EX36 3LU,13:20,13:40,"South Molton EX36 3LU, UK",South Molton,51.0872092,-3.722576199999999
+6,Taunton,A,Tuesday,4/12/2016,High Street,TA22 9QW,13:55,14:15,"Hawkridge, Dulverton, Somerset TA22 9QW, UK",Hawkridge,51.064096,-3.627221
+7,Taunton,B,Wednesday,4/13/2016,Lower Holworthy,TA22 9NY,9:40,9:50,"Brompton Regis, Dulverton, Somerset TA22 9NY, UK",Brompton Regis,51.0737452,-3.4562409
+8,Taunton,B,Wednesday,4/13/2016,Wimbleball Lake,TA22 9NU,10:00,10:20,"Wimbleball Lake Angling & Watersports Centre, Dulverton, Dulverton, Somerset TA22 9NU, UK",Dulverton,51.0668963,-3.4786169
+9,Taunton,B,Wednesday,4/13/2016,George Inn,TA22 9NL,10:25,10:50,"Brompton Regis, Dulverton, Somerset TA22 9NL, UK",Brompton Regis,51.0730689,-3.4990565
+10,Taunton,B,Wednesday,4/13/2016,Combeshead,TA22 9LE,10:55,11:05,"Combeshead Hill, Dulverton, Somerset TA22, UK",Dulverton,51.0805209,-3.5076156
+11,Taunton,B,Wednesday,4/13/2016,Exford School,TA24 7PP,11:25,11:55,"Exford, Minehead, Somerset TA24 7PP, UK",Exford,51.1334946,-3.6381967
+12,Taunton,B,Wednesday,4/13/2016,Whiterock,TA24 7JT,12:10,12:20,"Simonsbath, Minehead, Somerset TA24 7JT, UK",Simonsbath,51.13631669999999,-3.738569
+13,Taunton,B,Wednesday,4/13/2016,Hillcrest,TA24 7SL,12:30,12:40,"Hillcrest House, Simonsbath, Minehead, Somerset TA24 7SJ, UK",Simonsbath,51.1407761,-3.7614664
+14,Taunton,B,Wednesday,4/13/2016,Red Deer House,TA24 7JY,13:20,13:35,"Red Deer House, Oakford, Tiverton, Devon EX16 9JE, UK",Oakford,50.99842599999999,-3.5797488
+15,Taunton,B,Wednesday,4/13/2016,West Ley,TA24 7NQ,13:40,13:50,"Exford, Minehead, Somerset TA24 7NQ, UK",Exford,51.1392513,-3.6604145
+16,Taunton,B,Wednesday,4/13/2016,Mill Lane House,TA24 7NS,14:00,14:15,"Mill Lane House, Mill Ln, Exford, Minehead, Somerset TA24 7NS, UK",Exford,51.1427884,-3.6487759
+17,Taunton,B,Wednesday,4/13/2016,Exford Centre,TA24 7PU,14:25,15:00,"Bridge Cottages, Exford, Minehead, Somerset TA24 7PU, UK",Exford,51.132648,-3.6408537
+18,Taunton,B,Wednesday,4/13/2016,Blagdon View,TA24 7ED,15:15,15:35,"Blagdon Cross, Minehead, Somerset TA24 7ED, UK",Blagdon Cross,51.1440701,-3.5525219
+19,Taunton,B,Wednesday,4/13/2016,Wheddon Cross car park,TA24 7DY,15:40,15:55,"Wheddon Cross Car Park, Wheddon Cross, Minehead, Somerset TA24, UK",Wheddon Cross,51.1381124,-3.5398138
+20,Taunton,C,Thursday,4/14/2016,Appley Pavilion,TA21 0HH,9:30,9:55,"Appley Cross, Stawley, Wellington TA21 0HH, UK",Stawley,50.98074940000001,-3.3249462
+21,Taunton,C,Thursday,4/14/2016,Raddington Mill,TA4 2QW,10:20,10:30,"Raddington, Taunton TA4 2QW, UK",Raddington,51.0238285,-3.4061525
+22,Taunton,C,Thursday,4/14/2016,Blackwell Farm,TA4 2QN,10:35,10:40,"Raddington, Taunton TA4 2QN, UK",Raddington,51.0287222,-3.4149567
+23,Taunton,C,Thursday,4/14/2016,Gamblyn Cottage,TA4 2DF,10:45,10:55,"Gamblyn Cottage, Skilgate, Taunton, Somerset TA4 2DF, UK",Skilgate,51.0328112,-3.4321526
+24,Taunton,C,Thursday,4/14/2016,Roborough,TA4 2JD,11:10,11:30,"Upton, Taunton, Somerset TA4 2JD, UK",Upton,51.0755022,-3.4245915
+25,Taunton,C,Thursday,4/14/2016,Middleton Lodge,TA4 2EN,11:45,12:00,"Middleton Court, Huish Champflower, Taunton, Somerset TA4 2EN, UK",Huish Champflower,51.0797324,-3.4019795
+26,Taunton,C,Thursday,4/14/2016,Glebe Farm,TA4 3PR,12:25,12:35,"Tolland, Lydeard St Lawrence, Taunton, Somerset TA4 3PR, UK",Lydeard St Lawrence,51.0814283,-3.2849627
+27,Taunton,C,Thursday,4/14/2016,Blackdown View lay-by (School),TA2 6TB,13:00,13:15,"Blackdown View, Norton Fitzwarren, Taunton, Somerset TA2 6TB, UK",Norton Fitzwarren,51.0284443,-3.1457436
+28,Taunton,D,Friday,4/15/2016,Kingsbridge,TA23 0SH,9:45,10:00,"Kingsbridge, Watchet, Somerset TA23, UK",Watchet,51.130136,-3.452298
+29,Taunton,D,Friday,4/15/2016,Cutcombe School,TA24 7DZ,10:15,10:45,"Old School House, Wheddon Cross, Minehead, Somerset TA24 7DZ, UK",Wheddon Cross,51.1389491,-3.5378697
+30,Taunton,D,Friday,4/15/2016,Higher Park Lane,TA24 7AG,10:55,11:15,"Highfield, Higher Park Ln, Cutcombe, Minehead, Somerset TA24 7AG, UK",Cutcombe,51.140273,-3.5349753
+31,Taunton,D,Friday,4/15/2016,Timberscombe School & Playgroup,TA24 7TY,11:30,12:00,"Timberscombe, Minehead, Somerset TA24 7TY, UK",Timberscombe,51.1681686,-3.4968033
+32,Taunton,D,Friday,4/15/2016,Cheeky Cherubs Nursery,TA24 5EB,12:50,13:20,"Minehead, Somerset TA24 5EB, UK",Minehead,51.2007188,-3.4643645
+33,Taunton,D,Friday,4/15/2016,Butlins- Billy's All Stars Nursery,TA24 5SH,13:25,13:55,"Minehead, Somerset TA24 5SH, UK",Minehead,51.2059856,-3.4617114
+34,Taunton,D,Friday,4/15/2016,Willow Grove ,TA23 0PT,14:10,14:25,"Willow Grove, Washford, Watchet, Somerset TA23 0PT, UK",Washford,51.16167120000001,-3.3633605
+35,Taunton,E,Wednesday,4/20/2016,"Bishops Hull Rd, Memorial (Plygrp)",TA1 5HR,9:30,9:45,"Parsonage Ct, Bishop's Hull, Taunton, Somerset TA1 5HR, UK",Bishop's Hull,51.0169471,-3.1360936
+36,Taunton,E,Wednesday,4/20/2016,Leach's Field,TA2 8JL,10:05,10:35,"Leach's Field, Kingston St Mary, Taunton, Somerset TA2 8JL, UK",Kingston St Mary,51.060319,-3.1154792
+37,Taunton,E,Wednesday,4/20/2016,Spaxton School,TA5 1BS,10:55,11:30,"Spaxton, Bridgwater, Somerset TA5 1BS, UK",Spaxton,51.12494,-3.10720
+38,Taunton,E,Wednesday,4/20/2016,The Cottage (Bottom of hill),TA5 1DR,11:45,11:55,"Courtway, Bridgwater, Somerset TA5 1DR, UK",Courtway,51.0991762,-3.1396365
+39,Taunton,E,Wednesday,4/20/2016,Broomfield Church,TA5 2EQ,12:05,12:20,"Broomfield, Bridgwater, Somerset TA5, UK",Broomfield,51.08205,-3.10908
+40,Taunton,E,Wednesday,4/20/2016,Entrance to Halswell House,TA5 2DE,12:40,13:00,"Goathurst, Bridgwater, Somerset TA5 2DE, UK",Goathurst,51.1043935,-3.0631058
+41,Taunton,F,Thursday,4/21/2016,Village Hall,TA3 5QQ,9:35,10:05,"Creech St Michael, UK",Creech St Michael,51.02631,-3.03841
+42,Taunton,F,Thursday,4/21/2016,Neroche School,TA19 9RG,10:25,11:15,"Broadway, Ilminster, Somerset TA19 9RG, UK",Broadway,50.93522,-2.96163
+43,Taunton,F,Thursday,4/21/2016,Isle Brewers Garage,TA3 6QN,11:40,11:55,"Main Road Garage (SE-bound), Taunton, Somerset TA3, UK",Isle Brewers,50.986568,-2.904924
+44,Taunton,F,Thursday,4/21/2016,Isle Abbotts Village Hall,TA3 6RR,12:10,12:30,"TA3 6RR, UK",Isle Abbots,50.98453,-2.92664
+45,Taunton,F,Thursday,4/21/2016,Curry Mallet Post Office,TA3 6SY,12:40,12:55,"Curry Mallet, TA3 6SY, UK",Curry Mallet,50.99221,-2.95878
+46,Taunton,F,Thursday,4/21/2016,St Martins Close,TA3 6PW,13:40,14:00,"St Martin's Cl, Fivehead, Taunton, Somerset TA3 6PW, UK",Fivehead,51.00077169999999,-2.9225817
+47,Taunton,F,Thursday,4/21/2016,Parsonage Place,TA10 0EW,14:15,14:40,"Parsonage Pl, Curry Rivel, Langport, Somerset TA10 0EW, UK",Curry Rivel,51.02510239999999,-2.8653878
+48,Taunton,F,Thursday,4/21/2016,Stoke St Gregory Village Hall,TA3 6EG,15:00,15:40,"Stoke St Gregory, Taunton, Somerset TA3 6EG, UK",Stoke St Gregory,51.0390053,-2.9328659
+49,Taunton,F,Thursday,4/21/2016,Stoke Road,TA3 6HW,15:50,16:05,"Stoke Rd, North Curry, Taunton, Somerset TA3 6HW, UK",North Curry,51.02797,-2.96000
+50,Taunton,F,Thursday,4/21/2016,Queens Square,TA3 6JS,16:10,16:40,"Queen Square, North Curry, Taunton, Somerset TA3 6JS, UK",North Curry,51.0233228,-2.9727054
+51,Taunton,G,Friday,4/22/2016,Stockmoor School,TA6 6AH,9:30,10:00,"Stockmoor Dr, Bridgwater, Somerset TA6 6AH, UK",Stockmoor,51.1116163,-2.9976009
+52,Taunton,G,Friday,4/22/2016,Gardens Children's Centre,TA6 5HT,10:15,10:45,"Bridgwater, Somerset TA6 5HT, UK",Bridgwater,51.1268597,-2.9932136
+53,Taunton,G,Friday,4/22/2016,College Children's Centre,TA6 4PZ,10:55,11:55,"Bridgwater, Somerset TA6 4PZ, UK",Bridgwater,51.13147319999999,-2.9878532
+54,Taunton,G,Friday,4/22/2016,Chedzoy Lane (Pre-school),TA7 8QW,12:05,12:50,"Bridgwater, Somerset TA7 8QW, UK",Bridgwater,51.14150309999999,-2.9691697
+55,Taunton,G,Friday,4/22/2016,Stawell Village Hall,TA7 9AE,13:00,13:15,"Stawell Village Hall, Stawell, Bridgwater, Somerset TA7 9AE, UK",Stawell,51.14046,-2.90746
+56,Taunton,G,Friday,4/22/2016,"Tapmoor Road, Junction",TA7 9BZ,14:00,14:25,"Moorlinch, Bridgwater, Somerset TA7 9BZ, UK",Moorlinch,51.13152,-2.86674
+57,Taunton,G,Friday,4/22/2016,Community Centre,TA7 0EX,14:45,15:45,"Cheer Ln, Westonzoyland, Bridgwater, Somerset TA7 0EX, UK",Westonzoyland,51.1099352,-2.9219686
+58,Taunton,G,Friday,4/22/2016,"Main Road, Bus Stop",TA7 0NJ,15:55,16:15,"Main Rd, Middlezoy, Bridgwater, Somerset TA7 0NJ, UK",Middlezoy,51.0902931,-2.8922205
+59,Taunton,H,Tuesday,4/26/2016,Otterhampton School,TA5 2QS,9:45,10:40,"School Ln, Combwich, Bridgwater, Somerset TA5 2QS, UK",Combwich,51.1757406,-3.0639023
+60,Taunton,H,Tuesday,4/26/2016,Harbour,TA5 2QU,10:45,11:05,"Harbour View, Combwich, Bridgwater, Somerset TA5 2QU, UK",Combwich,51.1744894,-3.0610697
+61,Taunton,H,Tuesday,4/26/2016,Combwich Post Office,TA5 2QW,11:10,11:30,"Combwich, Bridgwater, Somerset TA5 2QW, UK",Combwich,51.1731529,-3.0656853
+62,Taunton,H,Tuesday,4/26/2016,Captains,TA5 2PY,11:40,11:55,"Stockland Bristol, Bridgwater, Somerset TA5 2PY, UK",Bridgwater,51.1874233,-3.0833025
+63,Taunton,H,Tuesday,4/26/2016,Ridgeway Lane (Telephone Box),TA5 1TN,12:05,12:20,"Stolford, Stogursey, Bridgwater, Somerset TA5 1TN, UK",Stogursey,51.20259799999999,-3.1058592
+64,Taunton,H,Tuesday,4/26/2016,Shurton Inn,TA5 1QE,12:35,12:55,"Shurton Ln, Shurton, Stogursey, Bridgwater, Somerset TA5 1QE, UK",Stogursey,51.1921253,-3.1438605
+65,Taunton,H,Tuesday,4/26/2016,Greyhound Inn,TA5 1QR,13:40,14:10,"Lime St, Stogursey, Bridgwater, Somerset TA5 1QR, UK",Stogursey,51.1804485,-3.1415827
+66,Taunton,H,Tuesday,4/26/2016,Town Close No 30,TA5 1RN,14:15,14:40,"30 Town Cl, Stogursey, Bridgwater, Somerset TA5 1RN, UK",Stogursey,51.1815744,-3.146559
+67,Taunton,H,Tuesday,4/26/2016,Brook Street,TA5 2HP,15:00,15:30,"Brook St, Cannington, Bridgwater, Somerset TA5 2HP, UK",Cannington,51.1501201,-3.0610825
+68,Taunton,I,Wednesday,4/27/2016,Dinhams Farm Corner,TA3 5JG,9:35,9:45,"Dinhams, Ruishton, Taunton, Somerset TA3 5JG, UK",Ruishton,51.0196902,-3.0485493
+69,Taunton,I,Wednesday,4/27/2016,Hatch Beauchamp Village Hall,TA3 6SQ,9:55,10:20,"Hatch Beauchamp, Taunton, Somerset TA3 6SQ, UK",Hatch Beauchamp,50.9788742,-2.992599
+70,Taunton,I,Wednesday,4/27/2016,Capland,TA3 6TW,10:20,10:40,"Capland, Hatch Beauchamp, Taunton, Somerset TA3 6TW, UK",Hatch Beauchamp,50.9667053,-2.9962416
+71,Taunton,I,Wednesday,4/27/2016,Ilton School,TA19 9EX,10:55,11:30,"Old School House, Ilton, Ilminster, Somerset TA19 9EX, UK",Ilton,50.9527221,-2.9251889
+72,Taunton,I,Wednesday,4/27/2016,Merrifields,TA19 9HA,11:40,11:50,"Merrifield Cottage, Merryfield Ln, Ilton, Ilminster, Somerset TA19 9HA, UK",Ilton,50.9508756,-2.9312168
+73,Taunton,I,Wednesday,4/27/2016,Tatworth Memorial Hall,TA20 2QA,13:00,13:20,"Memorial Hall (SW-bound), South Chard, Chard, Somerset TA20, UK",South Chard,50.84336099999999,-2.949987
+74,Taunton,I,Wednesday,4/27/2016,Davies Close,TA20 4JL,13:40,14:00,"Davies Cl, Winsham, Chard, Somerset TA20 4JL, UK",Winsham,50.853512,-2.8933195
+75,Taunton,I,Wednesday,4/27/2016,Winsham School & Bell Inn,TA20 4HU,14:10,14:40,"Winsham, TA20 4HU, UK",Winsham,50.8531532,-2.8895164
+76,Taunton,I,Wednesday,4/27/2016,Higher Chillington,TA19 0PT,14:55,15:10,"Higher Chillington, Ilminster, Somerset TA19 0PT, UK",Higher Chillington,50.8883115,-2.8697878
+77,Taunton,J,Thursday,4/28/2016,Children's Centre,TA23 0EX,9:45,10:00,"Watchet, Somerset TA23 0EX, UK",Watchet,51.176823,-3.3218907
+78,Taunton,J,Thursday,4/28/2016,Roadwater Church,TA23 0RB,10:30,10:50,"Roadwater, Watchet, Somerset TA23 0RB, UK",Roadwater,51.13806899999999,-3.3829912
+79,Taunton,J,Thursday,4/28/2016,Higher Rodhuish Farm,TA24 6QL,11:00,11:20,"Rodhuish, Minehead, Somerset TA24 6QL, UK",Rodhuish,51.14882129999999,-3.4147956
+80,Taunton,J,Thursday,4/28/2016,The Causeway,TA24 6PZ,11:30,11:50,"Withycombe, Minehead, Somerset TA24 6PZ, UK",Withycombe,51.1624458,-3.4087768
+81,Taunton,J,Thursday,4/28/2016,Carantoc Place,TA24 6NE,12:00,12:15,"Carantoc Pl, Carhampton, Minehead, Somerset TA24 6NE, UK",Carhampton,51.174005,-3.4225761
+82,Taunton,J,Thursday,4/28/2016,Blue Anchor Garage,TA24 6JZ,12:25,12:40,"Blue Anchor, Minehead, Somerset TA24 6JZ, UK",Minehead,51.1786596,-3.4035198
+83,Taunton,J,Thursday,4/28/2016,Hill Top,TA5 1SR,13:45,14:05,"Hilltop Ln, Bridgwater, Somerset TA5 1SR, UK",Bridgwater,51.1788263,-3.2080424
+84,Taunton,J,Thursday,4/28/2016,Frog Street T junction,TA5 1EJ,14:10,14:25,"East Quantoxhead, Bridgwater, Somerset TA5 1EJ, UK",East Quantoxhead,51.1828702,-3.2351293
+85,Taunton,K,Friday,4/29/2016,Slough,TA3 5RW,9:15,9:25,"TA3 5RW, UK",Taunton,50.985878,-3.0333948
+86,Taunton,K,Friday,4/29/2016,Farmers Arms,TA3 5RS,9:30,9:40,"West Hatch, Taunton, Somerset TA3 5RS, UK",West Hatch,50.9729129,-3.0372545
+87,Taunton,K,Friday,4/29/2016,Allen's Farm,TA3 6AG,10:00,10:20,"Broadmead, Beercrocombe, Taunton, Somerset TA3 6AG, UK",Beercrocombe,50.9790727,-2.9659683
+88,Taunton,K,Friday,4/29/2016,Barrington School,TA19 0JR,10:45,11:00,"Barrington, Somerset TA19 0JR, UK",Barrington,50.9591751,-2.8633332
+89,Taunton,K,Friday,4/29/2016,Buttle Close,TA19 0LU,11:10,11:25,"Buttle Cl, Shepton Beauchamp, Ilminster, Somerset TA19 0LU, UK",Ilminster,50.9495831,-2.849535
+90,Taunton,K,Friday,4/29/2016,Opposite Ruskway Lane,TA10 0BN,11:40,11:50,"Westport, Langport, Somerset TA10 0BN, UK",Westport,50.9738838,-2.878308
+91,Taunton,K,Friday,4/29/2016,Homelea,TA7 0SA,12:50,13:00,"Burrow Bridge, Bridgwater, Somerset TA7 0SA, UK",Burrow Bridge,51.0607283,-2.9277545
+92,Taunton,K,Friday,4/29/2016,Outwood Rd Station Post Box,TA3 5AJ,13:20,13:35,"West Lyng, Taunton, Somerset TA3 5AJ, UK",West Lyng,51.0497126,-2.9912625
+93,Taunton,K,Friday,4/29/2016,Durston Village Hall,TA3 5AG,13:40,13:55,"Durston, TA3 5AG",Durston,51.0476151,-3.0157092
+94,Taunton,L,Tuesday,4/5/2016,Amberley,TA3 7SG,9:30,9:45,"Blagdon Hill, Taunton, Somerset TA3 7SG, UK",Blagdon Hill,50.9608695,-3.124914
+95,Taunton,L,Tuesday,4/5/2016,Pear Tree Cottage,TA3 7QB,10:00,10:20,"Pear Tree Cottage, Stapley, Somerset, TA3 7QB, UK",Stapley,50.919191,-3.1513944
+96,Taunton,L,Tuesday,4/5/2016,Churchinford Village Hall & Playgroup,TA3 7RG,10:30,11:15,"Churchinford, TA3 7RG",Churchinford,50.9078445,-3.1204319
+97,Taunton,L,Tuesday,4/5/2016,Old School,TA21 0BJ,11:40,12:00,"The Old School, Holywell Lake, Wellington, Somerset TA21 0EJ, UK",Wellington,50.9756517,-3.2747474
+98,Taunton,L,Tuesday,4/5/2016,Hillfarance Church,TA4 1AW,12:10,12:30,"Hillfarrance, Taunton, Somerset TA4 1AW, UK",TA21 0BJ,51.0154959,-3.1897324
+99,Taunton,L,Tuesday,4/5/2016,Cotford St Luke School,TA4 1JD,13:15,13:45,"Nichol Pl, Cotford St Luke, Taunton, Somerset TA4 1JD, UK",Cotford St Luke,51.0385121,-3.1849019
+100,Taunton,L,Tuesday,4/5/2016,Lydeard St Lawrence School,TA4 3SF,14:00,14:45,"Lydeard St Lawrence, TA4 3SF",Taunton,51.0826874,-3.2457476
+101,Taunton,L,Tuesday,4/5/2016,Old Post Office,TA4 3SB,14:50,15:10,"The Old Post Office, Huish Champflower, Taunton, Somerset TA4 2EY, UK",Huish Champflower,51.0536944,-3.3581746
+102,Taunton,M,Friday,4/6/2016,Crowcombe School,TA4 4AA,10:00,10:30,"School Cottage, Crowcombe, Taunton, Somerset TA4 4AA, UK",Crowcombe,51.1217334,-3.2297398
+103,Taunton,M,Friday,4/6/2016,Hagleys Green,TA4 4AH,10:40,10:50,"Hagleys Green, Crowcombe, Taunton, Somerset TA4 4AH, UK",Crowcombe,51.1243522,-3.2372257
+104,Taunton,M,Friday,4/6/2016,Stogumber School,TA4 3TQ,11:00,11:30,"Stogumber, Taunton, Somerset TA4 3TQ, UK",Stogumber,51.1267433,-3.2887897
+105,Taunton,M,Friday,4/6/2016,Notley Arms,TA4 4JB,11:40,12:10,"Notley Arms Inn Exmoor National Park, Front St, Taunton, Somerset TA4 4JB, UK",Exmoor,51.129199,-3.32619
+106,Taunton,M,Friday,4/6/2016,Castlake Farm,TA4 3TT,12:25,12:35,"Castlake Ln, Stogumber, Taunton, Somerset TA4 3TT, UK",Stogumber,51.1205292,-3.2650576
+107,Taunton,M,Friday,4/6/2016,Higher Vexford Farm,TA4 3QF,12:45,12:55,"Higher Vexford TA4 3QF, UK",Higher Vexford,51.1087112,-3.2749743
+108,Taunton,M,Friday,4/6/2016,Station,TA4 4PA,13:10,13:40,"Bakers Orchard, Crowcombe Heathfield, Taunton, Somerset TA4 4PA, UK",Crowcombe Heathfield,51.102047,-3.2341733
+109,Wells,A,Wednesday,4/13/2016,South Barrow Church,BA22 7LN,9:25,9:45,"South Barrow, Somerset BA22 7AN, UK",South Barrow,51.0497169,-2.5689771
+110,Wells,A,Wednesday,4/13/2016,North Cadbury Village Hall,BA22 7DW,10:00,10:20,"North Cadbury, Somerset BA22 7DW, UK",North Cadbury,51.0435944,-2.5205176
+111,Wells,A,Wednesday,4/13/2016,Chapel Road (Telephone Box),BA22 7EX,10:25,10:40,"Chapel Rd, South Cadbury, Yeovil, Somerset BA22 7EX, UK",South Cadbury,51.0297715,-2.5250714
+112,Wells,A,Wednesday,4/13/2016,Sutton Montis Church,BA22 7HE,10:50,11:05,"Church Hill, Yeovil, Somerset BA22 7HE, UK",South Cadbury,51.0213681,-2.5366754
+113,Wells,A,Wednesday,4/13/2016,Queen Camel Village Hall,BA22 7NQ,11:15,11:35,"Queen Camel, Yeovil, Somerset BA22 7NQ, UK",Queen Camel,51.0211258,-2.5773525
+114,Wells,A,Wednesday,4/13/2016,Townsend,BA22 8BP,11:45,12:05,"Townsend, Marston Magna, Yeovil, Somerset BA22 8BP, UK",Marston Magna,50.9997188,-2.5856827
+115,Wells,A,Wednesday,4/13/2016,Road to Rimpton House,BA22 8AQ,12:10,12:40,"Rimpton, Yeovil, Somerset BA22 8AQ, UK",Rimpton,50.9953312,-2.5617596
+116,Wells,A,Wednesday,4/13/2016,Red Tile Farm,BA22 8DF,13:30,13:40,"Marston Magna, Yeovil, Somerset BA22 8DF, UK",Marston Magna,50.999089,-2.5785352
+117,Wells,A,Wednesday,4/13/2016,Hales Meadow,BA21 5TA,13:50,14:05,"Hales Meadow, Mudford, Yeovil, Somerset BA21 5TA, UK",Mudford,50.97360219999999,-2.6073592
+118,Wells,A,Wednesday,4/13/2016,Fore Street Middle Farmhouse,BA22 7QW,14:20,14:40,"West Camel, Yeovil, Somerset BA22 7QW, UK",West Camel,51.0205329,-2.6056913
+119,Wells,B,Thursday,4/14/2016,Ashcott School,TA7 9PP,9:30,10:00,"Ashcott, Bridgwater, Somerset TA7 9PP, UK",Ashcott,51.1320229,-2.8085437
+120,Wells,B,Thursday,4/14/2016,Middle Street,TA7 9QB,10:05,10:20,"Middle St, Ashcott, Bridgwater, Somerset TA7 9QB, UK",Ashcott,51.12977069999999,-2.8066207
+121,Wells,B,Thursday,4/14/2016,Wellfield House,TA7 9HT,10:35,10:55,"Wellfield House, Manor Rd, Bridgwater, Somerset TA7 9HT, UK",Catcott,51.1501623,-2.8648803
+122,Wells,B,Thursday,4/14/2016,Church Lane,TA7 9DY,11:10,11:40,"Church Ln, Bridgwater, Somerset TA7 9DY, UK",Chilton Polden,51.1543021,-2.895895
+123,Wells,B,Thursday,4/14/2016,Station Road,TA7 8JZ,11:50,12:20,"Station Rd, Cossington, Bridgwater, Somerset TA7 8JZ, UK",Cossington,51.1618706,-2.9201866
+124,Wells,B,Thursday,4/14/2016,Westham Farm,BS28 4UR,12:50,13:05,"Blackford, Somerset BS28 4UR, UK",Wedmore,51.215641,-2.8440552
+125,Wells,B,Thursday,4/14/2016,Central Car Park,BS28 4AN,13:45,14:45,"Wedmore, Somerset BS28 4AN, UK",Wedmore,51.2273586,-2.8136822
+126,Wells,B,Thursday,4/14/2016,Little Owls (Childcare),BS28 4SA,14:50,15:05,"Wedmore, Somerset BS28 4SA, UK",Wedmore,51.22511,-2.799408
+127,Wells,B,Thursday,4/14/2016,Honeycombe House,BS28 4TD,15:10,15:30,"Honeycombe House, Bagley, Wedmore, Somerset BS28 4TD, UK",Wedmore,51.2107566,-2.7760507
+128,Wells,C,Friday,4/15/2016,Woolavington Village Hall,TA7 8DY,9:15,10:00,"Woolavington, Bridgwater, Somerset TA7 8DY, UK",Woolavington,51.1693077,-2.9359083
+129,Wells,C,Friday,4/15/2016,Puriton Village Hall,TA7 8BP,10:10,10:25,"Puriton, Bridgwater, Somerset TA7 8BP, UK",Puriton,51.1692162,-2.9767566
+130,Wells,C,Friday,4/15/2016,Gaunts Road,TA6 4SF,10:30,10:50,"Gaunts Rd, Pawlett, Bridgwater, Somerset TA6 4SF, UK",Pawlett,51.1795638,-3.0037025
+131,Wells,C,Friday,4/15/2016,Chapel Road,TA6 4SH,10:55,11:10,"Chapel Rd, Pawlett, Bridgwater, Somerset TA6 4SH, UK",Pawlett,51.183077,-3.0092587
+132,Wells,C,Friday,4/15/2016,Brent Knoll Post Office,TA9 4DT,11:30,12:00,"Brent Knoll, Somerset TA9 4DT, UK",Brent Knoll,51.2468338,-2.9508777
+133,Wells,C,Friday,4/15/2016,Pinewood Estate,TA8 2RU,12:15,12:30,"Pinewood Way, Brean, Burnham-on-Sea, Somerset TA8 2RU, UK",Brean,51.2928822,-3.0118911
+134,Wells,C,Friday,4/15/2016,War Memorial,BS24 0DS,13:20,13:50,"Church Ln, Lympsham, Weston-super-Mare, Somerset BS24 0DS, UK",Lympsham,51.2829026,-2.9530589
+135,Wells,C,Friday,4/15/2016,Stone Bow Farm,BS24 0HT,13:55,14:00,"Eastertown, Lympsham, Weston-super-Mare, Somerset BS24 0HT, UK",Lympsham,51.2855238,-2.9380281
+136,Wells,C,Friday,4/15/2016,East Drive (off Strowlands),TA9 4JQ,14:05,14:25,"Strowlands, East Brent, Highbridge, Somerset TA9 4JQ, UK",East Brent,51.2628265,-2.9325485
+137,Wells,D,Tuesday,4/19/2016,Hemington School,BA3 5XU,9:30,10:00,"Hemington, Somerset BA3 5XU, UK",Hemington,51.2783293,-2.3896659
+138,Wells,D,Tuesday,4/19/2016,Tellisford Lane Estate,BA2 7LL,10:15,10:55,"Tellisford Ln, Norton St Philip, Bath, Somerset BA2 7LL, UK",Norton St Philip,51.2987255,-2.3206044
+139,Wells,D,Tuesday,4/19/2016,Marsh Road (Pre school),BA11 6PB,11:05,11:20,"High St, Rode, Frome, Somerset BA11 6PB, UK",Rode,51.2850883,-2.2808194
+140,Wells,D,Tuesday,4/19/2016,The Green,BA11 6PE,11:25,11:45,"Rode, Frome, Somerset BA11 6PE, UK",Rode,51.2849584,-2.2787395
+141,Wells,D,Tuesday,4/19/2016,Market Place,BA11 4LY,12:05,12:20,"The Market Pl, Nunney, Frome, Somerset BA11 4LY, UK",Nunney,51.2089661,-2.3786011
+142,Wells,D,Tuesday,4/19/2016,Seymour Arms,BA11 5HF,12:35,12:45,"Seymour Arms (SE-bound), Witham Friary, Frome, Somerset BA11, UK",Witham Friary,51.166943,-2.366426
+143,Wells,E,Wednesday,4/20/2016,Nine Barrows Corner,BA5 3BH,9:15,9:35,"Nine Barrows Ln, Wells, Somerset BA5 3BH, UK",Nine Barrows,51.2618229,-2.6780107
+144,Wells,E,Wednesday,4/20/2016,Priddy School (Pre-school),BA5 3BE,9:40,10:00,"Priddy, Wells, Somerset BA5 3BE, UK",Priddy,51.25854640000001,-2.6792365
+145,Wells,E,Wednesday,4/20/2016,Stoneleigh Housing Estate,BA5 1HG,10:15,10:25,"Stoneleigh, Westbury-sub-Mendip, Wells, Somerset BA5 1HG, UK",Westbury-sub-Mendip,51.2373361,-2.7224696
+146,Wells,E,Wednesday,4/20/2016,Henley Corner Farm (Telephone Box),TA10 9BQ,11:10,11:20,"Henley, Langport, Somerset TA10 9BQ, UK",Henley,51.089276,-2.807001
+147,Wells,E,Wednesday,4/20/2016,Chapel,TA10 9BH,11:25,11:35,"Henley, Langport, Somerset TA10 9BH, UK",Henley,51.0876164,-2.805116
+148,Wells,E,Wednesday,4/20/2016,Broadacre Farm,TA10 9AY,11:40,11:50,"Henley, Langport, Somerset TA10 9AY, UK",Henley,51.0764833,-2.7907195
+149,Wells,E,Wednesday,4/20/2016,Nythe Road Sunnymead,TA7 9BL,12:30,12:50,"Nythe Rd, Ashcott, Bridgwater, Somerset TA7 9BL, UK",Ashcott,51.1214621,-2.8246365
+150,Wells,E,Wednesday,4/20/2016,Cricket Club,TA7 9LN,13:30,13:50,"Northbrook Rd, Shapwick, Bridgwater, Somerset TA7 9LN, UK",Shapwick,51.13995019999999,-2.8322417
+151,Wells,E,Wednesday,4/20/2016,Holywell Road,TA7 9LD,14:00,14:15,"The Square, Holy Well Rd, Edington, Bridgwater, Somerset TA7 9LD, UK",Edington,51.1553936,-2.8772323
+152,Wells,E,Wednesday,4/20/2016,Church Layby,TA7 8NT,14:25,14:40,"Robins Ln, Burtle, Bridgwater, Somerset TA7 8NT, UK",Burtle,51.18632239999999,-2.8730119
+153,Wells,E,Wednesday,4/20/2016,Catcott Burtle,TA7 8NB,14:50,15:05,"Burtle, Bridgwater, Somerset TA7 8NB, UK",Burtle,51.1843475,-2.8604265
+154,Wells,E,Wednesday,4/20/2016,Abbots Close,BA6 9TF,15:20,15:50,"Abbots Cl, Meare, Glastonbury, Somerset BA6 9TF, UK",Meare,51.16927279999999,-2.7895883
+155,Wells,F,Thursday,4/21/2016,Next Steps Childcare Centre,BA4 6QL,9:55,10:25,"Shepton Mallet, Somerset BA4 6QL, UK",Shepton Mallet,51.1558039,-2.5234986
+156,Wells,F,Thursday,4/21/2016,North Wootton Church,BA4 4HA,10:40,11:10,"North Wootton, Shepton Mallet, Somerset BA4 4HA, UK",North Wootton,51.1739413,-2.6258809
+157,Wells,F,Thursday,4/21/2016,Doulting School,BA4 4PL,11:30,12:00,"Doulting, Somerset BA4 4PL, UK",Doulting,51.1884613,-2.5054817
+158,Wells,F,Thursday,4/21/2016,Barley Mow,BA4 6DY,12:15,12:40,"High St, Stoney Stratton, Shepton Mallet, Somerset BA4 6DY, UK",Stoney Stratton,51.1506625,-2.4941025
+159,Wells,F,Thursday,4/21/2016,Gartons Mead,BA4 6JH,12:55,13:25,"Gartons Mead Rd, Evercreech, Shepton Mallet, Somerset BA4 6JH, UK",Evercreech,51.1440181,-2.5065255
+160,Wells,G,Friday,4/22/2016,Elliscombe Park,BA9 8EA,9:30,9:55,"Wincanton, Somerset BA9 8EA, UK",Wincanton,51.0461055,-2.4601506
+161,Wells,G,Friday,4/22/2016,Old Orchard layby,BA9 8NE,10:15,10:25,"Grove Cl, Penselwood, Wincanton, Somerset BA9 8NE, UK",Penselwood,51.0781171,-2.3394463
+162,Wells,G,Friday,4/22/2016,Chapel Lane,BA8 0BR,10:40,11:10,"South Cheriton, Templecombe, Somerset BA8 0BR, UK",South Cheriton,51.0202385,-2.4381381
+163,Wells,G,Friday,4/22/2016,School Lane (Playgroup),BA8 0HP,11:25,12:00,"Templecombe, Somerset BA8 0HP, UK",Templecombe,51.0029925,-2.4156715
+164,Wells,G,Friday,4/22/2016,North Road,DT9 4NS,12:15,12:35,"North Rd, Sherborne, Somerset DT9 4NS, UK",Sherborne,51.01069829999999,-2.4812888
+165,Wells,G,Friday,4/22/2016,Sigwells Beech Farm,DT9 4LQ,12:45,12:55,"Corton Denham, Sherborne DT9 4LQ, UK",Corton Denham,50.9953028,-2.5132113
+166,Wells,G,Friday,4/22/2016,Sparkford Village Hall,BA22 7JN,13:15,13:45,"Sparkford, Somerset BA22 7HY, UK",Sparkford,51.0329957,-2.5607747
+167,Wells,H,Tuesday,4/26/2016,West Horrington School,BA5 3EB,9:15,10:00,"West Horrington, Wells, Somerset BA5 3EB, UK",Wells,51.2238716,-2.6093169
+168,Wells,H,Tuesday,4/26/2016,Neville's Batch,BA3 4TR,10:15,10:40,"Gurney Slade, Radstock, Somerset BA3 4TR, UK",Gurney Slade,51.2408632,-2.5462526
+169,Wells,H,Tuesday,4/26/2016,Fire Engine,BA3 5BJ,10:50,11:05,"Oakhill, Radstock, Somerset BA3 5BJ, UK",Oakhill,51.2424971,-2.5110021
+170,Wells,H,Tuesday,4/26/2016,Moonshill Road,BA3 5LG,11:15,11:30,"Moonshill Rd, Stoke St Michael, Radstock, Somerset BA3 5LG, UK",Stoke St Michael,51.2224282,-2.4832291
+171,Wells,H,Tuesday,4/26/2016,Memorial Hall,BA3 5QQ,11:40,12:00,"Mendip, Somerset BA3 5QQ, UK",Leigh upon Mendip,51.2235031,-2.4432712
+172,Wells,H,Tuesday,4/26/2016,Bullen Mead,BA11 3LG,12:15,12:30,"Bullen Mead, Chantry, Frome, Somerset BA11 3LG, UK",Chantry,51.2198459,-2.4081295
+173,Wells,H,Tuesday,4/26/2016,The Bridge,BA3 5RL,12:40,12:50,"Vobster, Somerset BA3 5RL, UK",Vobster,51.2390518,-2.4229796
+174,Wells,H,Tuesday,4/26/2016,The Brambles,BA11 3RG,13:40,13:55,"Babbington, Somerset BA11 3RG, UK",Babbington,51.2502861,-2.4322526
+175,Wells,H,Tuesday,4/26/2016,Stockhill Road No.70,BA3 4JH,14:15,14:35,"70 Stockhill Rd, Chilcompton, Radstock, Somerset BA3 4JH, UK",Chilcompton,51.2549054,-2.5130499
+176,Wells,H,Tuesday,4/26/2016,Village Hall,BA3 4PD,14:50,15:05,"Chewton Mendip, Somerset, BA3 4PD, UK",Chewton Mendip,51.2784306,-2.5800602
+177,Wells,I,Wednesday,4/27/2016,Red House Farm,BA3 4QE,9:20,9:45,"Stratton-on-the-Fosse, Radstock, Somerset BA3 4QE, UK",Stratton-on-the-Fosse,51.270171,-2.4688366
+178,Wells,I,Wednesday,4/27/2016,Bishop Henderson School,BA3 5PN,10:00,10:45,"Farley Dell, Coleford, Radstock, Somerset BA3 5PN, UK",Coleford,51.24532929999999,-2.4567072
+179,Wells,I,Wednesday,4/27/2016,British Legion Car park,BA3 5PB,10:50,11:10,"Anchor Rd, Coleford, Radstock, Somerset BA3 5PB, UK",Coleford,51.2435869,-2.4515612
+180,Wells,I,Wednesday,4/27/2016,Scotts Close,BA3 5DT,11:25,11:45,"Scotts Cl, Holcombe, Radstock, Somerset BA3 5DT, UK",Holcombe,51.2456445,-2.4724553
+181,Wells,I,Wednesday,4/27/2016,George Inn,BA3 5AB,11:55,12:15,"Nettlebridge, Oakhill, Radstock, Somerset BA3 5AB, UK",Oakhill,51.2360937,-2.5050584
+182,Wells,I,Wednesday,4/27/2016,Hill Farm (Milk stand),BA4 6RQ,12:35,12:45,"Wraxall, Shepton Mallet, Somerset BA4 6RQ, UK",Wraxall,51.1255497,-2.5669394
+183,Wells,I,Wednesday,4/27/2016,Church Farm,BA4 6SF,13:25,13:35,"Mendip Farm Bungalow, Hornblotton, Shepton Mallet, Somerset BA4 6SF, UK",Hornblotton,51.0975026,-2.5870749
+184,Wells,I,Wednesday,4/27/2016,Wadehithe,TA11 7HD,13:45,14:05,"East Lydford, Somerton, Somerset TA11 7HD, UK",East Lydford,51.07863159999999,-2.609205
+185,Wells,I,Wednesday,4/27/2016,Old School,TA11 7DB,14:15,14:30,"Lydford-on-Fosse, Somerset TA11 7DB, UK",Lydford-on-Fosse,51.0815887,-2.621033
+186,Wells,I,Wednesday,4/27/2016,Westwood Drove,TA11 7DL,14:35,14:45,"Westwood Drove, West Lydford, Somerton, Somerset TA11 7DL, UK",West Lydford,51.090568,-2.613645500000001
+187,Wells,I,Wednesday,4/27/2016,Pound Close,BA6 8PA,14:55,15:05,"Pound Cl, Parbrook, Glastonbury, Somerset BA6 8PA, UK",Parbrook,51.1296572,-2.6221236
+188,Wells,J,Thursday,4/28/2016,Little Acre,BS26 2UG,9:45,10:00,"Rooks Bridge, Axbridge, Somerset BS26 2UG, UK",Rooks Bridge,51.2683275,-2.9146145
+189,Wells,J,Thursday,4/28/2016,Yew Tree Nursery,BS26 2SA,10:05,10:20,"Yew Tree Nursery, Tarnock, Axbridge, Somerset BS26 2SA, UK",Tarnock,51.2698287,-2.8889999
+190,Wells,J,Thursday,4/28/2016,Old School,BS26 2RH,10:25,10:40,"Biddisham, Somerset BS26 2RH, UK",Biddisham,51.275687,-2.887249
+191,Wells,J,Thursday,4/28/2016,Turnpike Road (Pre School),BS25 1TX,11:00,11:30,"Shipham, Winscombe, Somerset BS25 1TX, UK",Shipham,51.3153529,-2.798221
+192,Wells,J,Thursday,4/28/2016,Beech Road,BS25 1TH,11:35,11:45,"Beech Rd, Shipham, Winscombe, Somerset BS25 1SA, UK",Shipham,51.31730839999999,-2.7961134
+193,Wells,J,Thursday,4/28/2016,Elm Close,BS25 1SA,11:50,12:00,"Elm Cl, Shipham, Winscombe, Somerset BS25 1UG, UK",Shipham,51.3199856,-2.8092925
+194,Wells,J,Thursday,4/28/2016,Old Coach Road,BS26 2EH,12:15,12:25,"Old Coach Rd, Axbridge, Somerset BS26 2EH, UK",Axbridge,51.28804239999999,-2.845156
+195,Wells,J,Thursday,4/28/2016,Notting Hill Way (Avalon),BS26 2JN,12:30,12:45,"Lower Weare, Axbridge, Somerset BS26 2JN, UK",Lower Weare,51.2780067,-2.8521541
+196,Wells,J,Thursday,4/28/2016,May Tree Farm,BS26 2NJ,12:55,13:20,"Stone Allerton, Axbridge, Somerset BS26 2NJ, UK",Stone Allerton,51.2563835,-2.8517971
+197,Wells,J,Thursday,4/28/2016,Front Street (Bus shelter),BS26 2PB,13:25,13:35,"Chapel Allerton, Axbridge, Somerset BS26 2PB, UK",Chapel Allerton,51.2466664,-2.8500989
+198,Wells,K,Tuesday,4/5/2016,Merriott School,TA16 5PT,9:30,10:00,"Church St, Merriott, Somerset TA16 5PT, UK",Merriott,50.9116039,-2.7964986
+199,Wells,K,Tuesday,4/5/2016,West Chinnock School,TA18 7PT,10:10,10:40,"West Chinnock Primary School, Scotts Way, West Chinnock, Crewkerne, Somerset TA18 7PU, UK",West Chinnock,50.9177897,-2.7602571
+200,Wells,K,Tuesday,4/5/2016,Weston Street Playgroup,BA22 9EQ,10:50,11:20,"Weston St, East Chinnock, Yeovil, East Chinnock BA22 9EQ, UK",Yeovil,50.91618649999999,-2.7209688
+201,Wells,K,Tuesday,4/5/2016,Westbury Gardens,BA22 8UR,11:35,11:55,"Westbury Gardens, Yeovil, Somerset BA22 8UR, UK",Yeovil,50.9344933,-2.7050856
+202,Wells,K,Tuesday,4/5/2016,Cedar Fields,BA22 9DB,12:10,12:30,"Cedar Fields, West Coker, Yeovil, Somerset BA22 9DB, UK",West Coker,50.92023649999999,-2.6891496
+203,Wells,K,Tuesday,4/5/2016,High Street (Pippins),BA22 9PJ,12:45,12:55,"High St, Hardington Mandeville, Yeovil, Somerset BA22 9PJ, UK",Hardington,50.9013203,-2.6960375
+204,Wells,K,Tuesday,4/5/2016,Hardington Marsh,BA22 9QE,13:00,13:10,"Hardington Marsh, Yeovil, Somerset BA22 9QE, UK",Yeovil,50.8867618,-2.7019762
+205,Wells,K,Tuesday,4/5/2016,Hill End,BA22 9PY,13:15,13:25,"Hill End House, Hill End, Hardington Mandeville, Yeovil, Somerset BA22 9PY, UK",Hardington Mandeville,50.900623,-2.7087972
+206,Wells,K,Tuesday,4/5/2016,Helyar Arms,BA22 9JR,13:45,14:00,"Moor Ln, East Coker, Yeovil, Somerset BA22 9JR, UK",East Coker,50.9087006,-2.6529095
+207,Wells,K,Tuesday,4/5/2016,Bower Farm,BA22 9QP,14:40,14:50,"Sutton Bingham, Yeovil, Somerset BA22 9QP, UK",Sutton Bingham,50.8964302,-2.6456708
+208,Wells,L,Wednesday,4/6/2016,Podymore Inn,BA22 8JH,10:05,10:15,"Podimore, Yeovil, Somerset BA22 8JH, UK",Podimore,51.02296579999999,-2.6483116
+209,Wells,L,Wednesday,4/6/2016,Southwinds,BA22 8HF,10:20,10:40,"Bridgehampton, Yeovil, Somerset BA22 8HF, UK",Bridgehampton,51.0142767,-2.6240134
+210,Wells,L,Wednesday,4/6/2016,Corlarach Bineham Lane,BA22 8EZ,10:40,10:50,"Yeovilton, Yeovil, Somerset BA22 8EZ, UK",Yeovilton,51.0046724,-2.6520757
+211,Wells,L,Wednesday,4/6/2016,Car Park,BA22 8LX,11:00,11:20,"Limington Rd, Ilchester, Yeovil, Somerset BA22 8LX, UK",Ilchester,51.0002029,-2.6805151
+212,Wells,L,Wednesday,4/6/2016,Telephone Box Playgroup,TA12 6AL,11:40,11:55,"Milton Ln, Milton, Martock, Somerset TA12 6AL, UK",Milton,50.9918525,-2.7587454
+213,Wells,L,Wednesday,4/6/2016,Thurlocks,BA22 8QE,12:10,12:25,"Thurlocks, Tintinhull, Yeovil, Somerset BA22 8QE, UK",Tintinhull,50.9697402,-2.7189353
+214,Wells,L,Wednesday,4/6/2016,Higher Street Pippins,TA14 6SN,12:40,13:00,"Higher St, Norton-sub-Hamdon, Stoke-sub-Hamdon, Somerset TA14 6SN, UK",Norton-sub-Hamdon,50.938145,-2.7594363
+215,Wells,L,Wednesday,4/6/2016,Village Hall,TA14 6TR,13:50,14:40,"Chiselborough, TA14 6TR, UK",Chiselborough,50.9303252,-2.7574875
+216,Wells,L,Wednesday,4/6/2016,Ilchester School,BA22 8JP,15:00,15:30,"Ilchester, Somerset BA22 8JP, UK",Ilchester,51.011257,-2.6832
+217,Wells,M,Thursday,4/7/2016,Greyhound,BA6 8QN,9:00,9:25,"The Greyhound, Martin St, Baltonsborough, Glastonbury, Somerset BA6 8QS, UK",Baltonsborough,51.1102791,-2.6534328
+218,Wells,M,Thursday,4/7/2016,Baltonsborough Playgroup,BA6 8PN,9:30,10:00,"Ham Street, Baltonsborough, Glastonbury, Somerset BA6 8PN, UK",Baltonsborough,51.1125959,-2.6327514
+219,Wells,M,Thursday,4/7/2016,Baltonsborough School,BA6 8PN,10:00,10:30,"School Rd, Glastonbury, Somerset BA6 8PD, UK",Baltonsborough,51.1254745,-2.6175079
+220,Wells,M,Thursday,4/7/2016,Butleigh School,BA6 8SX,10:40,11:10,"Somerset BA6 8SX, UK",Butleigh,51.100936,-2.68495
+221,Wells,M,Thursday,4/7/2016,Barton Road Fairmile,BA6 8TH,11:15,11:30,"Barton Rd, Butleigh, Glastonbury, Somerset BA6 8TH, UK",Butleigh,51.0951235,-2.68395
+222,Wells,M,Thursday,4/7/2016,Charlton Adam Post Office,TA11 7AY,11:45,12:00,"Charlton Adam, Somerton, Somerset TA11 7AY, UK",Charlton Adam,51.05702,-2.661087
+223,Wells,M,Thursday,4/7/2016,Baker Street Bus shelter,TA11 7DU,13:00,13:15,"Baker St, Babcary, Somerton, Somerset TA11 7DU, UK",Babcary,51.055505,-2.6259516
+224,Wells,M,Thursday,4/7/2016,Queen Street Layby,TA11 6EH,13:30,13:50,"Queen St, Keinton Mandeville, Somerton, Somerset TA11 6EH, UK",Keinton Mandeville,51.0706915,-2.644397
+225,Wells,M,Thursday,4/7/2016,Main Street Telephone box,TA11 6BX,14:00,14:20,"Barton St David, Somerton, Somerset TA11 6BX, UK",Barton St David,51.0851537,-2.6568477
+226,Wells,M,Thursday,4/7/2016,Southwood,BA6 8PG,14:30,14:45,"Southwood, Glastonbury, Somerset BA6 8PG, UK",Southwood,51.09776960000001,-2.634077

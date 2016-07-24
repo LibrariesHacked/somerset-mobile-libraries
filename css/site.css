@@ -36,25 +36,6 @@ tr.grouping {
     background-color: #29ABE0;
 }
 
-
-/* IE 6-8 fallback colors */
-.leaflet-oldie .marker-cluster-taunton {
-    background-color: #F47C3C;
-}
-
-    .leaflet-oldie .marker-cluster-taunton div {
-        background-color: #F47C3C;
-    }
-
-.leaflet-oldie .marker-cluster-wells {
-    background-color: #29ABE0;
-}
-
-    .leaflet-oldie .marker-cluster-wells div {
-        background-color: #29ABE0;
-    }
-
-
 .marker-cluster {
     background-clip: padding-box;
     border-radius: 15px;
