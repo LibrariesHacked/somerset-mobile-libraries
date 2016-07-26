@@ -20,8 +20,8 @@ with open('../data/somersetmobiles.csv', 'r') as mobilecsv:
         postcode = row[6]
         start = row[7]
         end = row[8]
-        # url = 'http://nominatim.openstreetmap.org/search/' + postcode + '?format=json&addressdetails=1&limit=1'
-        url = 'https://maps.googleapis.com/maps/api/geocode/json?address=' + location + ',' + postcode  + ' Somerset UK'
+        url = 'http://nominatim.openstreetmap.org/search/' + postcode + '?format=json&addressdetails=1&limit=1'
+
         result = requests.get(url).json()
         
         addresses = result['results']
