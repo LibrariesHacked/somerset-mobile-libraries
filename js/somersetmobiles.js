@@ -5,7 +5,7 @@
     // Loads the data asynchonously.
     /////////////////////////////////////
     loadData: function (callback) {
-        Papa.parse('/data/somersetmobiles_geocoded.csv', {
+        Papa.parse('/data/' + mobilesConfig.datafile, {
             download: true,
             complete: function (results) {
                 $.each(results.data.splice(1), function (key, val) {

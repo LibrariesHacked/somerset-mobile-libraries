@@ -58,10 +58,7 @@ L.Polyline = L.Polyline.extend({
 // Following relies on jQuery etc so wait for page to complete
 //////////////////////////////////////////////////
 $(function () {
-    //////////////////////////////////////////////////
-    // Load Data
-    // 
-    /////////////////////////////////////////////////
+    // Load data
     SomersetMobiles.loadData(function () {
 
         // First get how many mobile libraries we have.
@@ -80,8 +77,8 @@ $(function () {
                 + '</div></div>');
 
             $('#divMapFilters').append('<div class="btn-group">'
-                    + '<a href="#" id="btnAllStops' + lib + '" class="btn btn-' + mobilesConfig.libBootswatchClass[lib] + '">' + lib + ' Stops  <span class="badge" id="sp' + lib + 'StopCount"></span></a>'
-                    + '<a href="#" class="btn btn-' + mobilesConfig.libBootswatchClass[lib] + ' dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></a>'
+                    + '<a href="#" id="btnAllStops' + lib + '" class="btn btn-sm btn-' + mobilesConfig.libBootswatchClass[lib] + '">' + lib + ' Stops  <span class="badge" id="sp' + lib + 'StopCount"></span></a>'
+                    + '<a href="#" class="btn btn-sm btn-' + mobilesConfig.libBootswatchClass[lib] + ' dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></a>'
                     + '<ul class="dropdown-menu" id="ul' + lib + 'Filter">'
                     + '<li><a href="#" id="aAllStops' + lib + '">All ' + lib + ' stops</a></li>'
                     + '<li class="divider"></li>'
@@ -293,10 +290,10 @@ $(function () {
                         });
                     }
                 });
-        // Set an interval to refresh all the page data (that we want to refresh).
+
+        // Page refresh
         setInterval(function () {
             setCurrentPositions();
-            // table.fnDraw();
         }, 5000);
 
     });

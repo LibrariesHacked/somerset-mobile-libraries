@@ -39,6 +39,7 @@ tr.grouping {
 .marker-cluster {
     background-clip: padding-box;
     border-radius: 15px;
+    opacity: 0.8;
 }
 
     .marker-cluster div {
