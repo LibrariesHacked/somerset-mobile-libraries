@@ -17,7 +17,7 @@ Mobile library data includes stop locations, times, address details, numbe rof r
 
 The application is designed to be easily customisable to an alternative mobile library service.
 
-By modifying the [mobiles.config](js/mobiles.config) file and providing alternative data in the data folder, the solution can be made to work for any library service.  The python scripts provided should provide the means to create geocoordinate data (if not available already) and route data.
+By modifying the [mobiles.config](js/mobiles.config) file, and providing alternative data in the data folder, the solution can be made to work for any library service.  The python scripts provided should provide the means to create geocoordinate data (if not available already) and route data.
 
 ## Mobile library data
 
@@ -25,7 +25,19 @@ The data for the mobile libraries is held in the [somersetmobiles](somersetmobil
 
 | Field | Description |
 | ----- | ----------- |
-|  |  | 
+| Id | An auto-incrementing ID assigned to each stop, starting at 1.  Not shown in display but used in code to uniquely reference stops. | 
+| Mobile |  |
+| Route |  |
+| Day |  |
+| StartDate |  |
+| Location |  |
+| Postcode |  |
+| Start |  |
+| End |  |
+| Address |  |
+| Place |  |
+| Lat | The latitude geocoordinate of the stop. |
+| Lng | The longitude geocoordinate of the stop. |
 
 ## Creating routes
 
