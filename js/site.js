@@ -157,22 +157,20 @@ $(function () {
             $('#ul' + val.library + 'Filter').append('<li><a href="#" id="aFilter' + val.library + val.route + '")">Route ' + val.route + '</a></li>');
             $('#aFilter' + val.library + val.route).on('click', function () {
                 filterLibrariesMap(val.library + val.route);
+                $('body').trigger('click');
                 return false;
             });
         });
-
         // Initial setup - Add all libraries and the overall bounds
         $.each(libraries, function (key, lib) {
             map.addLayer(markerGroups[lib]);
             $('#sp' + lib + 'StopCount').text($.map(markersArrays, function (v, k) { if (k.indexOf(lib) != -1) return v; }).length);
         });
         $('#spStopCount').text($.map(markersArrays, function (v, k) { return v; }).length);
-
         map.fitBounds($.map(markersBounds, function (val, key) {
             return val;
         }));
         var currentFilter = 'All';
-
         // Set up the option to show either set of library stops
         filterLibrariesMap = function (filter) {
             $('#spQuickStats').html('');
@@ -247,6 +245,7 @@ $(function () {
         var table = $('#tblFullTimetable').dataTable(
                 {
                     processing: true,
+                    responsive: true,
                     dom: 'Bfrtip',
                     buttons: [
                         {

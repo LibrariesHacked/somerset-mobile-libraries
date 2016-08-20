@@ -25,6 +25,7 @@
     "datatables.net-buttons-bs": "^1.2.1",
     "jszip": "Stuk/jszip#^3.0.0",
     "papaparse": "^4.1.2",
-    "bootstrap-select": "^1.10.0"
+    "datatables.net-responsive": "^2.1.0",
+    "datatables.net-responsive-bs": "^2.1.0"
   }
 }
