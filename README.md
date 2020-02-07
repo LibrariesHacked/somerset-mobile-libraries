@@ -2,7 +2,7 @@
 
 Project for displaying a mobile library timetable in a live departure/arrival style web dashboard.  This is currently deployed to:
 
-[http://somersetmobiles.librarieshacked.org](http://somersetmobiles.librarieshacked.org)
+[https://somersetmobiles.librarieshacked.org](https://somersetmobiles.librarieshacked.org)
 
 ## What is it?
 
